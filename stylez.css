@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: Futura;
+    color: var(--blanco);
+}
+:root{
+    --base:rgba(0,0,0,1);
+    --azul:rgba(1,175,235,1);
+    --gris:rgba(28,28,28,.9);
+    --blanco:#ffff;
+}
+@font-face {
+    font-family: Futura;
+    src: url(fonts/Futura.ttc);
+}
+
+/*============DIV====================*/
+
+
+.div-xl-6, .div-xl-4, .div-xl-3, .div-xl-12, .div-xl-8, .div-xl-2{
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.div-xl-2{ width: 15.666666666667%; }
+.div-xl-3{ width: 24%; }
+.div-xl-4{ width: 32.3333333%; }
+.div-xl-6{ width: 49%; }
+.div-xl-8{ width: 65.666666666667%; }
+.div-xl-12{ width: 99%; }
+
+/*======= BASICA =======*/
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    float: left;
+    background: var(--gris);
+}
+
+.header{
+    width: 100%;
+    height: 15%;
+    position: relative;
+    float: left;
+    background: var(--base);
+}
+#logo{
+    width: 13em;
+    height: 9em;
+}
+#icons{
+    width: 3em;
+    height: 2em;
+}
+
+.extra{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3%;
+}
+
+.footer{
+    width: 100%;
+    height: 5%;
+    position: relative;
+    float: left;
+    background: blue;
+}
+
+.body2{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    float: left;
+}
+
+
+/*============= INDEX =========*/
+.body{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    float: left;
+}
+
+.imgmuestra{
+    width: 100%;
+    height: 305px;
+    position: relative;
+    float: left;
+}
+
+.outmarg{
+    margin-right:0;
+    margin-bottom: 0;
+}
+
+
+/*============= NOSOTROS =========*/
+.text{
+    background: var(--azul);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+/*============= SERVICIO =========*/
+.selector{
+    float: left;
+    background: var(--gris);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.informacion{
+    background: var(--azul);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.qflex{
+    display:block;
+}
+
+
+/*============= CONTACT =========*/
+.dats{
+    margin-left: 5%;
+}
+#imgc{
+    width: 1.2em;
+    height: 1.2em;
+}
