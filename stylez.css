@@ -143,3 +143,11 @@
     width: 1.2em;
     height: 1.2em;
 }
+#map{
+    width: 49%;
+    height: 50%;
+    position: relative;
+    float: left;
+    top: 9%;
+    /*background: red;*/
+}

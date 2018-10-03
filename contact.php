@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylez.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASQKvbTGUZ1Ds6TTJJXJAuicT0ejXwNpw"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
 </head>
 
@@ -47,8 +48,10 @@
                         <H4>Alberto Martínez<br> (Director de Operaciones)<br><img id="imgc" src="images/icon/whatsapp.png">55 4056 098<br><img id="imgc" src="images/icon/mail.png">alberto@gruposgi.com.mx</H4><br>
                     </div>
                 </div>
-                <div class="div-xl-6">
-                    6
+                <div class="div-xl-6" id="map">
+                    <!-- <div class="hsti col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"> -->
+                        <!-- <div id="map"> </div> -->
+                    <!-- </div> -->
                 </div>
                 <div class="div-xl-12">
                     <H1>f ins</H1>
@@ -57,3 +60,32 @@
         </div>
     </div>
 </body>
+</html>
+
+<script>
+  window.onload = initMap(); // cargar esta funcion enseguida del dom
+  /*window.onload = obtenerdireccion;*/
+    
+  var map = null;
+  var marker = null;
+  var geocoder = new google.maps.Geocoder();
+  
+ /* function geoloca(){ //FUNCION DE LA GEOLOCALIZACION QUE DARA LA VARIABLE myLatlng
+    navigator.geolocation.getCurrentPosition(initMap);
+  }*/
+
+  function initMap() { //FUNCION QUE CARGA EL MAPA CON LA GEOLOCALIZACION ACTUAL
+ 
+    
+    var myLatlng = new google.maps.LatLng(20.6912786,-100.4456878);
+    var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: myLatlng,
+          //mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map
+    });
+  }
+</script>
