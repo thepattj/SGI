@@ -1,139 +1,263 @@
 *{
     padding: 0;
     margin:0;
-    font-family: Montserrat;
-}
-html , body{
-    width: 100%;
-    height: 100%;
+    font-family: Futura;
+    color: var(--blanco);
 }
 :root{
     --base:rgba(0,0,0,1);
-    --azul:#B0BAD8;
+    --azul:rgba(1,175,235,1);
+    --gris:rgba(28,28,28,.9);
     --blanco:#ffff;
 }
-
 @font-face {
-    font-family: Galada;
-    src: url(fonts/Galada-Regular.ttf);
-}
-@font-face {
-    font-family: Montserrat;
-    src: url(fonts/Montserrat-Regular.ttf);
-}
-/*------------------------------------ VISUALIZACION PARA EL JAVASCRIPT ------------------------*/
-.nv{
-    display: none !important;
+    font-family: Futura;
+    src: url(fonts/Futura.ttc);
 }
 
-.ver{
-    display: block !important;
-}
-
-/*----------------------------- MEDIA QUERY ----------------------------------*/
-/*PANTALLA CON MAS DE 1680 A 2000PX - 4K*/
-/*LAPTOPS CON HD */
-@media only screen and (min-width: 1681px) and (max-width: 2000px){
-    /*REDIMENCION EN CARRUSEL DE FOTOS*/
-   .logo{
-        height: 15% !important;
-        -webkit-transition: width .25s linear, background .25s linear;
-        transition: width .25s linear, background .25s linear;
-    }
-    #logoimg{
-        height: 100% !important;
-        position: relative !important;
-    }
-}
-
-/*LAPTOPS CON HD */
-@media only screen and (min-width: 1025px) and (max-width: 1680px){
-    /*REDIMENCION EN CARRUSEL DE FOTOS*/
-   .logo{
-        height: 15% !important;
-        -webkit-transition: width .25s linear, background .25s linear;
-        transition: width .25s linear, background .25s linear;
-    }
-    #logoimg{
-        height: 100% !important;
-        position: relative !important;
-    }
-}
+/*============DIV====================*/
 
 
-
-/*---------------BASE-------------*/
-#bg{
-    padding: 0;
-    background: var(--base);
-}
-.header{
-    padding: 0;
-    height: 150px;
-    position: fixed;
-    z-index: 9999;
+.div-xl-6, .div-xl-4, .div-xl-3, .div-xl-12, .div-xl-8, .div-xl-2{
     float: left;
-    box-shadow: 3px 0px 7px 0px rgba(255,255,255,.2);
-    background: rgba(0,0,0,.9);
-}
-
-/*DENTRO DEL HEADER*/
-.seph{
-    height: 100%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
-.sepm{
+.div-xl-2{ width: 15.666666666667%; }
+.div-xl-3{ width: 24%; }
+.div-xl-4{ width: 32.3333333%; }
+.div-xl-6{ width: 49%; }
+.div-xl-8{ width: 65.666666666667%; }
+.div-xl-12{ width: 99%; }
+
+/*======= BASICA =======*/
+
+.bg{
+    width: 100%;
     height: 100%;
+    position: absolute;
+    float: left;
+    background: var(--gris);
+}
+
+.header{
+    width: 100%;
+    height: 15%;
+    position: relative;
+    float: left;
+    background: var(--base);
+}
+#logo{
+    width: 13em;
+    height: 9em;
+}
+#icons{
+    width: 3em;
+    height: 2em;
+}
+
+.extra{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3%;
+}
+
+.footer{
+    width: 100%;
+    height: 5%;
+    position: relative;
+    float: left;
+    background: var(--base);
+}
+#redes{
+    width: 3em;
+    height: 2em;
+    margin-top: 22%;
+    position: relative;
+    float: left;
+}
+
+.body2{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    float: left;
+}
+/*============= MODAL =============*/
+#bg-negro {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999999999;
+    transition-timing-function: linear;
+    /*-webkit-transition: .1s all;*/
+    opacity: 0;
+    visibility: hidden;
+}
+
+#modal {
+    float: left;
+    position: fixed;
+    background: rgba(211,46,98,.7);
+    z-index: 999999999999;
+    border-radius: 2px;
+    /*top: 50%;*/
+    /*margin-top: -100px;*/
+    box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, .5);
+    /*transition-timing-function: linear;*/
+    -webkit-transition: .2s all;
+    opacity: 0;
+    visibility: hidden;
+    transition-timing-function: linear;
+    -webkit-transform: scale(.9);
+    /*width: 200px;*/
+    /*left: 50%;*/
+    overflow: hidden;
+}
+
+#modal>h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#modal>p {
+    color: #6f7a8c;
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.chico {
+    width: 300px !important;
+    margin-left: -150px;
+}
+
+.verModal {
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-transform: scale(1) !important;
+}
+
+.grande {
+    width: 100% !important;
+    height: 100%;
+}
+
+.cmodal{
+    margin-top: 10%;
+    /*background: blue;*/
+}
+
+.bmodal{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background: transparent;
+    /*color: white;*/
+    border-style: none;
+}
+.tmodal{    
+    margin-left: 45%;
+    /*background: green;*/
 }
 
-#log{
-    width: 10em;
-    height: 6em;
-}
-
-#main{
-    width: 3em;
-    height: 2em;
-    display: flex;
+.title:hover{
+    background: white;
+    color: rgb(211,46,98)
 }
 
 
-.footer{
-    height: 70px;
+/*============= INDEX =========*/
+.body{
+    width: 100%;
+    height: 80%;
     position: relative;
-    bottom: 0px;
+    float: left;
+    overflow-y: auto;
 }
 
-/*DENTRO DEL FOOTER*/
-.sepf{
+.imgmuestra{
+    width: 100%;
+    height: 305px;
+    position: relative;
+    float: left;
+}
+
+.outmarg{
+    margin-right:0;
+    margin-bottom: 0;
+}
+
+
+/*============= NOSOTROS =========*/
+.text{
+    background: var(--gris);
+    width: 100%;
     height: 100%;
+    position: relative;
+    float: left;
+}
+
+/*============= SERVICIO =========*/
+.selector{
+    float: left;
+    background: var(--gris);
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-footer img{
-    width: 20px;
-    height: 20px;   
-}
-
-.body{
-    margin-top: 150px;
-    padding: 0;
-    height: 450px;
     position: relative;
-    float: left;
-    
+    width: 100%;
 }
-
-.grid{
+.informacion{
+    background: var(--gris);
+    width: 100%;
     height: 100%;
     position: relative;
     float: left;
+    overflow-y: auto;
 }
 
+.qflex{
+    display:block;
+}
+
+.otro{
+    overflow-y: auto;
+}
+
+
+/*============= CONTACT =========*/
+.dats{
+    margin-left: 5%;
+}
+#imgc{
+    width: 1.2em;
+    height: 1.2em;
+}
+#map{
+    width: 49%;
+    height: 50%;
+    position: relative;
+    float: left;
+    top: 9%;
+}
+#maps{
+    width: 100%;
+    height: 91%;
+    position: absolute;
+    float: left;
+    top: 9%;
+}

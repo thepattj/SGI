@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: Montserrat;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+:root{
+    --base:rgba(0,0,0,1);
+    --azul:#B0BAD8;
+    --blanco:#ffff;
+}
+
+@font-face {
+    font-family: Galada;
+    src: url(fonts/Galada-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+/*------------------------------------ VISUALIZACION PARA EL JAVASCRIPT ------------------------*/
+.nv{
+    display: none !important;
+}
+
+.ver{
+    display: block !important;
+}
+
+/*----------------------------- MEDIA QUERY ----------------------------------*/
+/*PANTALLA CON MAS DE 1680 A 2000PX - 4K*/
+/*LAPTOPS CON HD */
+@media only screen and (min-width: 1681px) and (max-width: 2000px){
+    /*REDIMENCION EN CARRUSEL DE FOTOS*/
+   .logo{
+        height: 15% !important;
+        -webkit-transition: width .25s linear, background .25s linear;
+        transition: width .25s linear, background .25s linear;
+    }
+    #logoimg{
+        height: 100% !important;
+        position: relative !important;
+    }
+}
+
+/*LAPTOPS CON HD */
+@media only screen and (min-width: 1025px) and (max-width: 1680px){
+    /*REDIMENCION EN CARRUSEL DE FOTOS*/
+   .logo{
+        height: 15% !important;
+        -webkit-transition: width .25s linear, background .25s linear;
+        transition: width .25s linear, background .25s linear;
+    }
+    #logoimg{
+        height: 100% !important;
+        position: relative !important;
+    }
+}
+
+
+
+/*---------------BASE-------------*/
+#bg{
+    padding: 0;
+    background: var(--base);
+}
+.header{
+    padding: 0;
+    height: 150px;
+    position: fixed;
+    z-index: 9999;
+    float: left;
+    box-shadow: 3px 0px 7px 0px rgba(255,255,255,.2);
+    background: rgba(0,0,0,.9);
+}
+
+/*DENTRO DEL HEADER*/
+.seph{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sepm{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#log{
+    width: 10em;
+    height: 6em;
+}
+
+#main{
+    width: 3em;
+    height: 2em;
+    display: flex;
+}
+
+
+.footer{
+    height: 70px;
+    position: relative;
+    bottom: 0px;
+}
+
+/*DENTRO DEL FOOTER*/
+.sepf{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    width: 20px;
+    height: 20px;   
+}
+
+.body{
+    margin-top: 150px;
+    padding: 0;
+    height: 450px;
+    position: relative;
+    float: left;
+    
+}
+
+.grid{
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
