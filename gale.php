@@ -21,11 +21,11 @@
 
         <!-- *** AQUI INICIA LO QUE SE VE *** -->
         <div class="header">
-            <div class="div-xl-4">
+            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="logo" src="images/logo2.png">
             </div>
-            <div class="div-xl-4"></div>            
-            <div class="extra div-xl-4">
+            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>            
+            <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="icons" src="images/icon/menu.png">
             </div>
         </div>
@@ -33,46 +33,13 @@
             <div class="informacion">
                 <h1 align="center">GALERIA</h1>
                 <div class="otro">
-                    <div class="div-xl-12">
+                    <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
                         <div class="grid">
-                            <div class="outmarg div-xl-3">
-                                <img id="" class="imgmuestra" src="images/mike-wilson-96168-unsplash.jpg">
-                            </div>
-                            <div class="outmarg div-xl-3">
-                                <img class="imgmuestra" src="images/13244670_940523162683710_5104496885144873549_n.jpg">
-                            </div>
-                            <div class="outmarg div-xl-3">
-                                <img class="imgmuestra" src="images/mike-wilson-96168-unsplash.jpg">
-                            </div>
-                            <div class="outmarg div-xl-3">
-                                <img class="imgmuestra" src="images/13244670_940523162683710_5104496885144873549_n.jpg">
-                            </div>
-
-                            <div class="outmarg div-xl-3">
-                                <img id="" class="imgmuestra" src="images/mike-wilson-96168-unsplash.jpg">
-                            </div>
-                            <div class="outmarg div-xl-3">
-                                <img class="imgmuestra" src="images/13244670_940523162683710_5104496885144873549_n.jpg">
-                            </div>
-                            <div class="outmarg div-xl-3">
-                                <img class="imgmuestra" src="images/mike-wilson-96168-unsplash.jpg">
-                            </div>
-                            <div class="outmarg div-xl-3">
-                                <img class="imgmuestra" src="images/13244670_940523162683710_5104496885144873549_n.jpg">
-                            </div>
-
-                            <div class="outmarg div-xl-3">
-                                <img id="" class="imgmuestra" src="images/mike-wilson-96168-unsplash.jpg">
-                            </div>
-                            <div class="outmarg div-xl-3">
-                                <img class="imgmuestra" src="images/13244670_940523162683710_5104496885144873549_n.jpg">
-                            </div>
-                            <div class="outmarg div-xl-3">
-                                <img class="imgmuestra" src="images/mike-wilson-96168-unsplash.jpg">
-                            </div>
-                            <div class="outmarg div-xl-3">
-                                <img class="imgmuestra" src="images/13244670_940523162683710_5104496885144873549_n.jpg">
-                            </div>
+                            <?php for ($i=0; $i < 12; $i++) { ?>
+                                <div class="outmarg div-xsp-6 div-smp-6 div-mdp-6 div-lgp-3 div-xlp-3">
+                                    <img id="" class="imgmuestra" src="images/mike-wilson-96168-unsplash.jpg">
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>

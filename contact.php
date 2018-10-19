@@ -21,52 +21,52 @@
 
         <!-- *** AQUI INICIA LO QUE SE VE *** -->
         <div class="header">
-            <div class="div-xl-4">
+            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="logo" src="images/logo2.png">
             </div>
-            <div class="div-xl-4"></div>            
-            <div class="extra div-xl-4">
+            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>            
+            <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="icons" src="images/icon/menu.png">
             </div>
         </div>
         <div class="body2">
             <div class="text">
-                <div class="div-xl-12">
+                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
                     <H1>CONTACTANOS</H1>
                 </div>
 
                 <!-- ==== ESTE ES EL DIV DE LA INFORMACION ==== -->
-                <div class="qflex div-xl-6">
-                    <div class="qflex dats div-xl-12">
+                <div class="qflex div-xs-12 div-sm-12 div-md-6 div-lg-6 div-xl-6">
+                    <div class="qflex dats div-xs-6 div-sm-6 div-md-6 div-lg-12 div-xl-12">
                         <h2>SUCURSAL QUERÉTARO</h2>
                         <H4><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H4>
                         <H4> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H4><br>
                     </div>
-                    <div class="qflex dats  div-xl-12">
+                    <div class="qflex dats div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
                         <h2>SUCURSAL CIUDAD DE MÉXICO</h2>
                         <H4><img id="imgc" src="images/icon/mark.png"> Enrique Rebsamen 22. Col. Piedad Narvarte C.P. 03000</H4>
                         <H4><img id="imgc" src="images/icon/phone.png"> (55) 5530 7046</H4><br>
                     </div>
-                    <div class="qflex dats  div-xl-12">
+                    <div class="qflex dats div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
                         <h2>WHATSAPP-CORREO</h2>
                         <H4>Ulises Reséndiz<br> (Director Comercial)<br><img id="imgc" src="images/icon/whatsapp.png">55 4192 1881<br><img id="imgc" src="images/icon/mail.png">ulises@gruposgi.com.mx</H4><br>
                         <H4>Alberto Martínez<br> (Director de Operaciones)<br><img id="imgc" src="images/icon/whatsapp.png">55 4056 098<br><img id="imgc" src="images/icon/mail.png">alberto@gruposgi.com.mx</H4><br>
                     </div>
                 </div>
                 <!-- *** ES EL MAPA *** -->
-                <div class="div-xl-6" id="map"></div>
+                <div class="div-xs-12 div-sm-12 div-md-6 div-lg-6 div-xl-6" id="map"></div>
                 <!-- *** ES LA PARTE DE LOS ICONOS *** -->
-                <div class="div-xl-12">
-                    <div class="div-xl-4"></div>
-                    <div class="div-xl-4">
-                        <div class="div-xl-6">
-                            <img id="icons" src="images/icon/facebook.png">
+                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
+                    <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
+                    <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
+                        <div class="div-xs-6 div-sm-6 div-md-6 div-lg-6 div-xl-6">
+                            <img id="reds" src="images/icon/facebook.png">
                         </div>
-                        <div class="div-xl-6">
-                            <img id="icons" src="images/icon/instagram.png">
+                        <div class="div-xs-6 div-sm-6 div-md-6 div-lg-6 div-xl-6">
+                            <img id="reds" src="images/icon/instagram.png">
                         </div>
                     </div>
-                    <div class="div-xl-4"></div>
+                    <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
                 </div>
             </div>
         </div>
