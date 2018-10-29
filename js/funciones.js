@@ -1,52 +1,293 @@
 $(document).ready(function(){
-    $('#icons').click(function() {
-        //alert("ESTE ES EL BOTON DE MENU");
-        verModal('grande', 'INICIO','NOSOTROS','SERVICIOS','GALERIA','CONTACTO', 'X', 'Platillo Preparado con tortillas previamente sazonadas con la salsa que el comensal selecciono, con una guarnición de Pollo o Huevo al gusto.');
-    });
+    $clic = 0;
 
+
+   
+    
+
+    //alert("ESTE ES EL BOTON DE MENU");
+    $('#icons').click(function() {
+        verModal('grande', 'INICIO','NOSOTROS','SERVICIOS','CLIENTES','CONTACTO', 'X', 'Platillo Preparado con tortillas previamente sazonadas con la salsa que el comensal selecciono, con una guarnición de Pollo o Huevo al gusto.');
+    });
+    //REDIRECCIONAMIENTO DE LOGO
     $('#logo').click(function() {
         $(location).attr('href','index.php');
     });
 
 
-    $('#slc1').click(function(){
+    $('#slc1').click(function(){ //STANDS
+        $('#servicios1').css({"display":"none"});
+        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sd.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sd2.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sd3.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sd4.jpg'>"+
+                        "</div>";                                
+        $('#servicios2').html(imagenes);
+
         var texto = $('#slc1').attr('value');
         $('#title').html(texto);
-        var desc = "Tipos de materiales:<br><b>MDF, triplay, trovicel, coroplast, foamboard, lámina, microalambre, aluminio</b>";
+        var desc = "<b> DISEÑO Y PRODUCCIÓN </b> <br><br> <b> Materiales: <br> MDF, TRIPLAY, TROVICEL, COROPLAST, FOAMBOARD, LÁMINA, MICROALAMBRE, ALUMINIO</b>";
         $('#descrip').html(desc);
+
+        $ventana_ancho = $(window).width();
+        //alert($ventana_ancho);
+        if($ventana_ancho > 1025){
+            $('#galery').addClass("movgalery");
+            $('#flex').addClass("movflex");
+            $('#flext').addClass("movflex");
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
+            
+        }else if($ventana_ancho <= 1024){
+            //alert("es un dispositivo movil");
+            $('#flex').css({"display":"block"});
+            $('#flext').css({"display":"block"});
+            $('#flex').css({"margin-left":"0%"});
+            $('#flext').css({"margin-left":"0%"});
+            //alert($(".informacion").scrollTop() + " px INFO");
+            $('.informacion').animate({ scrollTop:9999}, 2000);
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            /* $('.informacion').scrollTop(); */
+        }
     });
-    $('#slc2').click(function(){
+    $('#slc2').click(function(){ //VINIL DE RECORTE
+        $('#servicios1').css({"display":"none"});
+        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/recort.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/recort2.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/recort3.jpg'>"+
+                        "</div>";                                
+        $('#servicios2').html(imagenes);
+
         var texto = $('#slc2').attr('value');
         $('#title').html(texto);
-        var desc = "Tipos de materiales:<br><b>Autoadherible (mate, blanco, transparente, microperforado)<br> Electroestático (blanco, transparente)</b>";
+        var desc = "<b> IMPRESIÓN, RECORTE E INSTALACIÓN</b> <br><br> <b>Materiales: <br> AUTOADHERIBLE </b> (mate, blanco, transparente, microperforado)<br><b>ELECTROESTÁTICO </b> (blanco, transparente)";
         $('#descrip').html(desc);
+
+        $ventana_ancho = $(window).width();
+        //alert($ventana_ancho);
+        if($ventana_ancho > 1025){
+            $('#galery').addClass("movgalery");
+            $('#flex').addClass("movflex");
+            $('#flext').addClass("movflex");
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);º1                              
+        }else if($ventana_ancho <= 1024){
+            //alert("es un dispositivo movil");
+            $('#flex').css({"display":"block"});
+            $('#flext').css({"display":"block"});
+            $('#flex').css({"margin-left":"0%"});
+            $('#flext').css({"margin-left":"0%"});
+            //alert($(".informacion").scrollTop() + " px INFO");
+            $('.informacion').animate({ scrollTop:9999}, 2000);
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            /* $('.informacion').scrollTop(); */
+        }
     });
-    $('#slc3').click(function(){
+    $('#slc3').click(function(){ // VINIL PARA CUALQUIER SUPERFICIE
+        $('#servicios1').css({"display":"none"});
+        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sup.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sup1.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sup2.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sup3.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sup4.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sup5.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/sup6.jpg'>"+
+                        "</div>";                                
+        $('#servicios2').html(imagenes);
+
         var texto = $('#slc3').attr('value');
         $('#title').html(texto);
-        var desc = "Tipos de materiales:<br><b>Autoadherible (mate, blanco, transparente, microperforado)<br> Electroestático (blanco, transparente)</b>";
+        var desc = "<b> IMPRESIÓN, RECORTE E INSTALACIÓN</b> <br><br> <b>Materiales: <br> AUTOADHERIBLE </b> (mate, blanco, transparente, microperforado)<br><b>ELECTROESTÁTICO </b> (blanco, transparente)";
         $('#descrip').html(desc);
+
+        $ventana_ancho = $(window).width();
+        //alert($ventana_ancho);
+        if($ventana_ancho > 1025){
+            $('#galery').addClass("movgalery");
+            $('#flex').addClass("movflex");
+            $('#flext').addClass("movflex");
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);º1                              
+        }else if($ventana_ancho <= 1024){
+            //alert("es un dispositivo movil");
+            $('#flex').css({"display":"block"});
+            $('#flext').css({"display":"block"});
+            $('#flex').css({"margin-left":"0%"});
+            $('#flext').css({"margin-left":"0%"});
+            //alert($(".informacion").scrollTop() + " px INFO");
+            $('.informacion').animate({ scrollTop:9999}, 2000);
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            /* $('.informacion').scrollTop(); */
+        }
     });
-    $('#slc4').click(function(){
+    $('#slc4').click(function(){ // LONAS
+        $('#servicios1').css({"display":"none"});
+        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/lona.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/lona2.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/lona3.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/lona4.jpg'>"+
+                        "</div>";                                
+        $('#servicios2').html(imagenes);
+
         var texto = $('#slc4').attr('value');
         $('#title').html(texto);
-        var desc = "Tipos de materiales:<br><b>Autoadherible (mate, blanco, transparente, microperforado)<br> Electroestático (blanco, transparente)</b>";
+        var desc = "<b> IMPRESIÓN E INSTALACIÓN</b> <br><br> <b>Materiales: <br> BLACKLIGHT <br> MESH <br> BLACKOUT <br> FRONT</b> (brillante y mate)";
         $('#descrip').html(desc);
+
+        $ventana_ancho = $(window).width();
+        //alert($ventana_ancho);
+        if($ventana_ancho > 1025){
+            $('#galery').addClass("movgalery");
+            $('#flex').addClass("movflex");
+            $('#flext').addClass("movflex");
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
+        }else if($ventana_ancho <= 1024){
+            //alert("es un dispositivo movil");
+            $('#flex').css({"display":"block"});
+            $('#flext').css({"display":"block"});
+            $('#flex').css({"margin-left":"0%"});
+            $('#flext').css({"margin-left":"0%"});
+            //alert($(".informacion").scrollTop() + " px INFO");
+            $('.informacion').animate({ scrollTop:9999}, 2000);
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            /* $('.informacion').scrollTop(); */
+        }
     });
-    $('#slc5').click(function(){
+    $('#slc5').click(function(){ // TELA
+        $('#servicios1').css({"display":"none"});
+        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/tela.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/tela2.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/tela3.jpg'>"+
+                        "</div>"+
+                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/tela4.jpg'>"+
+                        "</div>";                                
+        $('#servicios2').html(imagenes);
+
+
         var texto = $('#slc5').attr('value');
         $('#title').html(texto);
-        var desc = "Tipos de materiales:<br><b>Tela Plack art y Ten cloth<br> Acabados: Dobladillo perimental, jaretas, hule para perfil de aluminio.</b>";
+        var desc = "<b> SUBLIMACIÓN E IMPRESIÓN</b> <br><br> <b>Materiales: <br> TELA PLACK ART Y TEN CLOTH ACABADOS </b> (Dobladillo perimental, Jaretas, Hule para perfil de aluminio)";
         $('#descrip').html(desc);
+
+        $ventana_ancho = $(window).width();
+        //alert($ventana_ancho);
+        if($ventana_ancho > 1025){
+            $('#galery').addClass("movgalery");
+            $('#flex').addClass("movflex");
+            $('#flext').addClass("movflex");
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
+        }else if($ventana_ancho <= 1024){
+            //alert("es un dispositivo movil");
+            $('#flex').css({"display":"block"});
+            $('#flext').css({"display":"block"});
+            $('#flex').css({"margin-left":"0%"});
+            $('#flext').css({"margin-left":"0%"});
+            //alert($(".informacion").scrollTop() + " px INFO");
+            $('.informacion').animate({ scrollTop:9999}, 2000);
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            /* $('.informacion').scrollTop(); */
+        }
     });
-    $('#slc6').click(function(){
+    $('#slc6').click(function(){ //SUSTRATOS
+        $('#servicios1').css({"display":"none"});
+        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/subs.jpg'>"+
+                        "</div>";                                
+        $('#servicios2').html(imagenes);
+
         var texto = $('#slc6').attr('value');
         $('#title').html(texto);
-        var desc = "Tipos de materiales:<br><b>Vinil Impresión a gran formato<br>Estireno, coroplast, trovicel, foamboard , MDF</b>";
+        var desc = "<b> IMPRESIÓN E INSTALACIÓN </b> <br><br> <b>Materiales:<br> ESTIRENO, COROPLAST, FOAMBOARD, MDF</b>";
         $('#descrip').html(desc);
+
+        $ventana_ancho = $(window).width();
+        //alert($ventana_ancho);
+        if($ventana_ancho > 1025){
+            $('#galery').addClass("movgalery");
+            $('#flex').addClass("movflex");
+            $('#flext').addClass("movflex");
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
+        }else if($ventana_ancho <= 1024){
+            //alert("es un dispositivo movil");
+            $('#flex').css({"display":"block"});
+            $('#flext').css({"display":"block"});
+            $('#flex').css({"margin-left":"0%"});
+            $('#flext').css({"margin-left":"0%"});
+            //alert($(".informacion").scrollTop() + " px INFO");
+            $('.informacion').animate({ scrollTop:9999}, 2000);
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            /* $('.informacion').scrollTop(); */
+        }
+    });
+    $('#slc7').click(function(){ //VOLUMETRICOSD
+        $('#servicios1').css({"display":"none"});
+        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestra' src='images/servicios/vol.jpg'>"+
+                        "</div>";                                
+        $('#servicios2').html(imagenes);
+
+
+        var texto = $('#slc7').attr('value');
+        $('#title').html(texto);
+        var desc = "<b> DISEÑO Y PRODUCCIÓN</b> <br><br> <b>Materiales :<br> </b>";
+        $('#descrip').html(desc);
+
+        $ventana_ancho = $(window).width();
+        //alert($ventana_ancho);
+        if($ventana_ancho > 1025){
+            $('#galery').addClass("movgalery");
+            $('#flex').addClass("movflex");
+            $('#flext').addClass("movflex");
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
+        }else if($ventana_ancho <= 1024){
+            //alert("es un dispositivo movil");
+            $('#flex').css({"display":"block"});
+            $('#flext').css({"display":"block"});
+            $('#flex').css({"margin-left":"0%"});
+            $('#flext').css({"margin-left":"0%"});
+            //alert($(".informacion").scrollTop() + " px INFO");
+            $('.informacion').animate({ scrollTop:9999}, 2000);
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            /* $('.informacion').scrollTop(); */
+        }
     });
 });
-
+//MUESTRA MODAL CON DATOS DE ARRIBA
 function verModal(tipo, texto, texto2, texto3, texto4, texto5, textoBtn, parrafo) { //MODAL DE ALERTA
     bgNegro = document.getElementById('bg-negro');
     modal = document.getElementById('modal');
@@ -78,13 +319,13 @@ function verModal(tipo, texto, texto2, texto3, texto4, texto5, textoBtn, parrafo
 
     tipo = tipo;
 }
-
+//REDIRECCIONA
 function seccion(pagina){
     dir = pagina+".php"
     //alert(dir);
     window.location.href = dir;
 }
-
+//BOTON QUE CIERRA EL MODAL
 function cerrar() { //BOTON QUE SE CREA
     bgNegro.classList.remove('verModal');
     modal.classList.remove('verModal');

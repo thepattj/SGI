@@ -11,7 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
 </head>
-
+<?php
+    $arrayColores = ['0,255,255,.8', '255,0,255,.8', '255,255,0,.8'];
+    $seleccion = rand(0,2);
+    $colorsel = $arrayColores[$seleccion];
+?>
 <body>
     <div class="bg">
         <!-- **** ESTE ES EL MODAL **** -->
@@ -19,7 +23,7 @@
         <div id="modal"></div>
 
         <!-- *** AQUI INICIA LO QUE SE VE *** -->
-        <div class="header">
+        <div class="header" style="" >
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="logo" src="images/logo2.png">
@@ -30,10 +34,48 @@
         </div>
         <div class="body">
             <div class="grid">
-                <?php $arrayNombres = ['']; $arrayArchivos = [''];
+                <?php $arrayNombres = ['Vinil de recorte',
+                                       'Lona gran formato',
+                                       'Stand', 
+                                       'Vinil cualquier superficie',
+                                       'Display',
+                                       'Tela (Camisa)',
+                                       'Tela (perfil de aluminio)',
+                                       'Volumetrico',
+                                       'Mas informacion sobre nosotros',
+                                       'Lona formato pequeño',
+                                       'Substrato', 'Ubicanos'];
+                      $arrayDescrip = ['Impresión, recorte e instalación',
+                                       'Impresión e instalación',
+                                       'Diseño y producción',
+                                       'Impresión, recorte e instalación',
+                                       'Diseño y producción',
+                                       'Sublimación e impresión',
+                                       'Sublimación e impresión',
+                                       'Diseño y producción',
+                                       'Nos dedicamos a materializar ideas',
+                                       'Impresión e instalación',
+                                       'Impresión e instalación','Visitanos en alguna de nuestras sucursales'];
+                      $arrayArchivos = ['recorte',
+                                        'lona',
+                                        'stand',
+                                        'superficie','display', 'tela', 'tela2','relleno', 'us','lona2','relleno2','location'];
                 for ($i=0; $i < 12; $i++) { ?>
                     <div class="outmarg div-xsp-6 div-smp-6 div-mdp-6 div-lgp-3 div-xlp-3">
-                        <img class="imgmuestra" src="images/mike-wilson-96168-unsplash.jpg" id="textimg" >
+                        <div class="fig">
+                            <img class="imgmuestra" src="images/galeriain/<?php echo $arrayArchivos[$i]; ?>.jpg" id="textimg" >
+                            <div class="figcap">
+                                <h3><?php echo $arrayNombres[$i]; ?> </h3> 
+                                <p><?php echo $arrayDescrip[$i]; ?> </p> 
+                                <?php if($i == 8) {?>
+                                    <a href="us.php">Click aqui</a>
+                                <?php }else if($i==11) {?>
+                                    <a href="contact.php">Click aqui</a>
+                                <?php } else if($i <> 8 && $i <> 11 ) {?>
+                                    <a href="serv.php">Click aqui</a>
+                                <?php }?>
+                            </div>
+                        </div>
                     </div>
                 <?php } ?>
             </div>
