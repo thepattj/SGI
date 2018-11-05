@@ -1,33 +1,30 @@
+var varible = 0;
+
 $(document).ready(function(){
     $clic = 0;
 
-
-   
-    
-
     //alert("ESTE ES EL BOTON DE MENU");
     $('#icons').click(function() {
-        verModal('grande', 'INICIO','NOSOTROS','SERVICIOS','CLIENTES','CONTACTO', 'X', 'Platillo Preparado con tortillas previamente sazonadas con la salsa que el comensal selecciono, con una guarnición de Pollo o Huevo al gusto.');
+        verModal('grande', 'INICIO','NOSOTROS','SERVICIOS','CONTACTO', 'X', 'Platillo Preparado con tortillas previamente sazonadas con la salsa que el comensal selecciono, con una guarnición de Pollo o Huevo al gusto.');
     });
     //REDIRECCIONAMIENTO DE LOGO
     $('#logo').click(function() {
         $(location).attr('href','index.php');
     });
 
-
     $('#slc1').click(function(){ //STANDS
         $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sd.jpg'>"+
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser imgp' src='images/servicios/sd.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sd2.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser imgp' src='images/servicios/sd2.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sd3.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/sd3.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sd4.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/sd4.jpg'>"+
                         "</div>";                                
         $('#servicios2').html(imagenes);
 
@@ -58,14 +55,14 @@ $(document).ready(function(){
     });
     $('#slc2').click(function(){ //VINIL DE RECORTE
         $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/recort.jpg'>"+
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/recort.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/recort2.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/recort2.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/recort3.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser imgp' src='images/servicios/recort3.jpg'>"+
                         "</div>";                                
         $('#servicios2').html(imagenes);
 
@@ -80,7 +77,7 @@ $(document).ready(function(){
             $('#galery').addClass("movgalery");
             $('#flex').addClass("movflex");
             $('#flext').addClass("movflex");
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);º1                              
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);                              
         }else if($ventana_ancho <= 1024){
             //alert("es un dispositivo movil");
             $('#flex').css({"display":"block"});
@@ -95,26 +92,26 @@ $(document).ready(function(){
     });
     $('#slc3').click(function(){ // VINIL PARA CUALQUIER SUPERFICIE
         $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sup.jpg'>"+
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/sup.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sup1.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/sup1.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sup2.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/sup2.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sup3.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/sup3.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sup4.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/sup4.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sup5.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/sup5.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/sup6.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser imgp' src='images/servicios/sup6.jpg'>"+
                         "</div>";                                
         $('#servicios2').html(imagenes);
 
@@ -129,7 +126,7 @@ $(document).ready(function(){
             $('#galery').addClass("movgalery");
             $('#flex').addClass("movflex");
             $('#flext').addClass("movflex");
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);º1                              
+            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);                              
         }else if($ventana_ancho <= 1024){
             //alert("es un dispositivo movil");
             $('#flex').css({"display":"block"});
@@ -144,17 +141,17 @@ $(document).ready(function(){
     });
     $('#slc4').click(function(){ // LONAS
         $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/lona.jpg'>"+
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/lona.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/lona2.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/lona2.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/lona3.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser imgp' src='images/servicios/lona3.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/lona4.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser imgp' src='images/servicios/lona4.jpg'>"+
                         "</div>";                                
         $('#servicios2').html(imagenes);
 
@@ -184,17 +181,17 @@ $(document).ready(function(){
     });
     $('#slc5').click(function(){ // TELA
         $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/tela.jpg'>"+
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/tela.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/tela2.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser imgp' src='images/servicios/tela2.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/tela3.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/tela3.jpg'>"+
                         "</div>"+
-                        "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/tela4.jpg'>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/tela4.jpg'>"+
                         "</div>";                                
         $('#servicios2').html(imagenes);
 
@@ -225,8 +222,8 @@ $(document).ready(function(){
     });
     $('#slc6').click(function(){ //SUSTRATOS
         $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/subs.jpg'>"+
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/subs.jpg'>"+
                         "</div>";                                
         $('#servicios2').html(imagenes);
 
@@ -256,8 +253,8 @@ $(document).ready(function(){
     });
     $('#slc7').click(function(){ //VOLUMETRICOSD
         $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class='outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestra' src='images/servicios/vol.jpg'>"+
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/vol.jpg'>"+
                         "</div>";                                
         $('#servicios2').html(imagenes);
 
@@ -287,8 +284,53 @@ $(document).ready(function(){
         }
     });
 });
+
+function MiFuncionJS(varible){
+    //alert("aqui esta el valor"+varible);
+    if(varible == "slc1"){
+        alert("hola que hace");
+    }if (varible == "slc2") {
+        //alert("vengo de index");
+        //document.querySelector("#servicios1").style.display = "none"; //$('#servicios1').css({"display":"none"});
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/recort.jpg'>"+
+                        "</div>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser' src='images/servicios/recort2.jpg'>"+
+                        "</div>"+
+                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
+                            "<img class='imgmuestraser imgp' src='images/servicios/recort3.jpg'>"+
+                        "</div>";                                
+        $('#servicios2').html(imagenes);
+        var texto = "VINIL DE RECORTE";
+        $('#title').html(texto);
+        var desc = "<b> IMPRESIÓN, RECORTE E INSTALACIÓN</b> <br><br> <b>Materiales: <br> AUTOADHERIBLE </b> (mate, blanco, transparente, microperforado)<br><b>ELECTROESTÁTICO </b> (blanco, transparente)";
+        $('#descrip').html(desc);
+
+        $ventana_ancho = $(window).width();
+        alert($ventana_ancho);
+        if($ventana_ancho > 1025){
+            $('#galery').addClass("movgalery");
+            $('#flex').addClass("movflex");
+            $('#flext').addClass("movflex");
+            //setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
+        }else if($ventana_ancho <= 1024){
+            //alert("es un dispositivo movil");
+            $('#flex').css({"display":"block"});
+            $('#flext').css({"display":"block"});
+            $('#flex').css({"margin-left":"0%"});
+            $('#flext').css({"margin-left":"0%"});
+            //alert($(".informacion").scrollTop() + " px INFO");
+            $('.informacion').animate({ scrollTop:9999}, 2000);
+            //setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            /* $('.informacion').scrollTop(); */
+        }
+    }
+
+}
+
 //MUESTRA MODAL CON DATOS DE ARRIBA
-function verModal(tipo, texto, texto2, texto3, texto4, texto5, textoBtn, parrafo) { //MODAL DE ALERTA
+function verModal(tipo, texto, texto2, texto3, texto4, textoBtn, parrafo) { //MODAL DE ALERTA
     bgNegro = document.getElementById('bg-negro');
     modal = document.getElementById('modal');
 
@@ -309,10 +351,8 @@ function verModal(tipo, texto, texto2, texto3, texto4, texto5, textoBtn, parrafo
                 "<h1 class='tmodal'>" + texto2 + "</h1></div>"+
             "<div onclick='seccion(this.id)' id='serv' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>"+
                 "<h1 class='tmodal'>" + texto3 + "</h1></div>"+
-            "<div onclick='seccion(this.id)' id='gale' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>"+
-                "<h1 class='tmodal'>" + texto4 + "</h1></div>"+
             "<div onclick='seccion(this.id)' id='contact' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>"+
-                "<h1 class='tmodal'>" + texto5 + "</h1></div>"+
+                "<h1 class='tmodal'>" + texto4 + "</h1></div>"+
         "</div>";
 
     modal.classList.add(tipo);

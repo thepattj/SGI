@@ -26,7 +26,7 @@
         <!-- *** AQUI INICIA LO QUE SE VE *** -->
         <div class="header" style="" >
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-                <img id="logo" src="images/logo2.png">
+                <img id="logo" src="images/logo.png">
             </div>
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>            
             <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">

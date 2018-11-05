@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     font-family: HelveNeu;
-    color: var(--blanco);
+    color: var(--negro);
 }
 
 :root {
     --base: rgba(0, 0, 0, .7);
-    --azul: rgba(1, 175, 235, 1);
-    --gris: rgba(0, 0, 0, .8);
+    --azul: rgba(1, 175, 235, .6);
+    --blanco: rgba(0, 0, 0, 1);
+    --gris: rgba(0, 0, 0, .1);
     --blanco: #ffff;
 }
 
@@ -34,7 +35,7 @@
     }
     .div-xl-2 { width: 15.666666666667%; }
     .div-xl-3 { width: 24%; }
-    .div-xlp-3 { width: 25%; }
+    .div-xlp-3 { width: 24%; }
     .div-xl-4 { width: 32.3333333%; }
     .div-xl-6 { width: 49%; }
     .div-xl-8 { width: 65.666666666667%; }
@@ -42,6 +43,7 @@
     #logo {
         width: 13em;
         height: 8em;
+        margin-top: 2%;
     }
 }
 
@@ -60,7 +62,7 @@
 
     .div-lg-2 { width: 15.666666666667%; }
     .div-lg-3 { width: 24%; }
-    .div-lgp-3 {  width: 25%; }
+    .div-lgp-3 {  width: 24%; }
     .div-lg-4 { width: 32.3333333%; }
     .div-lg-6 { width: 49%; }
     .div-lg-8 { width: 65.666666666667%; }
@@ -93,16 +95,16 @@
     .div-md-3 { width: 24%; }
     .div-md-4 { width: 32.3333333%; }
     .div-md-6 { width: 49%; }
-    .div-mdp-6 { width: 49%; }
+    .div-mdp-6 { width: 48%; }
     .div-md-8 { width: 65.666666666667%; }
     .div-md-10 { width: 82.33333333333%; }
     .div-md-12 { width: 99%; }
     #logo { 
         width: 8em !important; 
         height: 5em !important; 
-        margin-top: 3%;
+        margin-top: 2%;
     }
-    #icons { width: 5em !important; height: 4em !important; }
+    #icons { width: 2em !important; height: 2em !important; }
     .imgmuestra { height: 255px !important; }
     #reds { width: 2em !important; }
     #imgc { width: 1em !important; height: 1em !important; }
@@ -130,7 +132,7 @@
     .div-md-3 { width: 24%; }
     .div-sm-4 { width: 32.3333333%; }
     .div-sm-6 { width: 49%; }
-    .div-smp-6 { width: 49%; }
+    .div-smp-6 { width: 48%; }
     .div-sm-8 { width: 65.666666666667%; }
     .div-sm-10 { width: 82.33333333333%; }
     .div-sm-12 { width: 99%; }
@@ -145,7 +147,8 @@
             margin-top: 18% !important;
     }
     #icons {  width: 2em !important;  height: 1.5em !important; }
-    .imgmuestra { height: 175px !important; }
+    .imgmuestra { height: 150px !important; }
+    .imgmuestraser { height: 150px !important; }
     #reds { width: 2em !important; }
     #imgc {
         width: 1em !important;
@@ -190,7 +193,7 @@
     .div-xs-3 { width: 24%; }
     .div-xs-4 { width: 32.3333333%; }
     .div-xs-6 { width: 49%; }
-    .div-xsp-6 { width: 49%; }
+    .div-xsp-6 { width: 48%; }
     .div-xs-8 { width: 65.666666666667%; }
     .div-xs-10 { width: 82.33333333333%; }
     .div-xs-12 { width: 99%; }
@@ -203,7 +206,8 @@
     }
 
     #icons { width: 2em !important; height: 1.5em !important; }
-    .imgmuestra { height: 175px !important; }
+    .imgmuestra { height: 120px !important; }
+    .imgmuestraser { height: 120px !important; }
     #reds { width: 2em !important; }
     #imgc { width: 1em !important; height: 1em !important; }
     .tmodal { margin-left: 20% !important; }
@@ -252,7 +256,7 @@ span { font-size: 1.2em; font-weight: 2000; cursor: pointer;}
     height: 100%;
     position: absolute;
     float: left;
-    background: var(--gris);
+    background: var(--blanco);
 }
 
 .header {
@@ -260,7 +264,7 @@ span { font-size: 1.2em; font-weight: 2000; cursor: pointer;}
     height: 15%;
     position: relative;
     float: left;
-    background: var(--base);
+    background: var(--azul);
 }
 
 .body2 {
@@ -277,7 +281,7 @@ span { font-size: 1.2em; font-weight: 2000; cursor: pointer;}
 #icons {
     width: 3em;
     height: 2em;
-    filter: invert(100%);
+    /*filter: invert(100%);*/
 }
 #reds { width: 3em; height: 2em; filter: invert(100%);}
 #redes {
@@ -286,7 +290,7 @@ span { font-size: 1.2em; font-weight: 2000; cursor: pointer;}
     margin-top: 22%;
     position: relative;
     float: left;
-    filter: invert(100%);
+    /*filter: invert(100%);*/
 }
 
 .extra {
@@ -300,7 +304,7 @@ span { font-size: 1.2em; font-weight: 2000; cursor: pointer;}
     height: 5%;
     position: relative;
     float: left;
-    background: var(--base);
+    background: var(--azul);
 }
 
 h3{ margin-top: -15px !important; }
@@ -314,7 +318,7 @@ h3{ margin-top: -15px !important; }
     height: 100%;
     float: left;
     position: fixed;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(255, 255, 255, .1);
     z-index: 999999999;
     transition-timing-function: linear;
     /*-webkit-transition: .1s all;*/
@@ -376,8 +380,10 @@ h3{ margin-top: -15px !important; }
     align-items: center;
     background: transparent;
     border-style: none;
+    color: white;
 }
 .tmodal { margin-left: 45%; }
+.title{ color: var(--blanco); }
 .title:hover { background: white; color: rgb(211, 46, 98) }
 
 
@@ -397,10 +403,21 @@ h3{ margin-top: -15px !important; }
     position: relative;
     float: left;
 }
+ .imgmuestraser{
+    width: 100%;
+    height: 205px;
+    position: relative;
+    float: left;
+ }
+.imgp{
+    width: 60% !important;
+    margin-left: 18% !important;
+}
 
 .outmarg {
-    margin-right: 0;
-    margin-bottom: 0;
+    margin-right: .5%;
+    /*margin-bottom: 0;*/
+    margin-left: .5%;
 }
 
 /* === EFECTO DE GRID IMAGENES === */
@@ -417,7 +434,7 @@ h3{ margin-top: -15px !important; }
     bottom: 0;
     left: 0;
     padding: 4em 3em;
-    color: var(--blanco);
+    color: var(--negro);
 }
 /* ESTILO DE ETQ P */
 .figcap p {
@@ -425,7 +442,7 @@ h3{ margin-top: -15px !important; }
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s;
-    color: var(--blanco);
+    color: var(--negro);
 }
 /* ESTILO DE ETQ H3 */
 .figcap h3 {
@@ -439,7 +456,7 @@ h3{ margin-top: -15px !important; }
 .figcap a {
     position: absolute;
     opacity: 0;
-    color: var(--blanco);
+    color: var(--negro);
 }
 
 /* ESTILO DE CONTENDOR CON LINEAS */
@@ -495,7 +512,7 @@ h3{ margin-top: -15px !important; }
 
 /*============= NOSOTROS =========*/
 .text {
-    background: var(--gris);
+    background: var(--blanco);
     width: 100%;
     height: 100%;
     position: relative;
@@ -516,7 +533,7 @@ h3{ margin-top: -15px !important; }
 }
 
 .informacion {
-    background: var(--gris);
+    background: var(--blanco);
     width: 100%;
     height: 100%;
     position: relative;
