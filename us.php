@@ -40,12 +40,16 @@
                 </div>
                 <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
                     <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2"></div>
-                    <div class="dvi-xs-8 div-sm-8 div-md-8 div-lg-8 div-xl-8"><p align="justify">Nos dedicamos a dar Soluciones Publicitarias en cualquier formato</p></div>
+                    <div class="dvi-xs-8 div-sm-8 div-md-8 div-lg-8 div-xl-8">
+                        <p align="justify">Nos dedicamos a dar Soluciones Publicitarias en cualquier formato</p>
+                    </div>
                     <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2"></div>
                 </div>
                 <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
                     <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2"></div>
-                    <div class="div-xs-8 div-sm-8 div-md-8 div-lg-8 div-xl-8"><img id="imgus" src="images/team.jpg"></div>
+                    <div class="div-xs-8 div-sm-8 div-md-8 div-lg-8 div-xl-8">
+                        <video playsinline autoplay muted loop src="video/t.mp4" id="imgus" style="width:100%; height:100%;" >   </video>
+                    </div>
                     <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2"></div>
                 </div>
             </div>

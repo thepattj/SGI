@@ -285,50 +285,6 @@ $(document).ready(function () {
     });
 });
 
-function MiFuncionJS(varible) {
-    //alert("aqui esta el valor"+varible);
-    if (varible == "slc1") {
-        alert("hola que hace");
-    } if (varible == "slc2") {
-        //alert("vengo de index");
-        //document.querySelector("#servicios1").style.display = "none"; //$('#servicios1').css({"display":"none"});
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' src='images/servicios/recort.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' src='images/servicios/recort2.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser imgp2' src='images/servicios/recort3.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-        var texto = "VINIL DE RECORTE";
-        $('#title').html(texto);
-        var desc = "<b> IMPRESIÓN, RECORTE E INSTALACIÓN</b> <br><br> <b>Materiales: <br> AUTOADHERIBLE </b> (mate, blanco, transparente, microperforado)<br><b>ELECTROESTÁTICO </b> (blanco, transparente)";
-        $('#descrip').html(desc);
-
-        $ventana_ancho = $(window).width();
-        alert($ventana_ancho);
-        if ($ventana_ancho > 1025) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            //setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
-        } else if ($ventana_ancho <= 1024) {
-            //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
-            $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            //setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
-            /* $('.informacion').scrollTop(); */
-        }
-    }
-
-}
-
 //MUESTRA MODAL CON DATOS DE ARRIBA
 function verModal(tipo, texto, texto2, texto3, texto4, textoBtn, parrafo) { //MODAL DE ALERTA
     bgNegro = document.getElementById('bg-negro');
@@ -361,9 +317,14 @@ function verModal(tipo, texto, texto2, texto3, texto4, textoBtn, parrafo) { //MO
 }
 //REDIRECCIONA
 function seccion(pagina) {
-    dir = pagina + ".php"
-    //alert(dir);
-    window.location.href = dir;
+    if(pagina == "serv"){
+        dir= "serv.php?s=0&i=0";
+        window.location.href = dir;
+    }else{
+        dir = pagina + ".php"
+        //alert(dir);
+        window.location.href = dir;
+    }
 }
 //BOTON QUE CIERRA EL MODAL
 function cerrar() { //BOTON QUE SE CREA

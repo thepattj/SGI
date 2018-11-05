@@ -56,7 +56,7 @@
                                        'Nos dedicamos a materializar ideas',
                                        'Impresión e instalación',
                                        'Impresión e instalación','Visitanos en alguna de nuestras sucursales'];
-                      $arraySeccion =['slc2','slc4','slc1','slc3','slc1','slc5','slc5','slc7','','sl4','slc6',''];
+                      $arraySeccion =['slc2','slc4','slc1','slc3','slc1','slc5','slc5','slc7','','slc4','slc6',''];
                       $arrayArchivos = ['recorte',
                                         'lona',
                                         'stand',
@@ -79,7 +79,7 @@
                                 <?php }else if($i==11) {?>
                                     <a href="contact.php">Click aqui</a>
                                 <?php } else if($i <> 8 && $i <> 11 ) {?>
-                                    <a href="serv.php?sec=<?php echo $arraySeccion[$i]; ?>&u=1">Click aqui</a>
+                                    <a href="serv.php?s=<?php echo $arraySeccion[$i]; ?>&i=1">Click aqui</a>
                                 <?php }?>
                           </div>
                         </div>
@@ -96,7 +96,7 @@
                                 <?php }else if($i==11) {?>
                                     <a href="contact.php">Click aqui</a>
                                 <?php } else if($i <> 8 && $i <> 11 ) {?>
-                                    <a href="serv.php?sec=<?php echo $arraySeccion[$i]; ?>&u=1">Click aqui</a>
+                                    <a href="serv.php?s=<?php echo $arraySeccion[$i]; ?>&i=1">Click aqui</a>
                                 <?php }?>
                           </div>
                         </div>
