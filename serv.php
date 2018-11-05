@@ -65,7 +65,7 @@
                                 </div>
                             <?php }elseif ($h > $w) { ?>
                                 <div class="outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3">
-                                    <img class="imgmuestraser imgp" src="<?php echo $archivo; ?>" >
+                                    <img class="imgmuestraser imgp2" src="<?php echo $archivo; ?>" >
                                 </div>
                           <?php } ?> <!-- FINAL DE  ELSEIF -->
                 <?php } ?> <!-- FINAL DE  FOR -->

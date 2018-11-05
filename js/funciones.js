@@ -1,31 +1,31 @@
 var varible = 0;
 
-$(document).ready(function(){
+$(document).ready(function () {
     $clic = 0;
 
     //alert("ESTE ES EL BOTON DE MENU");
-    $('#icons').click(function() {
-        verModal('grande', 'INICIO','NOSOTROS','SERVICIOS','CONTACTO', 'X', 'Platillo Preparado con tortillas previamente sazonadas con la salsa que el comensal selecciono, con una guarnición de Pollo o Huevo al gusto.');
+    $('#icons').click(function () {
+        verModal('grande', 'INICIO', 'NOSOTROS', 'SERVICIOS', 'CONTACTO', 'X', 'Platillo Preparado con tortillas previamente sazonadas con la salsa que el comensal selecciono, con una guarnición de Pollo o Huevo al gusto.');
     });
     //REDIRECCIONAMIENTO DE LOGO
-    $('#logo').click(function() {
-        $(location).attr('href','index.php');
+    $('#logo').click(function () {
+        $(location).attr('href', 'index.php');
     });
 
-    $('#slc1').click(function(){ //STANDS
-        $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser imgp' src='images/servicios/sd.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser imgp' src='images/servicios/sd2.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/sd3.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/sd4.jpg'>"+
-                        "</div>";                                
+    $('#slc1').click(function () { //STANDS
+        $('#servicios1').css({ "display": "none" });
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser imgp2' src='images/servicios/sd.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser imgp2' src='images/servicios/sd2.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/sd3.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/sd4.jpg'>" +
+            "</div>";
         $('#servicios2').html(imagenes);
 
         var texto = $('#slc1').attr('value');
@@ -35,35 +35,35 @@ $(document).ready(function(){
 
         $ventana_ancho = $(window).width();
         //alert($ventana_ancho);
-        if($ventana_ancho > 1025){
+        if ($ventana_ancho > 1025) {
             $('#galery').addClass("movgalery");
             $('#flex').addClass("movflex");
             $('#flext').addClass("movflex");
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
-            
-        }else if($ventana_ancho <= 1024){
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
+
+        } else if ($ventana_ancho <= 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({"display":"block"});
-            $('#flext').css({"display":"block"});
-            $('#flex').css({"margin-left":"0%"});
-            $('#flext').css({"margin-left":"0%"});
+            $('#flex').css({ "display": "block" });
+            $('#flext').css({ "display": "block" });
+            $('#flex').css({ "margin-left": "0%" });
+            $('#flext').css({ "margin-left": "0%" });
             //alert($(".informacion").scrollTop() + " px INFO");
-            $('.informacion').animate({ scrollTop:9999}, 2000);
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            $('.informacion').animate({ scrollTop: 9999 }, 2000);
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
             /* $('.informacion').scrollTop(); */
         }
     });
-    $('#slc2').click(function(){ //VINIL DE RECORTE
-        $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/recort.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/recort2.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser imgp' src='images/servicios/recort3.jpg'>"+
-                        "</div>";                                
+    $('#slc2').click(function () { //VINIL DE RECORTE
+        $('#servicios1').css({ "display": "none" });
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/recort.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/recort2.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser imgp2' src='images/servicios/recort3.jpg'>" +
+            "</div>";
         $('#servicios2').html(imagenes);
 
         var texto = $('#slc2').attr('value');
@@ -73,46 +73,46 @@ $(document).ready(function(){
 
         $ventana_ancho = $(window).width();
         //alert($ventana_ancho);
-        if($ventana_ancho > 1025){
+        if ($ventana_ancho > 1025) {
             $('#galery').addClass("movgalery");
             $('#flex').addClass("movflex");
             $('#flext').addClass("movflex");
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);                              
-        }else if($ventana_ancho <= 1024){
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
+        } else if ($ventana_ancho <= 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({"display":"block"});
-            $('#flext').css({"display":"block"});
-            $('#flex').css({"margin-left":"0%"});
-            $('#flext').css({"margin-left":"0%"});
+            $('#flex').css({ "display": "block" });
+            $('#flext').css({ "display": "block" });
+            $('#flex').css({ "margin-left": "0%" });
+            $('#flext').css({ "margin-left": "0%" });
             //alert($(".informacion").scrollTop() + " px INFO");
-            $('.informacion').animate({ scrollTop:9999}, 2000);
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            $('.informacion').animate({ scrollTop: 9999 }, 2000);
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
             /* $('.informacion').scrollTop(); */
         }
     });
-    $('#slc3').click(function(){ // VINIL PARA CUALQUIER SUPERFICIE
-        $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/sup.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/sup1.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/sup2.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/sup3.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/sup4.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/sup5.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser imgp' src='images/servicios/sup6.jpg'>"+
-                        "</div>";                                
+    $('#slc3').click(function () { // VINIL PARA CUALQUIER SUPERFICIE
+        $('#servicios1').css({ "display": "none" });
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/sup.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/sup1.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/sup2.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/sup3.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/sup4.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/sup5.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser imgp2' src='images/servicios/sup6.jpg'>" +
+            "</div>";
         $('#servicios2').html(imagenes);
 
         var texto = $('#slc3').attr('value');
@@ -122,37 +122,37 @@ $(document).ready(function(){
 
         $ventana_ancho = $(window).width();
         //alert($ventana_ancho);
-        if($ventana_ancho > 1025){
+        if ($ventana_ancho > 1025) {
             $('#galery').addClass("movgalery");
             $('#flex').addClass("movflex");
             $('#flext').addClass("movflex");
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);                              
-        }else if($ventana_ancho <= 1024){
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
+        } else if ($ventana_ancho <= 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({"display":"block"});
-            $('#flext').css({"display":"block"});
-            $('#flex').css({"margin-left":"0%"});
-            $('#flext').css({"margin-left":"0%"});
+            $('#flex').css({ "display": "block" });
+            $('#flext').css({ "display": "block" });
+            $('#flex').css({ "margin-left": "0%" });
+            $('#flext').css({ "margin-left": "0%" });
             //alert($(".informacion").scrollTop() + " px INFO");
-            $('.informacion').animate({ scrollTop:9999}, 2000);
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            $('.informacion').animate({ scrollTop: 9999 }, 2000);
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
             /* $('.informacion').scrollTop(); */
         }
     });
-    $('#slc4').click(function(){ // LONAS
-        $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/lona.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/lona2.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser imgp' src='images/servicios/lona3.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser imgp' src='images/servicios/lona4.jpg'>"+
-                        "</div>";                                
+    $('#slc4').click(function () { // LONAS
+        $('#servicios1').css({ "display": "none" });
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/lona.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/lona2.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser imgp2' src='images/servicios/lona3.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser imgp2' src='images/servicios/lona4.jpg'>" +
+            "</div>";
         $('#servicios2').html(imagenes);
 
         var texto = $('#slc4').attr('value');
@@ -162,37 +162,37 @@ $(document).ready(function(){
 
         $ventana_ancho = $(window).width();
         //alert($ventana_ancho);
-        if($ventana_ancho > 1025){
+        if ($ventana_ancho > 1025) {
             $('#galery').addClass("movgalery");
             $('#flex').addClass("movflex");
             $('#flext').addClass("movflex");
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
-        }else if($ventana_ancho <= 1024){
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
+        } else if ($ventana_ancho <= 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({"display":"block"});
-            $('#flext').css({"display":"block"});
-            $('#flex').css({"margin-left":"0%"});
-            $('#flext').css({"margin-left":"0%"});
+            $('#flex').css({ "display": "block" });
+            $('#flext').css({ "display": "block" });
+            $('#flex').css({ "margin-left": "0%" });
+            $('#flext').css({ "margin-left": "0%" });
             //alert($(".informacion").scrollTop() + " px INFO");
-            $('.informacion').animate({ scrollTop:9999}, 2000);
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            $('.informacion').animate({ scrollTop: 9999 }, 2000);
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
             /* $('.informacion').scrollTop(); */
         }
     });
-    $('#slc5').click(function(){ // TELA
-        $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/tela.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser imgp' src='images/servicios/tela2.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/tela3.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/tela4.jpg'>"+
-                        "</div>";                                
+    $('#slc5').click(function () { // TELA
+        $('#servicios1').css({ "display": "none" });
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/tela.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser imgp2' src='images/servicios/tela2.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/tela3.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/tela4.jpg'>" +
+            "</div>";
         $('#servicios2').html(imagenes);
 
 
@@ -203,28 +203,28 @@ $(document).ready(function(){
 
         $ventana_ancho = $(window).width();
         //alert($ventana_ancho);
-        if($ventana_ancho > 1025){
+        if ($ventana_ancho > 1025) {
             $('#galery').addClass("movgalery");
             $('#flex').addClass("movflex");
             $('#flext').addClass("movflex");
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
-        }else if($ventana_ancho <= 1024){
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
+        } else if ($ventana_ancho <= 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({"display":"block"});
-            $('#flext').css({"display":"block"});
-            $('#flex').css({"margin-left":"0%"});
-            $('#flext').css({"margin-left":"0%"});
+            $('#flex').css({ "display": "block" });
+            $('#flext').css({ "display": "block" });
+            $('#flex').css({ "margin-left": "0%" });
+            $('#flext').css({ "margin-left": "0%" });
             //alert($(".informacion").scrollTop() + " px INFO");
-            $('.informacion').animate({ scrollTop:9999}, 2000);
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            $('.informacion').animate({ scrollTop: 9999 }, 2000);
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
             /* $('.informacion').scrollTop(); */
         }
     });
-    $('#slc6').click(function(){ //SUSTRATOS
-        $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/subs.jpg'>"+
-                        "</div>";                                
+    $('#slc6').click(function () { //SUSTRATOS
+        $('#servicios1').css({ "display": "none" });
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/subs.jpg'>" +
+            "</div>";
         $('#servicios2').html(imagenes);
 
         var texto = $('#slc6').attr('value');
@@ -234,28 +234,28 @@ $(document).ready(function(){
 
         $ventana_ancho = $(window).width();
         //alert($ventana_ancho);
-        if($ventana_ancho > 1025){
+        if ($ventana_ancho > 1025) {
             $('#galery').addClass("movgalery");
             $('#flex').addClass("movflex");
             $('#flext').addClass("movflex");
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
-        }else if($ventana_ancho <= 1024){
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
+        } else if ($ventana_ancho <= 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({"display":"block"});
-            $('#flext').css({"display":"block"});
-            $('#flex').css({"margin-left":"0%"});
-            $('#flext').css({"margin-left":"0%"});
+            $('#flex').css({ "display": "block" });
+            $('#flext').css({ "display": "block" });
+            $('#flex').css({ "margin-left": "0%" });
+            $('#flext').css({ "margin-left": "0%" });
             //alert($(".informacion").scrollTop() + " px INFO");
-            $('.informacion').animate({ scrollTop:9999}, 2000);
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            $('.informacion').animate({ scrollTop: 9999 }, 2000);
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
             /* $('.informacion').scrollTop(); */
         }
     });
-    $('#slc7').click(function(){ //VOLUMETRICOSD
-        $('#servicios1').css({"display":"none"});
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/vol.jpg'>"+
-                        "</div>";                                
+    $('#slc7').click(function () { //VOLUMETRICOSD
+        $('#servicios1').css({ "display": "none" });
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/vol.jpg'>" +
+            "</div>";
         $('#servicios2').html(imagenes);
 
 
@@ -266,41 +266,41 @@ $(document).ready(function(){
 
         $ventana_ancho = $(window).width();
         //alert($ventana_ancho);
-        if($ventana_ancho > 1025){
+        if ($ventana_ancho > 1025) {
             $('#galery').addClass("movgalery");
             $('#flex').addClass("movflex");
             $('#flext').addClass("movflex");
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
-        }else if($ventana_ancho <= 1024){
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
+        } else if ($ventana_ancho <= 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({"display":"block"});
-            $('#flext').css({"display":"block"});
-            $('#flex').css({"margin-left":"0%"});
-            $('#flext').css({"margin-left":"0%"});
+            $('#flex').css({ "display": "block" });
+            $('#flext').css({ "display": "block" });
+            $('#flex').css({ "margin-left": "0%" });
+            $('#flext').css({ "margin-left": "0%" });
             //alert($(".informacion").scrollTop() + " px INFO");
-            $('.informacion').animate({ scrollTop:9999}, 2000);
-            setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
+            $('.informacion').animate({ scrollTop: 9999 }, 2000);
+            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
             /* $('.informacion').scrollTop(); */
         }
     });
 });
 
-function MiFuncionJS(varible){
+function MiFuncionJS(varible) {
     //alert("aqui esta el valor"+varible);
-    if(varible == "slc1"){
+    if (varible == "slc1") {
         alert("hola que hace");
-    }if (varible == "slc2") {
+    } if (varible == "slc2") {
         //alert("vengo de index");
         //document.querySelector("#servicios1").style.display = "none"; //$('#servicios1').css({"display":"none"});
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/recort.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser' src='images/servicios/recort2.jpg'>"+
-                        "</div>"+
-                        "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>"+
-                            "<img class='imgmuestraser imgp' src='images/servicios/recort3.jpg'>"+
-                        "</div>";                                
+        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/recort.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' src='images/servicios/recort2.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser imgp2' src='images/servicios/recort3.jpg'>" +
+            "</div>";
         $('#servicios2').html(imagenes);
         var texto = "VINIL DE RECORTE";
         $('#title').html(texto);
@@ -309,19 +309,19 @@ function MiFuncionJS(varible){
 
         $ventana_ancho = $(window).width();
         alert($ventana_ancho);
-        if($ventana_ancho > 1025){
+        if ($ventana_ancho > 1025) {
             $('#galery').addClass("movgalery");
             $('#flex').addClass("movflex");
             $('#flext').addClass("movflex");
             //setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 3000);
-        }else if($ventana_ancho <= 1024){
+        } else if ($ventana_ancho <= 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({"display":"block"});
-            $('#flext').css({"display":"block"});
-            $('#flex').css({"margin-left":"0%"});
-            $('#flext').css({"margin-left":"0%"});
+            $('#flex').css({ "display": "block" });
+            $('#flext').css({ "display": "block" });
+            $('#flex').css({ "margin-left": "0%" });
+            $('#flext').css({ "margin-left": "0%" });
             //alert($(".informacion").scrollTop() + " px INFO");
-            $('.informacion').animate({ scrollTop:9999}, 2000);
+            $('.informacion').animate({ scrollTop: 9999 }, 2000);
             //setTimeout(function(){ $('#flext').css({"opacity":1}); $('#flex').css({"opacity":1}); }, 50);
             /* $('.informacion').scrollTop(); */
         }
@@ -343,16 +343,16 @@ function verModal(tipo, texto, texto2, texto3, texto4, textoBtn, parrafo) { //MO
         parrafo = parrafo;
     }
 
-    modal.innerHTML =  "<button onclick='cerrar()' id='cierra' class='bmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'><H1>" + textoBtn + "</H1></button>"+
-        "<div class='cmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>"+
-            "<div onclick='seccion(this.id)' id='index' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>"+
-                "<h1 class='tmodal'>" + texto + "</h1></div>"+
-            "<div onclick='seccion(this.id)' id='us' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>"+
-                "<h1 class='tmodal'>" + texto2 + "</h1></div>"+
-            "<div onclick='seccion(this.id)' id='serv' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>"+
-                "<h1 class='tmodal'>" + texto3 + "</h1></div>"+
-            "<div onclick='seccion(this.id)' id='contact' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>"+
-                "<h1 class='tmodal'>" + texto4 + "</h1></div>"+
+    modal.innerHTML = "<button onclick='cerrar()' id='cierra' class='bmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'><H1>" + textoBtn + "</H1></button>" +
+        "<div class='cmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+        "<div onclick='seccion(this.id)' id='index' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+        "<h1 class='tmodal'>" + texto + "</h1></div>" +
+        "<div onclick='seccion(this.id)' id='us' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+        "<h1 class='tmodal'>" + texto2 + "</h1></div>" +
+        "<div onclick='seccion(this.id)' id='serv' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+        "<h1 class='tmodal'>" + texto3 + "</h1></div>" +
+        "<div onclick='seccion(this.id)' id='contact' class='title col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+        "<h1 class='tmodal'>" + texto4 + "</h1></div>" +
         "</div>";
 
     modal.classList.add(tipo);
@@ -360,8 +360,8 @@ function verModal(tipo, texto, texto2, texto3, texto4, textoBtn, parrafo) { //MO
     tipo = tipo;
 }
 //REDIRECCIONA
-function seccion(pagina){
-    dir = pagina+".php"
+function seccion(pagina) {
+    dir = pagina + ".php"
     //alert(dir);
     window.location.href = dir;
 }

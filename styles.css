@@ -106,6 +106,8 @@
     }
     #icons { width: 2em !important; height: 2em !important; }
     .imgmuestra { height: 255px !important; }
+    .imgmuestraser { width: 60% !important; }
+    .imgp2{ width: 35% !important; margin-left: 0% !important; }
     #reds { width: 2em !important; }
     #imgc { width: 1em !important; height: 1em !important; }
     .tmodal { margin-left: 38% !important; }
@@ -137,7 +139,7 @@
     .div-sm-10 { width: 82.33333333333%; }
     .div-sm-12 { width: 99%; }
     #logo { 
-        width: 7em !important; 
+        width: 8em !important; 
         height: 5em !important; 
         margin-top: 2%;
     }
@@ -146,9 +148,15 @@
             height: 1em !important;
             margin-top: 18% !important;
     }
-    #icons {  width: 2em !important;  height: 1.5em !important; }
+    #icons {
+        width: 2em !important;
+        height: 1.5em !important;
+        margin-right: 3% !important;
+        margin-top: 2% !important;
+    }
     .imgmuestra { height: 150px !important; }
     .imgmuestraser { height: 150px !important; }
+    .imgp2{ width: 68% !important; }
     #reds { width: 2em !important; }
     #imgc {
         width: 1em !important;
@@ -198,20 +206,21 @@
     .div-xs-10 { width: 82.33333333333%; }
     .div-xs-12 { width: 99%; }
 
-    #logo { width: 5em !important; height: 3em !important; cursor: pointer; }
+    #logo { width: 5em !important; height: 3em !important; cursor: pointer; margin-top: 9%;}
     #redes {
-        width: 1.6em !important;
+        width: 1.5em !important;
         height: 1em !important;
-        margin-top: 18% !important;
+        margin-top: 40% !important;
     }
 
-    #icons { width: 2em !important; height: 1.5em !important; }
+    #icons { width: 2em !important; height: 1.5em !important; margin-top: 8% !important;}
     .imgmuestra { height: 120px !important; }
-    .imgmuestraser { height: 120px !important; }
+    .imgmuestraser { height: 100px !important; }
+    .imgp2{ width: 60% !important;}
     #reds { width: 2em !important; }
     #imgc { width: 1em !important; height: 1em !important; }
-    .tmodal { margin-left: 20% !important; }
-    .cmodal { margin-top: 10% !important; }
+    .tmodal { margin-left: 15% !important; }
+    .cmodal { margin-top: 20% !important; }
     #map {
         width: 99% !important;
         height: 85% !important;
@@ -410,9 +419,10 @@ h3{ margin-top: -15px !important; }
     float: left;
  }
 .imgp{
-    width: 60% !important;
-    margin-left: 18% !important;
+    width: 60%;
+    margin-left: 18%;
 }
+.imgp2{ }
 
 .outmarg {
     margin-right: .5%;
