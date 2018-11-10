@@ -311,11 +311,13 @@
                                                         'sd6',
                                                         'vinil6',
                                                         'vol5',
+                                                        'formato7',
                                                         'tela7',
+                                                        'recort7',
                                                         'sd7',
                                                         'vinil7',
                                                         'vol6'];
-                                for ($i=0; $i < 46; $i++) { 
+                                for ($i=0; $i < 51; $i++) { 
                                     $archivo = "images/servicios/".$arrayArchivos[$i].".jpg";
                                     $img = getimagesize($archivo);
                                     $w = $img[0];

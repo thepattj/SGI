@@ -92,6 +92,27 @@ $(document).ready(function () {
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
             "<img class='imgmuestraser' onclick='igs(this.id)' id='recort3' src='images/servicios/recort3.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort4z' src='images/servicios/recort4.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort5z' src='images/servicios/recort5.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort6' src='images/servicios/recort6.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort7' src='images/servicios/recort7.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort8' src='images/servicios/recort8.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort9' src='images/servicios/recort9.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort10' src='images/servicios/recort10.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -144,6 +165,18 @@ $(document).ready(function () {
             "</div>"+
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
             "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil7' src='images/servicios/vinil7.jpg'>" +
+            "</div>"+
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil8' src='images/servicios/vinil8.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil9' src='images/servicios/vinil9.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil10' src='images/servicios/vinil10.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil11' src='images/servicios/vinil11.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -187,6 +220,18 @@ $(document).ready(function () {
             "</div>"+
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
             "<img class='imgmuestraser' onclick='igs(this.id)' id='formato5' src='images/servicios/formato5.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato6z' src='images/servicios/formato6.jpg'>" +
+            "</div>"+
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato7' src='images/servicios/formato7.jpg'>" +
+            "</div>" +
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato8z' src='images/servicios/formato8.jpg'>" +
+            "</div>"+
+            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato9' src='images/servicios/formato9.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
