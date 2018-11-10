@@ -24,43 +24,67 @@
 
         <!-- *** AQUI INICIA LO QUE SE VE *** -->
         <div class="header" style="" >
-            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-                <img id="logo" src="images/logo.png">
+              <img id="logo" src="images/logo.png">
+            </div>
+            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
+              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Graficas e Industriales</H3>
             </div>
             <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="icons" src="images/icon/menu.png">
+                <div  id="titlen" class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
+                  <h1 onclick="seccion('us')" class="menuh">Nosotros</h1>
+                </div>
+                <div id="titles"  class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
+                  <h1 onclick="seccion('serv')" class="menuh">Servicios</h1>
+                </div>
+                <div id="titlec"  class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
+                  <h1 onclick="seccion('contact')" class="menuh">Contacto</h1>
+                </div>
+
             </div>
         </div>
         <div class="body">
-            <div class="grid">
+          <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
+              <H3 id="eslo" style="display:none;">Soluciones Graficas e Industriales</H3>
+          </div>
+          <div class="grid">
                 <?php $arrayNombres = ['Vinil de recorte',
-                                       'Lona gran formato',
-                                       'Stand', 
-                                       'Vinil cualquier superficie',
-                                       'Display',
-                                       'Tela (Camisa)',
-                                       'Tela (perfil de aluminio)',
-                                       'Volumetrico',
+                                       'Gran Formato',
+                                       'Stand y Display', 
+                                       'Autos, Vinil y Rotulación',
+                                       'Playeras',
+                                       'Tela',
+                                       'Letreros en 3D',
+                                       'Impresiones',
                                        'Mas informacion sobre nosotros',
-                                       'Lona formato pequeño',
-                                       'Substrato', 'Ubicanos'];
-                      $arrayDescrip = ['Impresión, recorte e instalación',
-                                       'Impresión e instalación',
-                                       'Diseño y producción',
-                                       'Impresión, recorte e instalación',
-                                       'Diseño y producción',
-                                       'Sublimación e impresión',
-                                       'Sublimación e impresión',
-                                       'Diseño y producción',
-                                       'Nos dedicamos a materializar ideas',
-                                       'Impresión e instalación',
-                                       'Impresión e instalación','Visitanos en alguna de nuestras sucursales'];
-                      $arraySeccion =['slc2','slc4','slc1','slc3','slc1','slc5','slc5','slc7','','slc4','slc6',''];
-                      $arrayArchivos = ['recorte',
+                                       'Instalaciones',
+                                       'Volumetricos',
+                                       'Ubicanos'];
+                      $arraySeccion =['slc2',
+                                      'slc4',
+                                      'slc1',
+                                      'slc3',
+                                      'slc8',
+                                      'slc5',
+                                      'slc9',
+                                      'slc0',
+                                      '',
+                                      'slc7',
+                                      'slc1',
+                                      ''];
+                      $arrayArchivos = ['recorte', 
                                         'lona',
                                         'stand',
-                                        'superficie','display', 'tela', 'tela2','relleno', 'us','lona2','relleno2','location'];
+                                        'superficie',
+                                        'camisa',
+                                        'tela',
+                                        'letreros',
+                                        'impresion',
+                                        'us',
+                                        'instalacion',
+                                        'volumetrico',
+                                        'location'];
                 for ($i=0; $i < 12; $i++) { 
                   $archivo = "images/galeriain/".$arrayArchivos[$i].".jpg";
                   $img = getimagesize($archivo);
@@ -69,20 +93,28 @@
                   
                   if($h < $w) {?> 
                     <div class="outmarg div-xsp-6 div-smp-6 div-mdp-6 div-lgp-3 div-xlp-3">
-                        <div class="fig">
-                          <img class="imgmuestra" src="<?php echo $archivo; ?>" id="textimg" >
-                          <div class="figcap">
-                                <h3><?php echo $arrayNombres[$i]; ?> </h3> 
-                                <p><?php echo $arrayDescrip[$i]; ?> </p> 
-                                <?php if($i == 8) {?>
-                                    <a href="us.php">Click aqui</a>
-                                <?php }else if($i==11) {?>
-                                    <a href="contact.php">Click aqui</a>
-                                <?php } else if($i <> 8 && $i <> 11 ) {?>
-                                    <a href="serv.php?s=<?php echo $arraySeccion[$i]; ?>&i=1">Click aqui</a>
-                                <?php }?>
+                      <?php if($i == 8) {?>
+                          <div class="fig" onclick="seccion('us.php')">
+                            <img class="imgmuestra" src="<?php echo $archivo; ?>" id="textimg" >
+                            <div class="figcap">
+                                  <h3><?php echo $arrayNombres[$i]; ?> </h3> 
+                            </div>
                           </div>
-                        </div>
+                      <?php }else if($i==11) {?>
+                          <div class="fig" onclick="seccion('contac.php')">
+                            <img class="imgmuestra" src="<?php echo $archivo; ?>" id="textimg" >
+                            <div class="figcap">
+                                  <h3><?php echo $arrayNombres[$i]; ?> </h3>
+                            </div>
+                          </div>
+                      <?php } else if($i <> 8 && $i <> 11 ) {?>
+                          <div class="fig" onclick="pag('serv.php?s=<?php echo $arraySeccion[$i]; ?>&i=1')">
+                            <img class="imgmuestra" src="<?php echo $archivo; ?>" id="textimg" >
+                            <div class="figcap">
+                                  <h3><?php echo $arrayNombres[$i]; ?> </h3> 
+                            </div>
+                          </div>
+                      <?php }?>
                     </div>
                   <?php }elseif ($h > $w) { ?>
                     <div class="outmarg div-xsp-6 div-smp-6 div-mdp-6 div-lgp-3 div-xlp-3">
@@ -90,7 +122,6 @@
                           <img class="imgmuestra imgp" src="<?php echo $archivo; ?>" id="textimg" >
                           <div class="figcap">
                                 <h3><?php echo $arrayNombres[$i]; ?> </h3> 
-                                <p><?php echo $arrayDescrip[$i]; ?> </p> 
                                 <?php if($i == 8) {?>
                                     <a href="us.php">Click aqui</a>
                                 <?php }else if($i==11) {?>
@@ -103,19 +134,19 @@
                     </div>
                   <?php } ?> <!-- FINAL DE  ELSEIF -->
                 <?php } ?> <!-- FINAL DE  FOR -->
-            </div>
+          </div>
         </div>
         <div class="footer">
-            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
-            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-                <div class="div-xs-6 div-sm-6 div-md-6 div-lg-6 div-xl-6">
-                    <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img id="redes" src="images/icon/facebook.png"> </a>
-                </div>
-                <div class="div-xs-6 div-sm-6 div-md-6 div-lg-6 div-xl-6">
-                    <a href="contact.php"> <img id="redes" src="images/icon/phone.png"> </a>
-                </div>
-            </div>
-            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
+          <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
+          <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
+              <div class="div-xs-6 div-sm-6 div-md-6 div-lg-6 div-xl-6">
+                <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img id="redes" src="images/icon/facebook.png"> </a>
+              </div>
+              <div class="div-xs-6 div-sm-6 div-md-6 div-lg-6 div-xl-6">
+                <a href="contact.php"> <img id="redes" src="images/icon/phone.png"> </a>
+              </div>
+          </div>
+          <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
         </div>
     </div>
 </body>

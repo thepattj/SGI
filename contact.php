@@ -27,41 +27,53 @@
         <!-- *** AQUI INICIA LO QUE SE VE *** -->
         <div class="header" style="" >
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-                <img id="logo" src="images/logo.png">
+              <img id="logo" src="images/logo.png">
             </div>
-            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>            
+            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
+              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Graficas e Industriales</H3>
+            </div>
             <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="icons" src="images/icon/menu.png">
+                <div  id="titlen" class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
+                  <h1 onclick="seccion('us')" class="menuh">Nosotros</h1>
+                </div>
+                <div id="titles"  class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
+                  <h1 onclick="seccion('serv')" class="menuh">Servicios</h1>
+                </div>
+                <div id="titlec"  class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
+                  <h1 style="color: cyan;" onclick="seccion('contact')" class="menuh">Contacto</h1>
+                </div>
+
             </div>
         </div>
         <div class="body2">
             <div class="text">
                 <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
-                    <H1>CONTACTANOS</H1>
+                    <H1 id="titlecnt">CONTACTANOS</H1>
                 </div>
 
                 <!-- ==== ESTE ES EL DIV DE LA INFORMACION ==== -->
                 <div class="qflexx div-xs-12 div-sm-12 div-md-6 div-lg-6 div-xl-6">
                     <div class="qflexx dats div-xs-6 div-sm-6 div-md-6 div-lg-12 div-xl-12">
-                        <h2>SUCURSAL QUERÉTARO</h2>
-                        <H4><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H4>
-                        <H4> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H4><br>
+                        <h2 class="textoi">SUCURSAL QUERÉTARO</h2>
+                        <H4 class="textod"><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H4>
+                        <H4 class="textod"> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H4><br>
                     </div>
                     <div class="qflexx dats div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
-                        <h2>SUCURSAL CIUDAD DE MÉXICO</h2>
-                        <H4><img id="imgc" src="images/icon/mark.png"> Enrique Rebsamen 22. Col. Piedad Narvarte C.P. 03000</H4>
-                        <H4><img id="imgc" src="images/icon/phone.png"> (55) 5530 7046</H4><br>
+                        <h2 class="textoi">SUCURSAL CIUDAD DE MÉXICO</h2>
+                        <H4 class="textod"><img id="imgc" src="images/icon/mark.png"> Enrique Rebsamen 22. Col. Piedad Narvarte C.P. 03000</H4>
+                        <H4 class="textod"><img id="imgc" src="images/icon/phone.png"> (55) 5530 7046</H4><br>
                     </div>
                     <div class="qflexx dats div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
-                        <h2>WHATSAPP-CORREO</h2>
-                        <H4>Ulises Reséndiz<br> (Director Comercial)<br><img id="imgc" src="images/icon/whatsapp.png">55 4192 1881<br><img id="imgc" src="images/icon/mail.png">ulises@gruposgi.com.mx</H4><br>
-                        <H4>Alberto Martínez<br> (Director de Operaciones)<br><img id="imgc" src="images/icon/whatsapp.png">55 4056 098<br><img id="imgc" src="images/icon/mail.png">alberto@gruposgi.com.mx</H4><br>
+                        <h2 class="textoi">WHATSAPP-CORREO</h2>
+                        <H4 class="textod">Ulises Reséndiz<br> (Director Comercial)<br><img id="imgc" src="images/icon/whatsapp.png">55 4192 1881<br><img id="imgc" src="images/icon/mail.png">ulises@gruposgi.com.mx</H4><br>
+                        <H4 class="textod">Alberto Martínez<br> (Director de Operaciones)<br><img id="imgc" src="images/icon/whatsapp.png">55 4056 098<br><img id="imgc" src="images/icon/mail.png">alberto@gruposgi.com.mx</H4><br>
                     </div>
                 </div>
                 <!-- *** ES EL MAPA *** -->
                 <div class="div-xs-12 div-sm-12 div-md-6 div-lg-6 div-xl-6" id="map"></div>
                 <!-- *** ES LA PARTE DE LOS ICONOS *** -->
-                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
+                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12" id="foot">
                     <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
                     <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                         <div class="div-xs-6 div-sm-6 div-md-6 div-lg-6 div-xl-6">

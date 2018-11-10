@@ -30,11 +30,23 @@
         <!-- *** AQUI INICIA LO QUE SE VE *** -->
         <div class="header" style="" >
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-                <img id="logo" src="images/logo2.png">
+              <img id="logo" src="images/logo.png">
             </div>
-            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>            
+            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
+              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Graficas e Industriales</H3>
+            </div>
             <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="icons" src="images/icon/menu.png">
+                <div  id="titlen" class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
+                  <h1 onclick="seccion('us')" class="menuh">Nosotros</h1>
+                </div>
+                <div id="titles"  class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
+                  <h1 style="color: cyan;" onclick="seccion('serv')" class="menuh">Servicios</h1>
+                </div>
+                <div id="titlec"  class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
+                  <h1 onclick="seccion('contact')" class="menuh">Contacto</h1>
+                </div>
+
             </div>
         </div>
         <div class="body2">
@@ -42,13 +54,16 @@
                 <div class="selector">
                     <div class="div-sm-1 div-md-1 div-lg-2 div-xl-2"></div>
                     <div class="div-xs-12 div-sm-10 div-md-10 div-lg-8 div-xl-8">
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc3" value="VINIL PARA CUALQUIER SUPERFICIE"><span class="secciones">VINIL </span> </div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc1" value="STANDS Y DISPLAYS"><span class="secciones">STANDS</p></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc4" value="LONAS, Gran Formato"><span class="secciones">LONAS</span></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc5" value="TELA"><span class="secciones">TELA</span></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc2" value="VINIL DE RECORTE"><span class="secciones">VINIL PARA RECORTE</p> </div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc6" value="SUSTRATOS RIGIDOS TOLDOS, CAJAS DE LUZ Y LETREROS"><span class="secciones">SUSTRATOS</span></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc7" value="VOLUMETRICOS"><span class="secciones">VOLUMETRICOS</span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc1" value="STANDS Y DISPLAYS"><span style="text-align: center !important;" class="secciones">STANDS Y DISPLAYS</p></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc2" value="VINIL DE RECORTE"><span style="text-align: center !important;" class="secciones">VINIL PARA RECORTE</p> </div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc3" value="AUTOS, VINIL y ROTULACIÓN"><span style="text-align: center;" class="secciones">VINIL Y ROTULACIÓN </span> </div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc4" value="GRAN FORMATO"><span style="text-align: center !important;" class="secciones">GRAN FORMATO</span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc5" value="TELA"><span style="margin-top: 10%;" class="secciones">TELA</span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc6" value="LETREROS EN 3D, TOLDOS Y CAJAS DE LUZ "><span style="text-align: center !important;" class="secciones">LETREROS EN 3D y mas</span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc7" value="VOLUMETRICOS"><span style="margin-top: 10%;" class="secciones">VOLUMETRICOS</span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc8" value="PLAYERAS"><span style="margin-top: 10%;" class="secciones">PLAYERAS </span> </div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc9" value="IMPRESIÓN DIRECTA"><span style="text-align: center !important;" class="secciones">IMPRESIÓN DIRECTA </span> </div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc0" value="INSTALACIONES"><span style="margin-top: 10%;" class="secciones">INSTALACIONES</span> </div>
                     </div>
                     <div class="div-sm-1 div-md-1 div-lg-2 div-xl-2"></div>
                 </div>
@@ -59,17 +74,17 @@
                                     <div class="div-xs-12 div-sm-8 div-md-8 div-lg-8 div-xl-8 movgalery" id="galery">
                                         <div class="grid" id="servicios1"> </div>
                                         <div class="grid" id="servicios2">
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                                 <img class='imgmuestraser imgp2' src='images/servicios/sd.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                                 <img class='imgmuestraser imgp2' src='images/servicios/sd2.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                                 <img class='imgmuestraser' src='images/servicios/sd3.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' src='images/servicios/sd4.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser' src='images/servicios/relleno.jpg'>
                                             </div>
                                         </div>
                                     </div>
@@ -84,13 +99,13 @@
                                 <div class="div-xs-12 div-sm-8 div-md-8 div-lg-8 div-xl-8 movgalery" id="galery">
                                         <div class="grid" id="servicios1"> </div>
                                         <div class="grid" id="servicios2">
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                                 <img class='imgmuestraser' src='images/servicios/recort.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                                 <img class='imgmuestraser' src='images/servicios/recort2.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                                 <img class='imgmuestraser imgp2' src='images/servicios/recort3.jpg'>
                                             </div>
                                         </div>
@@ -102,30 +117,33 @@
                                             <p id="descrip" style="font-size: 1.4em;"><b> IMPRESIÓN, RECORTE E INSTALACIÓN</b> <br><br> <b>Materiales: <br> AUTOADHERIBLE </b> (mate, blanco, transparente, microperforado)<br><b>ELECTROESTÁTICO </b> (blanco, transparente)</p>
                                         </div>
                                     </div>
-                        <?php   } if($servicio =="slc3") {?> <!-- V I N I L  S U P E R F I C I E -->                                
+                        <?php   } if($servicio =="slc3") {?> <!-- V I N I L  -->                                
                                 <div class="div-xs-12 div-sm-8 div-md-8 div-lg-8 div-xl-8 movgalery" id="galery">
                                         <div class="grid" id="servicios1"> </div>
                                         <div class="grid" id="servicios2">
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' src='images/servicios/sup.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser' src='images/servicios/vinil.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' src='images/servicios/sup1.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser' src='images/servicios/vinil1.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' src='images/servicios/sup2.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser' src='images/servicios/vinil2.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' src='images/servicios/sup3.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser' src='images/servicios/vinil3.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' src='images/servicios/sup4.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser' src='images/servicios/vinil4.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' src='images/servicios/sup5.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser' src='images/servicios/vinil5.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser imgp2' src='images/servicios/sup6.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser imgp2' src='images/servicios/vinil6.jpg'>
+                                            </div>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser imgp2' src='images/servicios/vinil7.jpg'>
                                             </div>
                                         </div>
                                     </div>
@@ -136,21 +154,24 @@
                                             <p id="descrip" style="font-size: 1.4em;"><b> IMPRESIÓN, RECORTE E INSTALACIÓN</b> <br><br> <b>Materiales: <br> AUTOADHERIBLE </b> (mate, blanco, transparente, microperforado)<br><b>ELECTROESTÁTICO </b> (blanco, transparente)</p>
                                         </div>
                                     </div>
-                        <?php   } if($servicio =="slc4") {?> <!-- L O N A S -->                                
+                        <?php   } if($servicio =="slc4") {?> <!-- G R A N  F O R M A T O -->                                
                                 <div class="div-xs-12 div-sm-8 div-md-8 div-lg-8 div-xl-8 movgalery" id="galery">
                                         <div class="grid" id="servicios1"> </div>
                                         <div class="grid" id="servicios2">
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' src='images/servicios/lona.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser' src='images/servicios/formato.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' src='images/servicios/lona2.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser' src='images/servicios/formato2.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser imgp2' src='images/servicios/lona3.jpg'>
+                                            <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser imgp2' src='images/servicios/formato3.jpg'>
                                             </div>
-                                            <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser imgp2' src='images/servicios/lona4.jpg'>
+                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser imgp2' src='images/servicios/formato4.jpg'>
+                                            </div>
+                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                                <img class='imgmuestraser imgp2' src='images/servicios/formato5.jpg'>
                                             </div>
                                         </div>
                                 </div>
@@ -165,16 +186,16 @@
                                 <div class="div-xs-12 div-sm-8 div-md-8 div-lg-8 div-xl-8 movgalery" id="galery">
                                     <div class="grid" id="servicios1"> </div>
                                     <div class="grid" id="servicios2">
-                                        <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                        <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                             <img class='imgmuestraser' src='images/servicios/tela.jpg'>
                                         </div>
-                                        <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                        <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                             <img class='imgmuestraser imgp2' src='images/servicios/tela2.jpg'>
                                         </div>
-                                        <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                        <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                             <img class='imgmuestraser' src='images/servicios/tela3.jpg'>
                                         </div>
-                                        <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                        <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                             <img class='imgmuestraser' src='images/servicios/tela4.jpg'>
                                         </div>
                                     </div>
@@ -191,7 +212,7 @@
                                 <div class="div-xs-12 div-sm-8 div-md-8 div-lg-8 div-xl-8 movgalery" id="galery">
                                     <div class="grid" id="servicios1"> </div>
                                     <div class="grid" id="servicios2">
-                                        <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                        <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                             <img class='imgmuestraser' src='images/servicios/subs.jpg'>
                                         </div>
                                     </div>
@@ -207,7 +228,7 @@
                             <div class="div-xs-12 div-sm-8 div-md-8 div-lg-8 div-xl-8 movgalery" id="galery">
                                     <div class="grid" id="servicios1"> </div>
                                     <div class="grid" id="servicios2">
-                                        <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
+                                        <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
                                             <img class='imgmuestraser' src='images/servicios/vol.jpg'>
                                         </div>
                                     </div>
@@ -219,26 +240,93 @@
                                     <p id="descrip" style="font-size: 1.4em;"><b> DISEÑO Y PRODUCCIÓN</b> <br><br> <b>Materiales :<br> </b></p>
                                 </div>
                             </div>
+                        <?php   } if($servicio =="slc8") {?> <!-- P L A Y E R A S -->
+                            <div class="div-xs-12 div-sm-8 div-md-8 div-lg-8 div-xl-8 movgalery" id="galery">
+                                    <div class="grid" id="servicios1"> </div>
+                                    <div class="grid" id="servicios2">
+                                        <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                            <img class='imgmuestraser' src='images/servicios/playera.jpg'>
+                                        </div>
+                                        <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
+                                            <img class='imgmuestraser' src='images/servicios/playera2.jpg'>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!-- AQUI HAY UN EFECTO CONFORME AL ANCHO DE LA VENTANA, HAY QUE VER SI FUNCIONA IGUAL PARA ESTE TIPO DE USOS -->
+                            <div class="qflex div-xs-12 div-sm-12 div-md-4 div-lg-4 div-xl-4 movflex" id="flex" style="opacity:1;">
+                                <div class="qflex div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12 movflex" id="flext" style="opacity:1;">
+                                    <H1 id="title">PLAYERAS</H1><br>
+                                    <p id="descrip" style="font-size: 1.4em;"><b>Materiales: <br> PLAYERAS DE CUALQUIER TIPO DE SERIGRAFIA Y VINIL TEXTIL</b> <br> (brillosa, mate y repelente al agua)</p>
+                                </div>
+                            </div>
 
                         <?php   } ?>
 
                        <?php } else { ?>
                             <div class="div-xs-12 div-sm-8 div-md-8 div-lg-8 div-xl-8" id="galery">
                                 <div class="grid" id="servicios1">
-                                <?php $arrayArchivos = ['lona','recort','sd','sup','tela','lona2','recort2','sd2','sup1','tela2','lona3','recort3','sd3','sup2','tela3','lona4','sd4','sup3','tela4','sup4','vol','sup5','subs','sup6'];
-                                for ($i=0; $i < 24; $i++) { 
+                                <?php $arrayArchivos = ['formato',
+                                                        'recort',
+                                                        'sd',
+                                                        'vinil',
+                                                        'tela',
+                                                        'id',
+                                                        'instalacion',
+                                                        'playera',
+                                                        'vol',
+                                                        'formato2',
+                                                        'recort2',
+                                                        'sd2',
+                                                        'vinil1',
+                                                        'tela2',
+                                                        'id2',
+                                                        'playera2',
+                                                        'vol2',
+                                                        'formato3',
+                                                        'vinil2',
+                                                        'recort3',
+                                                        'sd3',
+                                                        'vinil3',
+                                                        'tela3',
+                                                        'playera3',
+                                                        'vol3',
+                                                        'formato4',
+                                                        'sd4',
+                                                        'vinil4',
+                                                        'tela4',
+                                                        'id3',
+                                                        'recort4',
+                                                        'vol4',
+                                                        'formato5',
+                                                        'playera4',
+                                                        'recort5',
+                                                        'tela5',
+                                                        'sd5',
+                                                        'vinil5',
+                                                        'formato6',
+                                                        'id4',
+                                                        'playera5',
+                                                        'recort6',
+                                                        'tela6',
+                                                        'sd6',
+                                                        'vinil6',
+                                                        'vol5',
+                                                        'tela7',
+                                                        'sd7',
+                                                        'vinil7',
+                                                        'vol6'];
+                                for ($i=0; $i < 46; $i++) { 
                                     $archivo = "images/servicios/".$arrayArchivos[$i].".jpg";
                                     $img = getimagesize($archivo);
                                     $w = $img[0];
                                     $h = $img[1];
                                     if($h < $w) {?>
-
                                         <div class="outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3">
-                                            <img class="imgmuestraser" src="<?php echo $archivo; ?>" >
+                                            <img class="imgmuestraser" id="<?php echo $arrayArchivos[$i]?>" onclick="igs(this.id)" src="<?php echo $archivo; ?>" >
                                         </div>
                                     <?php }elseif ($h > $w) { ?>
                                         <div class="outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3">
-                                            <img class="imgmuestraser imgp2" src="<?php echo $archivo; ?>" >
+                                            <img class="imgmuestraser imgp2" id="<?php echo $arrayArchivos[$i]?>" onclick="igs(this.id)" src="<?php echo $archivo; ?>" >
                                         </div>
                                 <?php } ?> <!-- FINAL DE  ELSEIF -->
                                 <?php } ?> <!-- FINAL DE  FOR -->
