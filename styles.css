@@ -69,6 +69,7 @@
     #titulous{ font-size: 9em; }
     #descr{ font-size: 5em; }
     #imgus{ height: 1359px !important; width: 100% !important; }
+    video{ margin-left: 20% !important; }
 
     /*====== SERVICIOS =========*/
     .imgp{
@@ -87,16 +88,28 @@
     
     .imgmuestraser{ height: 480px !important; }
     .imgp2{ width: 480px !important;}
-    #title{font-size: 7em !important;}
-    #descrip{font-size: 4em !important;}
+    #title{font-size: 5.6em !important;}
+    #descrip{font-size: 3.2em !important;}
+
+    .modalhz{ margin-left: 24% !important; width: 50% !important; }
+    #piefoto{ margin-left: 35% !important; font-size: 3em !important; }
+    .modalvert{ height: 1810px !important; }
 
     /*==== CONTACTO ========*/
     #titlecnt{ font-size: 6em !important; }
     .textoi{ font-size: 4em !important; }
-    .textod{ font-size: 3em !important; }
+    .textod{ font-size: 4em !important; }
     #map{ top: 0% !important; height: 1400px !important; }
+    #map2{ top: 0% !important; height: 1400px !important; }
     #foot{ margin-top: 4% !important; }
     #reds{ width: 6em !important; height: 5em !important; filter: invert(0%) !important;}
+
+    #textem{ margin-top: 1.5% !important; font-size: 4em !important;}
+    #mail{ margin-top: 0% !important; border-radius: 15px !important; height: 1.8em !important; font-size: 4em !important;}
+    #cuerpo{ height: 735px !important; }
+    #senema{ font-size: 3em !important; }
+    #foot{ margin-top: 0% !important; }
+    #titface{ margin-top: 18px !important; font-size: 2em !important;}
 
 }
     /*PANTALLA CON 4K*/
@@ -154,13 +167,14 @@
     #titulous{ font-size: 7em; }
     #descr{ font-size: 3em; }
     #imgus{ height: 1240px !important; width: 100% !important; }
+    video{ margin-left: 8% !important; }
 
     /*====== SERVICIOS =========*/
     .imgp{
         width: 90% !important;
         margin-left: 10% !important;
     }
-    span { font-size: 3em !important; font-weight: 2000 !important; }
+    span { font-size: 2.5em !important; font-weight: 2000 !important; }
     #slc1, #slc2, #slc3, #slc4, #slc5, #slc6, #slc7 { margin-top: 1.5%; }
     #slc1 { border-bottom: 6px solid #00ffff !important; cursor: pointer !important;} 
     #slc3 { border-bottom: 6px solid #ff00ff !important; cursor: pointer !important;}
@@ -172,16 +186,29 @@
     
     .imgmuestraser{ height: 400px !important; }
     .imgp2{ width: 400px !important;}
-    #title{font-size: 5em !important;}
-    #descrip{font-size: 3em !important;}
+    #title{font-size: 4em !important;}
+    #descrip{font-size: 3.4em !important;}
+
+    .modalhz{ margin-left: 26% !important; width: 50% !important; }
+    #piefoto{ margin-left: 33% !important; font-size: 3em !important; }
+    .modalvert{ margin-left: 38% !important; height: 1810px !important; }
     
     /*===== CONTACTO ======*/
     #titlecnt{ font-size: 6em !important; }
     .textoi{ font-size: 4em !important; }
     .textod{ font-size: 3em !important; }
     #map{ top: 0% !important; height: 1400px !important; }
+    #map2{ top: 0% !important; height: 1400px !important; }
+
     #foot{ margin-top: 4% !important;}
     #reds{ width: 6em !important; height: 5em !important; filter: invert(0%) !important;}
+
+    #textem{ margin-top: 1.5% !important; font-size: 3em !important;}
+    #mail{ margin-top: 0% !important; border-radius: 15px !important; height: 1.7em !important; font-size: 3em !important;}
+    #cuerpo{ height: 735px !important; }
+    #senema{ font-size: 3em !important; height: 64px !important;}
+    #foot{ margin-top: 0% !important; }
+    #titface{ margin-top: 18px !important; font-size: 2em !important;}
 }
     /*LAPTOPS CON FULL HD */
 @media only screen and (min-width: 1681px) and (max-width: 2048px) {
@@ -216,6 +243,7 @@
         margin-top: 8% !important;
     }
     .menuh{ font-size: 1.7em !important; }
+    #redes{ margin-top: 25% !important;}
 
     /*====== SERVICIOS ======*/
     #slc1 { border-bottom: 2px solid #00FFFF !important; cursor: pointer !important; } 
@@ -228,6 +256,17 @@
     #slc8 { border-bottom: 2px solid #FF00FF !important; cursor: pointer !important; }
     #slc9 { border-bottom: 2px solid #FFEF00 !important; cursor: pointer !important; }
     #slc0 { border-bottom: 2px solid #00FFFF !important; cursor: pointer !important; }
+
+    #title{font-size: 2.8em !important;}
+    #descrip{font-size: 1.8em !important;}
+
+    /* ========= NOSOTROS ======== */
+    video{ margin-left: 16% !important; }
+
+
+    .modalhz{ margin-left: 26% !important; width: 50% !important; }
+    #piefoto{ margin-left: 34% !important; font-size: 1.4em !important; }
+    .modalvert{ margin-left: 38% !important; height: 768px !important; }
 
     /*====== CONTACTOS ===*/
     #reds{ width:2em !important; filter: invert(0%) !important;}
@@ -267,9 +306,21 @@
     #reds { width: 2em !important; }    
     .imgp{}
 
+    /* ====== NOSOTROS ======= */
+    video{ margin-left: 3% !important; }
+
+    #title{font-size: 2.5em !important;}
+    #descrip{font-size: 1.5em !important;}
+
     /*===== SERVICIOS =====*/
+    span { font-size: .9em !important; }
     .imgmuestra { height: 240px !important; }
+    .imgmuestraser { height: 248px !important; }
     .imgp2{ width: 240px !important; margin-left: 0% !important; }
+
+    .modalhz{ margin-left: 15% !important;}
+    #piefoto{ margin-left: 38% !important;}
+    .modalvert{ margin-top: 8% !important;}
 
     /*====== CONTACTOS ===*/
     #reds{ filter: invert(0%) !important;}
@@ -311,6 +362,12 @@
         margin-left: -25%;;
         cursor: pointer;
     }
+
+    /* ===== NOSOTROS ======= */
+    video{ margin-left: 1% !important; width: 131vh !important; margin-top: 6% !important;}
+    .color-overlay{ height: 760px !important;}
+
+
     #titulo{
         font-size: 1em !important;
         margin-top: 10% !important;
@@ -326,19 +383,34 @@
     }
 
     #icons { width: 2em !important; height: 2em !important; }
-    .imgmuestra { height: 255px !important; }
-    .imgmuestraser { height: 245px !important; }
+    .imgmuestra { height: 225px !important; }
+    .imgmuestraser { height: 160px !important; }
     .imgp2{ width: 245px !important; margin-left: 0% !important; }
     #reds { width: 2em !important; }
     #imgc { width: 1em !important; height: 1em !important; }
-    .tmodal { margin-left: 38% !important; }
+    .tmodal { margin-left: 2% !important; }
     .cmodal { margin-top: 15% !important; }
     .header { height: 80px !important; }
     .body2{ height: 90% !important;}
     .body{ height: 85% !important;}
 
+    /*======= SERVICIOS =========*/
+    span { font-size: .7em !important; }
+    .modalhz{ margin-left: 18% !important; margin-top: 8% !important; width: 65% !important;}
+    #piefoto{ margin-left: 25% !important;}
+    .modalvert{ margin-left: 32% !important;}
+
+    #title{font-size: 2.2em !important;}
+    #descrip{font-size: 1.2em !important;}
+
     /*====== CONTACTOS ===*/
     #reds{ filter: invert(0%) !important;}
+    #map{ top: 0% !important; height: 375px !important; }
+    #map2{ top: 0% !important; height: 375px !important; }
+    .textoi{ font-size: 21px !important; }
+    .textod{ font-size: 13px !important; }
+    #cuerpo{ height: 225px !important; }
+    #senema{ height: 29px !important; width:21% !important; margin-left:75% !important;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 799px) {
@@ -386,7 +458,12 @@
         margin-top: 5% !important;
     }
     /*==== NOSOTROS =====*/
+    .textn{ margin-top: 0% !important; }
+    video{ margin-left: 1% !important; width: 73.5vh !important; margin-top: 30% !important;}
+    .color-overlay{ height: 1024px !important;}
+
     .textn{ margin-top: 12%; }
+    #imgus { margin-top: -10% !important; }
 
     #icons { width: 2em !important; height: 2em !important; }
     
@@ -398,13 +475,23 @@
     .body2{ height: 90% !important;}   
 
     /*==== SERVICIOS ====*/ 
-    span { font-size: .9em !important;}
-    .imgmuestra { height: 255px !important; }
+    #galery { margin-left: 16% !important; }
+    span { font-size: .6em !important;}
+    .imgmuestra { height: 215px !important; }
     .imgmuestraser { height: 160px !important; }
     .imgp2{ width: 145px !important; margin-left: 0% !important; }
 
+    .modalhz{ margin-left: 4% !important; margin-top: 38% !important; width: 90% !important;}
+    #piefoto{ margin-left: 16% !important;}
+    .modalvert{ margin-left: 21% !important; margin-top: 16% !important;}
+
+    #title{font-size: 1.8em !important;}
+    #descrip{font-size: .9em !important;}
+
     /*====== CONTACTOS ===*/
     #reds{ filter: invert(0%) !important;}
+    #textem{ margin-top: 2% !important; }
+    #senema{ margin-left: 19% !important; }
 }
 
 /*DISPOSITIVOS SMARTPHONE width and Tablet*/
@@ -440,7 +527,7 @@
     #titlen, #titles, #titlec{ display: none !important; }
 
     #redes { 
-            width: 1.6em !important;
+            width: 1.5em !important;
             height: 1em !important;
             margin-top: 18% !important;
     }
@@ -457,7 +544,7 @@
         font-size: 1em;
         font-weight: bold;
     }
-    .grid{margin-left: 2%;}
+    .grid{margin-left: 2% !important;}
     .imgmuestra { height: 150px !important; }
     .imgmuestraser { height: 145px !important; }
     .imgp2{ width: 145px !important; margin-left: 0% !important;}
@@ -468,20 +555,38 @@
     }
    .tmodal { margin-left: 35% !important; }
    .cmodal { margin-top: 0% !important; }
-    #map { 
+    #map, #map2{ 
         width: 99% !important;
-        height: 85% !important;
+        height: 360px !important;
         top: 0% !important;
         left: .5% !important;
     }
     .header { height: 78px !important; }
     .body2{ height: 90% !important;}
     .body { height: 85% !important; }
-    .secciones { font-size: .9em; }
+    .secciones { font-size: .7em; }
     h3{ font-size: .9em; }
 
+    #title{font-size: 1.8em !important;}
+    #descrip{font-size: .9em !important;}
+
+    /* ===== NOSOTROS ====== */
+    video{ margin-left: 5.5% !important; width: 158vh !important; margin-top: 0% !important;}
+
+
+    /* =========== SERVICIOS ========== */
+    #imgus { height: 165px !important; margin-top: -33% !important;}
+    .modalhz{ margin-left: 20% !important; margin-top: 10% !important; width: 60% !important;}
+    #piefoto{ margin-left: 15% !important;}
+    .modalvert{ margin-left: 38% !important; margin-top: 3% !important; height: 280px !important;}
+
     /*====== CONTACTOS ===*/
-    #reds{ filter: invert(0%) !important;}
+    #reds{ filter: invert(0%) !important; }
+    #textem{ margin-top: 2% !important; }
+    #senema{ margin-left: 21% !important; }
+    #foot{ margin-top: 2% !important; }
+    #cuerpo{ height: 245px !important;}
+
 }
 
     /*DISPOSITIVOS SMARTPHONE*/
@@ -511,11 +616,11 @@
         width: 5em !important;
         height: 3em !important;
         cursor: pointer;
-        margin-top: 9%;}
+        margin-top: 15%;}
     #redes {
         width: 2em !important;
         height: 2em !important;
-        margin-top: 0% !important;
+        margin-top:33% !important;
     }
     #titulo{ display: none;}
     #titlen, #titles, #titlec{ display: none !important; }
@@ -537,19 +642,21 @@
     #reds { width: 2em !important; }
     
     /*==== NOSOTROS =====*/
-    .textn{ margin-top: 25%; }
+    .textn{ margin-top: 0% !important; }
+    video{width: 57vh !important; margin-top: 50% !important; margin-left: 0% !important;}
+    .color-overlay{ height: 1024px !important;}
 
     #imgc { width: 1em !important; height: 1em !important; }
-    .tmodal { margin-left: 15% !important; }
+    .tmodal { margin-left: 5% !important; }
     .cmodal { margin-top: 20% !important; }
-    #map {
+    #map, #map2 {
         width: 99% !important;
-        height: 85% !important;
+        height: 400px !important;
         top: 0% !important;
         left: .5% !important;
     }
     #imgus { height: 165px !important; }
-    .secciones { font-size: .5em; }
+    .secciones { font-size: .4em; }
     .header { height: 10% !important; }
     .body2{ height: 90% !important;}
     .body { height: 85% !important; }
@@ -559,15 +666,23 @@
         margin-top: 12%;
         margin-left: 2%;
     }
-    #galery {
-        margin-left: 2% !important;
-    }
+    #galery { margin-left: 2% !important; }
     h3{ font-size: .7em; }
     .figcap p{ font-size: .6em; }
     .figcap a{ font-size: .6em; }
 
+    /* ====== SECCIONES =========== */
+    .modalhz{ margin-left: 7% !important; margin-top: 58% !important; width: 90% !important;}
+    #piefoto{ font-size: .6em !important; margin-left: 10% !important;}
+    .modalvert{ margin-left: 19% !important; margin-top: 35% !important; height: 360px !important;}
+
+
+    #title{font-size: 1.4em !important;}
+    #descrip{font-size: 1em !important;}
+
     /*====== CONTACTOS ===*/
     #reds{ filter: invert(0%) !important;}
+    #senema{ margin-left: 18% !important;}
 }
 
 /*============= FIN DE MEDIAS QUERYS =================*/
@@ -602,7 +717,7 @@ span { font-size: 1.2em; font-weight: 2000; cursor: pointer;}
     height: 15%;
     position: relative;
     float: left;
-    border-bottom: 9px solid var(--azul);
+    border-bottom: 3px solid var(--azul);
 }
 
 .body2 {
@@ -637,11 +752,23 @@ span { font-size: 1.2em; font-weight: 2000; cursor: pointer;}
     height: 5%;
     position: relative;
     float: left;
-    border-top: 9px solid var(--azul);
+    border-top: 3px solid var(--azul);
 }
 h3{ margin-top: -15px !important; }
 
+.modalvert{
+    margin-left: 39%;
+    margin-top: 3%;
+    height: 600px;
+}
 
+.modalhz{ margin-left:25%; margin-top:8%;
+}
+
+#piefoto{ color: white; margin-left: 40%;
+}
+
+.grid{margin-left: 2%;}
     
 
 /*============= MODAL =============*/
@@ -740,6 +867,7 @@ h3{ margin-top: -15px !important; }
     height: 205px;
     position: relative;
     float: left;
+    cursor: pointer;
  }
 
  /*.selector{ display: none !important; }*/
@@ -750,8 +878,8 @@ h3{ margin-top: -15px !important; }
 .imgp2{ width: 60%; margin-left: 7%;}
 
 .outmarg {
-    margin-right: .5%;
-    /*margin-bottom: 0;*/
+    margin-right: -.1%;
+    margin-bottom: 5px;
     margin-left: .5%;
 }
 .menuh:hover{ color: var(--azul); }
@@ -789,11 +917,11 @@ h3{ margin-top: -15px !important; }
 }
 
 /* ==== ESTILOS DE ETQ A ==== */
-.figcap a {
+/*.figcap a {
     position: absolute;
     opacity: 0;
     color: var(--negro);
-}
+}*/
 
 /* ESTILO DE CONTENDOR CON LINEAS */
 .figcap::before {
@@ -845,18 +973,60 @@ h3{ margin-top: -15px !important; }
     transition-delay: 0s;
 }
 
-
 /*============= NOSOTROS =========*/
-.text {
-    background: var(--blanco);
+/*contenedor*/.textn{}
+/*contendor h1*/.textn #titulous{}
+
+.textn{
+    position: relative;
     width: 100%;
     height: 100%;
-    position: relative;
-    float: left;
-    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-#imgus { height: 460px; width: 100%; } 
+.textn H1{
+    text-align: center;
+    /* background: white; */
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    opacity: .8;
+    color: white;
+}
+
+.textn p{
+    text-align: center;
+    /* background: white; */
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    opacity: .8;
+    color: white;
+}
+
+video{ width: 150vh; margin-left: 15%; }
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.color-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: lightblue;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+/* #imgus { height: 540px; width: 100%; }  */
 
 /*============= SERVICIO =========*/
 #slc1:hover { color:var(--magenta);}
@@ -922,13 +1092,57 @@ h3{ margin-top: -15px !important; }
 .dats { margin-left: 5%; }
 #imgc { width: 1.2em; height: 1.2em; filter: invert(100%);}
 #map { 
-    width: 49%;
-    height: 50%;
-    position: relative;
+    height: 480px;
     float: left;
-    top: 9%;
+}
+
+#map2 { 
+    height: 480px;
+    float: left;
 }
 .qflexx { display: block; }
+
+#renglon{ background: rgba(192, 192, 192, .2); border-radius: 25px;}
+#mail{ 
+    margin-top: 1%;
+    border-radius: 5px;
+    width: 100%;
+    float: left;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 200;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 1);
+    padding: 5px;
+    outline: none;
+    transition-timing-function: linear;
+    /*-webkit-transition: .5s all;*/
+    color: rgba(0, 0, 0, 1);
+}
+#cuerpo{ 
+    background: rgba(192, 192, 192, .2);
+    border: 2px solid rgba(192, 192, 192, .6) !important; 
+    margin-top: 2%;
+    width:100%; 
+    height:295px;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+}
+#senema{ 
+    background: rgba(192, 192, 192, .5);
+    height: 40px;
+    width: 60%;
+    border: 2px solid rgba(192, 192, 192, .6);
+    color: white;
+    outline: none;
+    font-size: 1em;
+    border-radius: 10px;
+}
+#titface{ margin-top:7px;}
+
+a:link{ text-decoration:none; color: black; } 
+
 /* 
 #maps {
     width: 100%;

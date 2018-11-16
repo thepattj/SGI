@@ -28,7 +28,7 @@
               <img id="logo" src="images/logo.png">
             </div>
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Graficas e Industriales</H3>
+              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Gráficas e Industriales</H3>
             </div>
             <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="icons" src="images/icon/menu.png">
@@ -55,11 +55,11 @@
                                        'Autos, Vinil y Rotulación',
                                        'Playeras',
                                        'Tela',
-                                       'Letreros en 3D',
+                                       'Letreros en 3D, Cajas de luz y mas',
                                        'Impresiones',
-                                       'Mas informacion sobre nosotros',
                                        'Instalaciones',
                                        'Volumetricos',
+                                       'Mas informacion sobre nosotros',
                                        'Ubicanos'];
                       $arraySeccion =['slc2',
                                       'slc4',
@@ -67,11 +67,11 @@
                                       'slc3',
                                       'slc8',
                                       'slc5',
-                                      'slc9',
+                                      'slc6',
+                                      'slc9',                                      
                                       'slc0',
-                                      '',
                                       'slc7',
-                                      'slc1',
+                                      '',
                                       ''];
                       $arrayArchivos = ['recorte', 
                                         'lona',
@@ -80,10 +80,10 @@
                                         'camisa',
                                         'tela',
                                         'letreros',
-                                        'impresion',
-                                        'us',
+                                        'impresion',                                        
                                         'instalacion',
                                         'volumetrico',
+                                        'us',
                                         'location'];
                 for ($i=0; $i < 12; $i++) { 
                   $archivo = "images/galeriain/".$arrayArchivos[$i].".jpg";
@@ -93,21 +93,21 @@
                   
                   if($h < $w) {?> 
                     <div class="outmarg div-xsp-6 div-smp-6 div-mdp-6 div-lgp-3 div-xlp-3">
-                      <?php if($i == 8) {?>
-                          <div class="fig" onclick="seccion('us.php')">
+                      <?php if($i == 10) {?>
+                          <div class="fig" onclick="seccion('us')">
                             <img class="imgmuestra" src="<?php echo $archivo; ?>" id="textimg" >
                             <div class="figcap">
                                   <h3><?php echo $arrayNombres[$i]; ?> </h3> 
                             </div>
                           </div>
                       <?php }else if($i==11) {?>
-                          <div class="fig" onclick="seccion('contac.php')">
+                          <div class="fig" onclick="seccion('contact')">
                             <img class="imgmuestra" src="<?php echo $archivo; ?>" id="textimg" >
                             <div class="figcap">
                                   <h3><?php echo $arrayNombres[$i]; ?> </h3>
                             </div>
                           </div>
-                      <?php } else if($i <> 8 && $i <> 11 ) {?>
+                      <?php } else if($i <> 10 && $i <> 11 ) {?>
                           <div class="fig" onclick="pag('serv.php?s=<?php echo $arraySeccion[$i]; ?>&i=1')">
                             <img class="imgmuestra" src="<?php echo $archivo; ?>" id="textimg" >
                             <div class="figcap">

@@ -30,7 +30,7 @@
               <img id="logo" src="images/logo.png">
             </div>
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Graficas e Industriales</H3>
+              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Gráficas e Industriales</H3>
             </div>
             <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="icons" src="images/icon/menu.png">
@@ -51,39 +51,70 @@
                 <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
                     <H1 id="titlecnt">CONTACTANOS</H1>
                 </div>
-
-                <!-- ==== ESTE ES EL DIV DE LA INFORMACION ==== -->
-                <div class="qflexx div-xs-12 div-sm-12 div-md-6 div-lg-6 div-xl-6">
-                    <div class="qflexx dats div-xs-6 div-sm-6 div-md-6 div-lg-12 div-xl-12">
+                <!-- *** ES EL MAPA *** -->
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <h2 class="textoi">SUCURSAL QUERÉTARO</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <H4 class="textod"><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H4>
                         <H4 class="textod"> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H4><br>
                     </div>
-                    <div class="qflexx dats div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
-                        <h2 class="textoi">SUCURSAL CIUDAD DE MÉXICO</h2>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h2 class="textoi">SUCURSAL CD. MÉXICO</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map2"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <H4 class="textod"><img id="imgc" src="images/icon/mark.png"> Enrique Rebsamen 22. Col. Piedad Narvarte C.P. 03000</H4>
                         <H4 class="textod"><img id="imgc" src="images/icon/phone.png"> (55) 5530 7046</H4><br>
                     </div>
-                    <div class="qflexx dats div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
-                        <h2 class="textoi">WHATSAPP-CORREO</h2>
-                        <H4 class="textod">Ulises Reséndiz<br> (Director Comercial)<br><img id="imgc" src="images/icon/whatsapp.png">55 4192 1881<br><img id="imgc" src="images/icon/mail.png">ulises@gruposgi.com.mx</H4><br>
-                        <H4 class="textod">Alberto Martínez<br> (Director de Operaciones)<br><img id="imgc" src="images/icon/whatsapp.png">55 4056 098<br><img id="imgc" src="images/icon/mail.png">alberto@gruposgi.com.mx</H4><br>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h2 style="text-align:center;" class="textoi">CELULAR - CORREO</h2>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <H4 class="textod"><b> Ulises Reséndiz (Director Comercial)</b><br> <img id="imgc" src="images/icon/whatsapp.png">55 4192 1881<br><img id="imgc" src="images/icon/mail.png">ulises@gruposgi.com.mx</H4><br>
+                        <H4 class="textod"><b> Alberto Martínez (Director de Operaciones)</b><br> <img id="imgc" src="images/icon/whatsapp.png">55 4056 098<br><img id="imgc" src="images/icon/mail.png">alberto@gruposgi.com.mx</H4><br>
                     </div>
                 </div>
-                <!-- *** ES EL MAPA *** -->
-                <div class="div-xs-12 div-sm-12 div-md-6 div-lg-6 div-xl-6" id="map"></div>
-                <!-- *** ES LA PARTE DE LOS ICONOS *** -->
-                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12" id="foot">
-                    <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
-                    <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-                        <div class="div-xs-6 div-sm-6 div-md-6 div-lg-6 div-xl-6">
-                            <img id="reds" src="images/icon/facebook.png">
+
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div id="renglon" class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                            <p id="textem" style="margin-top:3.5%; text-align:center;"> Coloca tu correo: </p>
                         </div>
-                        <div class="div-xs-6 div-sm-6 div-md-6 div-lg-6 div-xl-6">
-                            <img id="reds" src="images/icon/instagram.png">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-4">
+                            <input id="mail" type="text" placeholder="ejemplos@servidor.com">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-4">
+                        <textarea id="cuerpo"></textarea>
                         </div>
                     </div>
-                    <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4"></div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <button id="senema">Enviar</button>
+                    </div>
+                </div>
+                
+
+                
+
+                <!-- *** ES LA PARTE DE LOS ICONOS *** -->
+                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12" id="foot">
+                <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img id="reds" src="images/icon/facebook.png"> </a> <p id="titface"> SOLUCIONES GRÁFICAS E INDUSTRIALES </p> 
                 </div>
             </div>
         </div>
@@ -92,6 +123,10 @@
 </html>
 
 <script>
+function sf(pf) {
+    window.location.href = pf;
+}
+
 window.onload = initMap(); // cargar esta funcion enseguida del dom
 /*window.onload = obtenerdireccion;*/
     
@@ -100,27 +135,31 @@ var marker = null;
 var geocoder = new google.maps.Geocoder();
   
 function initMap() { //FUNCION QUE CARGA EL MAPA CON LA GEOLOCALIZACION ACTUAL
-    var marcadores = [
-        ['', 20.5472674,-100.4013637], //QUERETARO
-        ['', 19.4026276,-99.1603794] //
-    ];  
-    
-    var myLatlng = new google.maps.LatLng(19.9722964,-99.7348477);
-    var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 8,
-          center: myLatlng,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+    var myLatLng = {lat: 20.5472674, lng: -100.4013637};
+    var myLatLng2 = {lat: 19.4026276, lng: -99.1603794};
+        // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 14
         });
 
-    google.maps.event.trigger(map, 'resize');
-    var infowindow = new google.maps.InfoWindow();
-    var marker, i;
-    for (i = 0; i < marcadores.length; i++) {  
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
-            icon: 'images/icon/markg.png',
-            map: map
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+          center: myLatLng2,
+          zoom: 14
         });
-    }
-  }
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          icon: 'images/icon/markg.png'
+        });
+
+        var marker2 = new google.maps.Marker({
+          map: map2,
+          position: myLatLng2,
+          icon: 'images/icon/markg.png'
+        });
+}
 </script>

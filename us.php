@@ -29,7 +29,7 @@
               <img id="logo" src="images/logo.png">
             </div>
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Graficas e Industriales</H3>
+              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Gráficas e Industriales</H3>
             </div>
             <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
                 <img id="icons" src="images/icon/menu.png">
@@ -46,24 +46,16 @@
             </div>
         </div>
         <div class="body2">
-            <div class="textn">
-                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
-                    <H1 id="titulous">NOSOTROS</H1>
+            <div class="textn">          
+                <H1 id="titulous">NOSOTROS</H1>
+                <!-- <p id="descr" align="justify">Nos dedicamos a dar Soluciones Publicitarias en cualquier formato o medio.</p> -->
+                <div class="video-container">
+                    <div class="color-overlay"></div>
+                    <video playsinline autoplay muted loop>
+                        <source src="video/video1.mp4" type="video/mp4">
+                    </video>
                 </div>
-                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
-                    <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2"></div>
-                    <div class="dvi-xs-8 div-sm-8 div-md-8 div-lg-8 div-xl-8">
-                        <p id="descr" align="justify">Nos dedicamos a dar Soluciones Publicitarias en cualquier formato o medio.</p>
-                    </div>
-                    <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2"></div>
-                </div>
-                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
-                    <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2"></div>
-                    <div class="div-xs-8 div-sm-8 div-md-8 div-lg-8 div-xl-8">
-                        <video playsinline autoplay muted loop src="video/w.mp4" id="imgus">   </video>
-                    </div>
-                    <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2"></div>
-                </div>
+
             </div>
         </div>
     </div>
