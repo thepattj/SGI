@@ -1088,6 +1088,16 @@ video{ width: 150vh; margin-left: 15%; }
 
 .otro { overflow-y: auto; }
 
+#at{ 
+    filter: invert(100%);
+    width: 3em;
+}
+
+#ad{ 
+    filter: invert(100%);
+    width: 3em;
+}
+
 /*============= CONTACT =========*/
 .dats { margin-left: 5%; }
 #imgc { width: 1.2em; height: 1.2em; filter: invert(100%);}

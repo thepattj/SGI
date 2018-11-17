@@ -1,4 +1,5 @@
 var varible = 0;
+sessionStorage.setItem("ulrm",'a');
 
 $(document).ready(function () {
     $clic = 0;
@@ -20,40 +21,40 @@ $(document).ready(function () {
     $('#slc1').click(function () { //STANDS bien
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd' src='images/servicios/sd.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd' src='images/servicios/sd.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd2' src='images/servicios/sd2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd2' src='images/servicios/sd2.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd3' src='images/servicios/sd3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd3' src='images/servicios/sd3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd4z' src='images/servicios/sd4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd4z' src='images/servicios/sd4.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd5z' src='images/servicios/sd5.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd5z' src='images/servicios/sd5.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd6z' src='images/servicios/sd6.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd6z' src='images/servicios/sd6.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd7' src='images/servicios/sd7.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd7' src='images/servicios/sd7.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd8' src='images/servicios/sd8.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd8' src='images/servicios/sd8.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd9' src='images/servicios/sd9.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd9' src='images/servicios/sd9.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd10' src='images/servicios/sd10.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd10' src='images/servicios/sd10.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd11' src='images/servicios/sd11.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd11' src='images/servicios/sd11.jpg'>" +
             "</div>"+
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='sd12z' src='images/servicios/sd12.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd12z' src='images/servicios/sd12.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -85,34 +86,34 @@ $(document).ready(function () {
     $('#slc2').click(function () { //VINIL DE RECORTE bien
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort' src='images/servicios/recort.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort' src='images/servicios/recort.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort2' src='images/servicios/recort2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort2' src='images/servicios/recort2.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort3' src='images/servicios/recort3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort3' src='images/servicios/recort3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort4z' src='images/servicios/recort4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort4z' src='images/servicios/recort4.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort5z' src='images/servicios/recort5.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort5z' src='images/servicios/recort5.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort6' src='images/servicios/recort6.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort6' src='images/servicios/recort6.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort7' src='images/servicios/recort7.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort7' src='images/servicios/recort7.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort8' src='images/servicios/recort8.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort8' src='images/servicios/recort8.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort9' src='images/servicios/recort9.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort9' src='images/servicios/recort9.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='recort10' src='images/servicios/recort10.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort10' src='images/servicios/recort10.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -143,40 +144,40 @@ $(document).ready(function () {
     $('#slc3').click(function () { // VINIL bien
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil' src='images/servicios/vinil.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil' src='images/servicios/vinil.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil1' src='images/servicios/vinil1.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil1' src='images/servicios/vinil1.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil2' src='images/servicios/vinil2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil2' src='images/servicios/vinil2.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil3' src='images/servicios/vinil3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil3' src='images/servicios/vinil3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil4' src='images/servicios/vinil4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil4' src='images/servicios/vinil4.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil5' src='images/servicios/vinil5.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil5' src='images/servicios/vinil5.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil6' src='images/servicios/vinil6.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil6' src='images/servicios/vinil6.jpg'>" +
             "</div>"+
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil7' src='images/servicios/vinil7.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil7' src='images/servicios/vinil7.jpg'>" +
             "</div>"+
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil8' src='images/servicios/vinil8.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil8' src='images/servicios/vinil8.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil9' src='images/servicios/vinil9.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil9' src='images/servicios/vinil9.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil10' src='images/servicios/vinil10.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil10' src='images/servicios/vinil10.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vinil11' src='images/servicios/vinil11.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil11' src='images/servicios/vinil11.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -207,31 +208,31 @@ $(document).ready(function () {
     $('#slc4').click(function () { // GRAN FORMATO bien
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato' src='images/servicios/formato.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato' src='images/servicios/formato.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato2' src='images/servicios/formato2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato2' src='images/servicios/formato2.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato3' src='images/servicios/formato3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato3' src='images/servicios/formato3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato4' src='images/servicios/formato4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato4' src='images/servicios/formato4.jpg'>" +
             "</div>"+
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato5' src='images/servicios/formato5.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato5' src='images/servicios/formato5.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato6z' src='images/servicios/formato6.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato6z' src='images/servicios/formato6.jpg'>" +
             "</div>"+
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato7' src='images/servicios/formato7.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato7' src='images/servicios/formato7.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato8z' src='images/servicios/formato8.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato8z' src='images/servicios/formato8.jpg'>" +
             "</div>"+
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='formato9' src='images/servicios/formato9.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato9' src='images/servicios/formato9.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -262,25 +263,25 @@ $(document).ready(function () {
     $('#slc5').click(function () { // TELA bien
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='tela' src='images/servicios/tela.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela' src='images/servicios/tela.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='tela2z' src='images/servicios/tela2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela2z' src='images/servicios/tela2.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='tela3' src='images/servicios/tela3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela3' src='images/servicios/tela3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='tela4' src='images/servicios/tela4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela4' src='images/servicios/tela4.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='tela5z' src='images/servicios/tela5.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela5z' src='images/servicios/tela5.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='tela6' src='images/servicios/tela6.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela6' src='images/servicios/tela6.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='tela7z' src='images/servicios/tela7.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela7z' src='images/servicios/tela7.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -312,40 +313,40 @@ $(document).ready(function () {
     $('#slc6').click(function () { //LETREROS EN 3D
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt' src='images/servicios/lt.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt' src='images/servicios/lt.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt2' src='images/servicios/lt2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt2' src='images/servicios/lt2.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt3' src='images/servicios/lt3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt3' src='images/servicios/lt3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt4' src='images/servicios/lt4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt4' src='images/servicios/lt4.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt5' src='images/servicios/lt5.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt5' src='images/servicios/lt5.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt6' src='images/servicios/lt6.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt6' src='images/servicios/lt6.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt7' src='images/servicios/lt7.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt7' src='images/servicios/lt7.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt8' src='images/servicios/lt8.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt8' src='images/servicios/lt8.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt9' src='images/servicios/lt9.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt9' src='images/servicios/lt9.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt10' src='images/servicios/lt10.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt10' src='images/servicios/lt10.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt11' src='images/servicios/lt11.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt11' src='images/servicios/lt11.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='lt12' src='images/servicios/lt12.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt12' src='images/servicios/lt12.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -378,28 +379,28 @@ $(document).ready(function () {
     $('#slc7').click(function () { //VOLUMETRICOS
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vol' src='images/servicios/vol.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol' src='images/servicios/vol.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vol2z' src='images/servicios/vol2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol2z' src='images/servicios/vol2.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vol3' src='images/servicios/vol3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol3' src='images/servicios/vol3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vol4' src='images/servicios/vol4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol4' src='images/servicios/vol4.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vol5' src='images/servicios/vol5.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol5' src='images/servicios/vol5.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vol6' src='images/servicios/vol6.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol6' src='images/servicios/vol6.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vol7' src='images/servicios/vol7.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol7' src='images/servicios/vol7.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='vol8' src='images/servicios/vol8.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol8' src='images/servicios/vol8.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -431,19 +432,19 @@ $(document).ready(function () {
     $('#slc8').click(function () { // PLAYERAS bien
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='playera' src='images/servicios/playera.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera' src='images/servicios/playera.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='playera2' src='images/servicios/playera2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera2' src='images/servicios/playera2.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='playera3' src='images/servicios/playera3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera3' src='images/servicios/playera3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='playera4' src='images/servicios/playera4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera4' src='images/servicios/playera4.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='playera5' src='images/servicios/playera5.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera5' src='images/servicios/playera5.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -475,16 +476,16 @@ $(document).ready(function () {
     $('#slc9').click(function () { // IMPRESION DIRECTA bien
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='id' src='images/servicios/id.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='id' src='images/servicios/id.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='id2' src='images/servicios/id2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='id2' src='images/servicios/id2.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='id3' src='images/servicios/id3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='id3' src='images/servicios/id3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='id3' src='images/servicios/id4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='id3' src='images/servicios/id4.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -516,22 +517,22 @@ $(document).ready(function () {
     $('#slc0').click(function () { // INSTALACIONES bien
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='iz' src='images/servicios/i.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='iz' src='images/servicios/i.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='i2' src='images/servicios/i2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='i2' src='images/servicios/i2.jpg'>" +
             "</div>"+
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='i3' src='images/servicios/i3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='i3' src='images/servicios/i3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='i4' src='images/servicios/i4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='i4' src='images/servicios/i4.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='i5' src='images/servicios/i5.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='i5' src='images/servicios/i5.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id)' id='i6' src='images/servicios/i6.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='i6' src='images/servicios/i6.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -577,7 +578,7 @@ $(document).ready(function () {
     });
 });
 
-function igs(url){
+function igs(url,lugar){
     enunc = "";
     cadena = '';
     if (url == "playeraz") {
@@ -604,12 +605,14 @@ function igs(url){
         modo = "horizontal"; 
     }    
     var na= url+".jpg";
+    sessionStorage.setItem("ulrm", na);
     //alert("esto va hacer que salga el modal con la imagen. El valor fue: "+na+" esto es el enunciado: "+enunc+" tipo: "+modo);
-    verImagenModal('grande', na, 'X', enunc, modo);
+    //alert("vengo de: "+lugar);
+    verImagenModal('grande', na, 'X', enunc, modo, lugar);
 };
 
 //MUESTRA MODAL CON DATOS DE ARRIBA
-function verImagenModal(tipo, img, textoBtn, parrafo, modo) { //MODAL DE ALERTA
+function verImagenModal(tipo, img, textoBtn, parrafo, modo, proce) { //MODAL DE ALERTA
     bgNegro = document.getElementById('bg-negro');
     modal = document.getElementById('modal');
 
@@ -626,9 +629,19 @@ function verImagenModal(tipo, img, textoBtn, parrafo, modo) { //MODAL DE ALERTA
         modal.innerHTML = "<button onclick='cerrar()' id='cierra' class='bmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'><H1>" + textoBtn + "</H1></button>" +
             "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
                 "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
-                    "<img class='imgmodal modalhz' src='images/servicios/"+img+"'> </div>"+
+                    "<img class='imgmodal modalhz' id='imgind' src='images/servicios/"+img+"'> </div>"+
                 "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
                     "<p id='piefoto'>"+ parrafo +"</p> </div>"+
+                "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'></div>" +
+                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'>"+
+                        "<div class='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
+                            "<img onclick=\"atr("+proce+",\'"+img+"\')\" id='at' src='images/flech.png'> </div>"  +
+                        "<div class='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
+                            "<img onclick=\"sig("+proce+",\'"+img+"\')\" id='ad' src='images/flecha.png'> </div>" +
+                    "</div>" +
+                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'></div>" +
+                "</div>"+
             "</div>";
 
         modal.classList.add(tipo);
@@ -637,8 +650,10 @@ function verImagenModal(tipo, img, textoBtn, parrafo, modo) { //MODAL DE ALERTA
     }if(modo == 'vertical'){
         modal.innerHTML = "<button onclick='cerrar()' id='cierra' class='bmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'><H1>" + textoBtn + "</H1></button>" +
             "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
-                "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+                "<div class='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'> <img onclick='atr("+proce+","+img+")' id='at' src='images/flech.png'> </div>"+ 
+                "<div class='col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8'>" +
                     "<img class='imgmodal modalvert' src='images/servicios/"+img+"'> </div>"+
+                "<div class='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'> <img onclick='sig("+proce+","+img+")' id='ad' src='images/flecha.png'> </div>"+
                 "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
                     "<p id='piefoto'>"+ parrafo +"</p> </div>"+
             "</div>";
@@ -647,6 +662,50 @@ function verImagenModal(tipo, img, textoBtn, parrafo, modo) { //MODAL DE ALERTA
 
         tipo = tipo;
     }
+}
+
+function sig(proce, url){
+    arrarInicial =['formato.jpg','recort.jpg','sd.jpg','vinil.jpg','tela.jpg','id.jpg','playera.jpg','vol.jpg','lt.jpg','i.jpg','formato2.jpg','recort2.jpg','sd2.jpg','vinil1.jpg','tela2.jpg','id2.jpg','playera2.jpg','vol2.jpg','lt2.jpg','i2.jpg','formato3.jpg','vinil2.jpg','recort3.jpg','sd3.jpg','vinil3.jpg','tela3.jpg','playera3.jpg','vol3.jpg','lt3.jpg','i3.jpg','formato4.jpg','sd4.jpg','vinil4.jpg','tela4.jpg','id3.jpg','recort4.jpg','vol4.jpg','i4.jpg','lt4.jpg','formato5.jpg','playera4.jpg','recort5.jpg','tela5.jpg','sd5.jpg','vinil5.jpg','lt5.jpg','i5.jpg','vol5.jpg','formato6.jpg','id4.jpg','playera5.jpg','recort6.jpg','tela6.jpg','sd6.jpg','vinil6.jpg','lt6.jpg','vol6.jpg','playera6.jpg','i6.jpg','formato7.jpg','tela7.jpg','recort7.jpg','sd7.jpg','vinil7.jpg','vol7.jpg','lt7.jpg'];
+    final = 64;
+    
+    if(proce == 1){
+        verurl = sessionStorage.getItem("ulrm");
+        for(i=0; i<= final; i ++){
+            if(verurl == arrarInicial[i]){
+                //alert("YA LA ENCONTRO");
+                if(i != final){
+                    //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+arrarInicial[i+1])
+                    document.getElementById("imgind").src = "images/servicios/"+arrarInicial[i+1];
+                    nueva = arrarInicial[i+1];
+                }                
+            }
+        }            
+        //alert(nueva);
+        sessionStorage.setItem("ulrm", nueva);
+        
+    }if (proce == 2){ }
+    // document.getElementById("img").src="image/"+cars[1]+".png"
+} 
+function atr(proce, url){
+    arrarInicial =['formato.jpg','recort.jpg','sd.jpg','vinil.jpg','tela.jpg','id.jpg','playera.jpg','vol.jpg','lt.jpg','i.jpg','formato2.jpg','recort2.jpg','sd2.jpg','vinil1.jpg','tela2.jpg','id2.jpg','playera2.jpg','vol2.jpg','lt2.jpg','i2.jpg','formato3.jpg','vinil2.jpg','recort3.jpg','sd3.jpg','vinil3.jpg','tela3.jpg','playera3.jpg','vol3.jpg','lt3.jpg','i3.jpg','formato4.jpg','sd4.jpg','vinil4.jpg','tela4.jpg','id3.jpg','recort4.jpg','vol4.jpg','i4.jpg','lt4.jpg','formato5.jpg','playera4.jpg','recort5.jpg','tela5.jpg','sd5.jpg','vinil5.jpg','lt5.jpg','i5.jpg','vol5.jpg','formato6.jpg','id4.jpg','playera5.jpg','recort6.jpg','tela6.jpg','sd6.jpg','vinil6.jpg','lt6.jpg','vol6.jpg','playera6.jpg','i6.jpg','formato7.jpg','tela7.jpg','recort7.jpg','sd7.jpg','vinil7.jpg','vol7.jpg','lt7.jpg'];
+    final = 64;
+    
+    if(proce == 1){
+        verurl = sessionStorage.getItem("ulrm");
+        for(i=0; i<= final; i ++){
+            if(verurl == arrarInicial[i]){
+                //alert("YA LA ENCONTRO");
+                if(i != final){
+                    //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+arrarInicial[i-1])
+                    document.getElementById("imgind").src = "images/servicios/"+arrarInicial[i-1];
+                    nueva = arrarInicial[i-1];
+                }                
+            }
+        }            
+        //alert(nueva);
+        sessionStorage.setItem("ulrm", nueva);
+    }if (proce == 2){ }
+    //document.getElementById("img").src="image/"+cars[0]+".png"
 }
 
 //MUESTRA MODAL CON DATOS DE ARRIBA
