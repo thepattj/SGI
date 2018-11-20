@@ -75,40 +75,40 @@
                                         <div class="grid" id="servicios1"> </div>
                                         <div class="grid" id="servicios2">
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd' src='images/servicios/sd.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd' src='images/servicios/sd.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd2' src='images/servicios/sd2.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd2' src='images/servicios/sd2.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'> 
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd3' src='images/servicios/sd3.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd3' src='images/servicios/sd3.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd4z' src='images/servicios/sd4.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd4z' src='images/servicios/sd4.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd5z' src='images/servicios/sd5.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd5z' src='images/servicios/sd5.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd6z' src='images/servicios/sd6.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd6z' src='images/servicios/sd6.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd7' src='images/servicios/sd7.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd7' src='images/servicios/sd7.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd8' src='images/servicios/sd8.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd8' src='images/servicios/sd8.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd9' src='images/servicios/sd9.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd9' src='images/servicios/sd9.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd10' src='images/servicios/sd10.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd10' src='images/servicios/sd10.jpg'>
                                             </div> 
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd11' src='images/servicios/sd11.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd11' src='images/servicios/sd11.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='sd12z' src='images/servicios/sd12.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='sd12z' src='images/servicios/sd12.jpg'>
                                             </div>
                                         </div>
                                     </div>
@@ -124,34 +124,34 @@
                                         <div class="grid" id="servicios1"> </div>
                                         <div class="grid" id="servicios2">
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='recort' src='images/servicios/recort.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='recort' src='images/servicios/recort.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='recort2' src='images/servicios/recort2.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='recort2' src='images/servicios/recort2.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='recort3' src='images/servicios/recort3.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='recort3' src='images/servicios/recort3.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='recort4z' src='images/servicios/recort4.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='recort4z' src='images/servicios/recort4.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='recort5z' src='images/servicios/recort5.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='recort5z' src='images/servicios/recort5.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='recort6' src='images/servicios/recort6.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='recort6' src='images/servicios/recort6.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='recort7' src='images/servicios/recort7.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='recort7' src='images/servicios/recort7.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='recort8' src='images/servicios/recort8.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='recort8' src='images/servicios/recort8.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='recort9' src='images/servicios/recort9.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='recort9' src='images/servicios/recort9.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='recort10' src='images/servicios/recort10.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='recort10' src='images/servicios/recort10.jpg'>
                                             </div>
                                         </div>
                                     </div>
@@ -167,40 +167,40 @@
                                         <div class="grid" id="servicios1"> </div>
                                         <div class="grid" id="servicios2">
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='vinil' src='images/servicios/vinil.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil' src='images/servicios/vinil.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='vinil1' src='images/servicios/vinil1.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil1' src='images/servicios/vinil1.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                               <img class='imgmuestraser' onclick='igs(this.id)' id='vinil2' src='images/servicios/vinil2.jpg'>
+                                               <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil2' src='images/servicios/vinil2.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='vinil3' src='images/servicios/vinil3.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil3' src='images/servicios/vinil3.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='vinil4' src='images/servicios/vinil4.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil4' src='images/servicios/vinil4.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='vinil5' src='images/servicios/vinil5.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil5' src='images/servicios/vinil5.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='vinil6' src='images/servicios/vinil6.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil6' src='images/servicios/vinil6.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='vinil7' src='images/servicios/vinil7.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil7' src='images/servicios/vinil7.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='vinil8' src='images/servicios/vinil8.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil8' src='images/servicios/vinil8.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='vinil9' src='images/servicios/vinil9.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil9' src='images/servicios/vinil9.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='vinil10' src='images/servicios/vinil10.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil10' src='images/servicios/vinil10.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='vinil11' src='images/servicios/vinil11.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil11' src='images/servicios/vinil11.jpg'>
                                             </div>
                                         </div>
                                 </div>
@@ -216,31 +216,31 @@
                                         <div class="grid" id="servicios1"> </div>
                                         <div class="grid" id="servicios2">
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='formato' src='images/servicios/formato.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='formato' src='images/servicios/formato.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='formato2' src='images/servicios/formato2.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='formato2' src='images/servicios/formato2.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='formato3' src='images/servicios/formato3.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='formato3' src='images/servicios/formato3.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='formato4' src='images/servicios/formato4.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='formato4' src='images/servicios/formato4.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='formato5' src='images/servicios/formato5.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='formato5' src='images/servicios/formato5.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='formato6z' src='images/servicios/formato6.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='formato6z' src='images/servicios/formato6.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='formato7' src='images/servicios/formato7.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='formato7' src='images/servicios/formato7.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='formato8z' src='images/servicios/formato8.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='formato8z' src='images/servicios/formato8.jpg'>
                                             </div>
                                             <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                                <img class='imgmuestraser' onclick='igs(this.id)' id='formato9' src='images/servicios/formato9.jpg'>
+                                                <img class='imgmuestraser' onclick='igs(this.id,2)' id='formato9' src='images/servicios/formato9.jpg'>
                                             </div>
                                         </div>
                                 </div>
@@ -256,25 +256,25 @@
                                     <div class="grid" id="servicios1"> </div>
                                     <div class="grid" id="servicios2">
                                         <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='tela' src='images/servicios/tela.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='tela' src='images/servicios/tela.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='tela2z' src='images/servicios/tela2.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='tela2z' src='images/servicios/tela2.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='tela3' src='images/servicios/tela3.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='tela3' src='images/servicios/tela3.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='tela4' src='images/servicios/tela4.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='tela4' src='images/servicios/tela4.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='tela5z' src='images/servicios/tela5.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='tela5z' src='images/servicios/tela5.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='tela6' src='images/servicios/tela6.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='tela6' src='images/servicios/tela6.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='tela7z' src='images/servicios/tela7.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='tela7z' src='images/servicios/tela7.jpg'>
                                         </div>
                                     </div>
                                 </div>
@@ -290,40 +290,40 @@
                                     <div class="grid" id="servicios1"> </div>
                                     <div class="grid" id="servicios2">
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt' src='images/servicios/lt.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt' src='images/servicios/lt.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt2' src='images/servicios/lt2.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt2' src='images/servicios/lt2.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt3' src='images/servicios/lt3.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt3' src='images/servicios/lt3.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt4' src='images/servicios/lt4.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt4' src='images/servicios/lt4.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt5' src='images/servicios/lt5.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt5' src='images/servicios/lt5.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt6' src='images/servicios/lt6.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt6' src='images/servicios/lt6.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt7' src='images/servicios/lt7.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt7' src='images/servicios/lt7.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt8' src='images/servicios/lt8.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt8' src='images/servicios/lt8.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt9' src='images/servicios/lt9.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt9' src='images/servicios/lt9.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt10' src='images/servicios/lt10.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt10' src='images/servicios/lt10.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt11' src='images/servicios/lt11.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt11' src='images/servicios/lt11.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='lt12' src='images/servicios/lt12.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='lt12' src='images/servicios/lt12.jpg'>
                                         </div>
                                     </div>
                                 </div>
@@ -339,28 +339,28 @@
                                     <div class="grid" id="servicios1"> </div>
                                     <div class="grid" id="servicios2">
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='vol' src='images/servicios/vol.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='vol' src='images/servicios/vol.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='vol2z' src='images/servicios/vol2.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='vol2z' src='images/servicios/vol2.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='vol3' src='images/servicios/vol3.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='vol3' src='images/servicios/vol3.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='vol4' src='images/servicios/vol4.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='vol4' src='images/servicios/vol4.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='vol5' src='images/servicios/vol5.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='vol5' src='images/servicios/vol5.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='vol6' src='images/servicios/vol6.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='vol6' src='images/servicios/vol6.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='vol7' src='images/servicios/vol7.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='vol7' src='images/servicios/vol7.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='vol8' src='images/servicios/vol8.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='vol8' src='images/servicios/vol8.jpg'>
                                         </div>
                                     </div>
                             </div>
@@ -376,19 +376,16 @@
                                     <div class="grid" id="servicios1"> </div>
                                     <div class="grid" id="servicios2">
                                         <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='playera' src='images/servicios/playera.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='playera' src='images/servicios/playeraz.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='playera2' src='images/servicios/playera2.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='playera3' src='images/servicios/playera3.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='playera3' src='images/servicios/playera3.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='playera4' src='images/servicios/playera4.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='playera4' src='images/servicios/playera4.jpg'>
-                                        </div>
-                                        <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='playera5' src='images/servicios/playera5.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='playera5' src='images/servicios/playera5.jpg'>
                                         </div>
                                     </div>
                             </div>
@@ -404,16 +401,16 @@
                                     <div class="grid" id="servicios1"> </div>
                                     <div class="grid" id="servicios2">
                                         <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='id' src='images/servicios/id.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='id' src='images/servicios/id.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='id2' src='images/servicios/id2.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='id2' src='images/servicios/id2.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='id3' src='images/servicios/id3.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='id3' src='images/servicios/id3.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='id3' src='images/servicios/id4.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='id3' src='images/servicios/id4.jpg'>
                                         </div>
                                     </div>
                             </div>
@@ -429,22 +426,22 @@
                                     <div class="grid" id="servicios1"> </div>
                                     <div class="grid" id="servicios2">
                                         <div class=' div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='iz' src='images/servicios/i.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='in' src='images/servicios/in.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='i2' src='images/servicios/i2.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='in2' src='images/servicios/in2.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='i3' src='images/servicios/i3.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='in3' src='images/servicios/in3.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='i4' src='images/servicios/i4.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='in4' src='images/servicios/in4.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='i5' src='images/servicios/i5.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='in5' src='images/servicios/in5.jpg'>
                                         </div>
                                         <div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>
-                                            <img class='imgmuestraser' onclick='igs(this.id)' id='i6' src='images/servicios/i6.jpg'>
+                                            <img class='imgmuestraser' onclick='igs(this.id,2)' id='in6' src='images/servicios/in6.jpg'>
                                         </div>
                                     </div>
                             </div>
@@ -466,20 +463,19 @@
                                                         'vinil',
                                                         'tela',
                                                         'id',
-                                                        'playera',
                                                         'vol',
                                                         'lt',
-                                                        'i',
+                                                        'in',
                                                         'formato2',
                                                         'recort2',
                                                         'sd2',
                                                         'vinil1',
                                                         'tela2',
                                                         'id2',
-                                                        'playera2',
+                                                        'playeraz',
                                                         'vol2',
                                                         'lt2',
-                                                        'i2',
+                                                        'in2',
                                                         'formato3',
                                                         'vinil2',
                                                         'recort3',
@@ -489,7 +485,7 @@
                                                         'playera3',
                                                         'vol3',
                                                         'lt3',
-                                                        'i3',
+                                                        'in3',
                                                         'formato4',
                                                         'sd4',
                                                         'vinil4',
@@ -497,7 +493,7 @@
                                                         'id3',
                                                         'recort4',
                                                         'vol4',
-                                                        'i4',
+                                                        'in4',
                                                         'lt4',
                                                         'formato5',
                                                         'playera4',
@@ -506,7 +502,7 @@
                                                         'sd5',
                                                         'vinil5',
                                                         'lt5',
-                                                        'i5',
+                                                        'in5',
                                                         'vol5',
                                                         'formato6',
                                                         'id4',
@@ -518,7 +514,7 @@
                                                         'lt6',
                                                         'vol6',
                                                         'playera6',
-                                                        'i6',
+                                                        'in6',
                                                         'formato7',
                                                         'tela7',
                                                         'recort7',
@@ -532,10 +528,9 @@
                                                         'vinil',
                                                         'tela',
                                                         'id',
-                                                        'playeraz',
                                                         'vol',
                                                         'lt',
-                                                        'i',
+                                                        'in',
                                                         'formato2',
                                                         'recort2',
                                                         'sd2',
@@ -545,7 +540,7 @@
                                                         'playeraz',
                                                         'vol2z',
                                                         'lt2',
-                                                        'i2',
+                                                        'in2',
                                                         'formato3',
                                                         'vinil2',
                                                         'recort3',
@@ -555,7 +550,7 @@
                                                         'playera3',
                                                         'vol3',
                                                         'lt3',
-                                                        'i3',
+                                                        'in3',
                                                         'formato4',
                                                         'sd4z',
                                                         'vinil4',
@@ -563,16 +558,16 @@
                                                         'id3',
                                                         'recort4z',
                                                         'vol4',
-                                                        'i4',
+                                                        'in4',
                                                         'lt4',
                                                         'formato5z',
                                                         'playera4',
-                                                        'recort5',
+                                                        'recort5z',
                                                         'tela5z',
                                                         'sd5z',
                                                         'vinil5',
                                                         'lt5',
-                                                        'i5',
+                                                        'in5',
                                                         'vol5',
                                                         'formato6z',
                                                         'id4',
@@ -584,7 +579,7 @@
                                                         'lt6',
                                                         'vol6',
                                                         'playera6z',
-                                                        'i6',
+                                                        'in6',
                                                         'formato7',
                                                         'tela7z',
                                                         'recort7',
@@ -592,7 +587,7 @@
                                                         'vinil7',
                                                         'vol7',
                                                         'lt7'];
-                                for ($i=0; $i < 65; $i++) { 
+                                for ($i=0; $i < 64; $i++) { 
                                     $archivo = "images/servicios/".$arrayArchivos[$i].".jpg";
                                     $img = getimagesize($archivo);
                                     $w = $img[0];

@@ -1,5 +1,6 @@
 var varible = 0;
 sessionStorage.setItem("ulrm",'a');
+nueva = "";
 
 $(document).ready(function () {
     $clic = 0;
@@ -432,10 +433,7 @@ $(document).ready(function () {
     $('#slc8').click(function () { // PLAYERAS bien
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera' src='images/servicios/playera.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera2' src='images/servicios/playera2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playeraz' src='images/servicios/playeraz.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
             "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera3' src='images/servicios/playera3.jpg'>" +
@@ -517,22 +515,22 @@ $(document).ready(function () {
     $('#slc0').click(function () { // INSTALACIONES bien
         $('#servicios1').css({ "display": "none" });
         var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='iz' src='images/servicios/i.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in' src='images/servicios/in.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='i2' src='images/servicios/i2.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in2' src='images/servicios/in2.jpg'>" +
             "</div>"+
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='i3' src='images/servicios/i3.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in3' src='images/servicios/in3.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='i4' src='images/servicios/i4.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in4' src='images/servicios/in4.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='i5' src='images/servicios/i5.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in5' src='images/servicios/in5.jpg'>" +
             "</div>" +
             "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='i6' src='images/servicios/i6.jpg'>" +
+            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in6' src='images/servicios/in6.jpg'>" +
             "</div>";
         $('#servicios2').html(imagenes);
 
@@ -650,12 +648,20 @@ function verImagenModal(tipo, img, textoBtn, parrafo, modo, proce) { //MODAL DE 
     }if(modo == 'vertical'){
         modal.innerHTML = "<button onclick='cerrar()' id='cierra' class='bmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'><H1>" + textoBtn + "</H1></button>" +
             "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
-                "<div class='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'> <img onclick='atr("+proce+","+img+")' id='at' src='images/flech.png'> </div>"+ 
-                "<div class='col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8'>" +
-                    "<img class='imgmodal modalvert' src='images/servicios/"+img+"'> </div>"+
-                "<div class='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'> <img onclick='sig("+proce+","+img+")' id='ad' src='images/flecha.png'> </div>"+
+                "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+                    "<img class='imgmodal modalvert' id='imgind' src='images/servicios/"+img+"'> </div>"+
                 "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
                     "<p id='piefoto'>"+ parrafo +"</p> </div>"+
+                "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'></div>" +
+                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'>"+
+                        "<div class='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
+                            "<img onclick=\"atr("+proce+",\'"+img+"\')\" id='at' src='images/flech.png'> </div>"  +
+                        "<div class='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
+                            "<img onclick=\"sig("+proce+",\'"+img+"\')\" id='ad' src='images/flecha.png'> </div>" +
+                    "</div>" +
+                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'></div>" +
+                "</div>"+
             "</div>";
 
         modal.classList.add(tipo);
@@ -665,46 +671,791 @@ function verImagenModal(tipo, img, textoBtn, parrafo, modo, proce) { //MODAL DE 
 }
 
 function sig(proce, url){
-    arrarInicial =['formato.jpg','recort.jpg','sd.jpg','vinil.jpg','tela.jpg','id.jpg','playera.jpg','vol.jpg','lt.jpg','i.jpg','formato2.jpg','recort2.jpg','sd2.jpg','vinil1.jpg','tela2.jpg','id2.jpg','playera2.jpg','vol2.jpg','lt2.jpg','i2.jpg','formato3.jpg','vinil2.jpg','recort3.jpg','sd3.jpg','vinil3.jpg','tela3.jpg','playera3.jpg','vol3.jpg','lt3.jpg','i3.jpg','formato4.jpg','sd4.jpg','vinil4.jpg','tela4.jpg','id3.jpg','recort4.jpg','vol4.jpg','i4.jpg','lt4.jpg','formato5.jpg','playera4.jpg','recort5.jpg','tela5.jpg','sd5.jpg','vinil5.jpg','lt5.jpg','i5.jpg','vol5.jpg','formato6.jpg','id4.jpg','playera5.jpg','recort6.jpg','tela6.jpg','sd6.jpg','vinil6.jpg','lt6.jpg','vol6.jpg','playera6.jpg','i6.jpg','formato7.jpg','tela7.jpg','recort7.jpg','sd7.jpg','vinil7.jpg','vol7.jpg','lt7.jpg'];
-    final = 64;
+    //alert("este es el valor de donde viene la pagina"+proce);
+    arrarInicial =['formato.jpg','recort.jpg','sd.jpg','vinil.jpg','tela.jpg','id.jpg','vol.jpg','lt.jpg','in.jpg','formato2.jpg','recort2.jpg','sd2.jpg','vinil1.jpg','tela2z.jpg','id2.jpg','playeraz.jpg','vol2z.jpg','lt2.jpg','in2.jpg','formato3.jpg','vinil2.jpg','recort3.jpg','sd3.jpg','vinil3.jpg','tela3.jpg','playera3.jpg','vol3.jpg','lt3.jpg','in3.jpg','formato4.jpg','sd4z.jpg','vinil4.jpg','tela4.jpg','id3.jpg','recort4.jpg','vol4.jpg','in4.jpg','lt4.jpg','formato5.jpg','playera4.jpg','recort5z.jpg','tela5z.jpg','sd5z.jpg','vinil5.jpg','lt5.jpg','i5.jpg','vol5.jpg','formato6z.jpg','id4.jpg','playera5.jpg','recort6.jpg','tela6.jpg','sd6z.jpg','vinil6.jpg','lt6.jpg','vol6.jpg','playera6z.jpg','i6.jpg','formato7.jpg','tela7z.jpg','recort7.jpg','sd7.jpg','vinil7.jpg','vol7.jpg','lt7.jpg'];
+    final = 63;
     
     if(proce == 1){
         verurl = sessionStorage.getItem("ulrm");
         for(i=0; i<= final; i ++){
             if(verurl == arrarInicial[i]){
-                //alert("YA LA ENCONTRO");
+                //npm.jsalert("YA LA ENCONTRO");
                 if(i != final){
                     //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+arrarInicial[i+1])
-                    document.getElementById("imgind").src = "images/servicios/"+arrarInicial[i+1];
-                    nueva = arrarInicial[i+1];
+                    newimg = arrarInicial[i+1];
+                    //alert("este es el que va a deshacer"+newimg);
+                    c = newimg.length;
+                    vz = newimg.split("");
+                    //alert("tiene la z o no?"+vz[c-5]);
+                    if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                        //alert("si tiene z el que sigue");
+                        document.getElementById("imgind").classList.remove("modalhz");
+                        document.getElementById("imgind").classList.add("modalvert");
+                        document.getElementById("imgind").src = "images/servicios/"+arrarInicial[i+1];
+                        nueva = arrarInicial[i+1];
+                    }else{
+                        //alert("no tiene z el que sigue");
+                        document.getElementById("imgind").classList.remove("modalvert");
+                        document.getElementById("imgind").classList.add("modalhz");
+                        document.getElementById("imgind").src = "images/servicios/"+arrarInicial[i+1];
+                        nueva = arrarInicial[i+1];
+                    }
+                    
+                    
                 }                
             }
         }            
         //alert(nueva);
         sessionStorage.setItem("ulrm", nueva);
         
-    }if (proce == 2){ }
+    }if (proce == 2){
+        alert("es la segunda seccion");
+        verurl = sessionStorage.getItem("ulrm");
+        //Descompones 
+        desfr = verurl.split("");
+        // =========== FORMATO ============
+        if(desfr[0] == "f" && desfr[1] == "o"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['formato.jpg','formato2.jpg','formato3.jpg','formato4.jpg','formato5.jpg','formato6z.jpg','formato7.jpg','formato8z.jpg','formato9.jpg'];
+            final=9; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+arrarInicial[i+1])
+                        newimg = Arrayserv[i+1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }
+                    } 
+                }
+            }
+            alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        }
+        // =========== IMPRESION DIRECTA ============
+        if(desfr[0] == "i" && desfr[1] == "d"){
+            //alert("entre al impresion directa, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['id.jpg','id2.jpg','id3.jpg','id4.jpg'];
+            final=4; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i+1])
+                        newimg = Arrayserv[i+1];
+                       //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== INSTALACIONES ============
+        if(desfr[0] == "i" && desfr[1] == "n"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['in.jpg','in2.jpg','in3.jpg','in4.jpg','in5.jpg','in6.jpg'];
+            final=6; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i+1])
+                        newimg = Arrayserv[i+1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        }
+        // =========== LETREROS ============
+        if(desfr[0] == "l" && desfr[1] == "t"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['lt.jpg','lt2.jpg','lt3.jpg','lt4.jpg','lt5.jpg','lt6.jpg','lt7.jpg','lt8.jpg','lt9.jpg','lt10.jpg','lt11.jpg','lt12.jpg'];
+            final=12; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i+1])
+                        newimg = Arrayserv[i+1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                           //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== CAMISAS ============
+        if(desfr[0] == "p" && desfr[1] == "l"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['playeraz.jpg','playera3.jpg','playera4.jpg','formato5.jpg','playera6z.jpg'];
+            final=6; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i+1])
+                        newimg = Arrayserv[i+1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== VINIL RECORTE ============
+        if(desfr[0] == "r" && desfr[1] == "e"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['recort.jpg','recort2.jpg','recort3.jpg','recort4z.jpg','recort5z.jpg','recort6.jpg','recort7.jpg','recort8.jpg','recort9.jpg','recort10.jpg'];
+            final=10; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i+1])
+                        newimg = Arrayserv[i+1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                       //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== STANDISPLAY============
+        if(desfr[0] == "s" && desfr[1] == "d"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['sd.jpg','sd2.jpg','sd3.jpg','sd4z.jpg','sd5z.jpg','sd6z.jpg','sd7.jpg','sd8.jpg','sd9.jpg','sd10.jpg','sd11.jpg','sd12z.jpg'];
+            final=12; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //lert("la encontro");
+                    if(i != final){
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i+1])
+                        newimg = Arrayserv[i+1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== TELA ============
+        if(desfr[0] == "t" && desfr[1] == "e"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['tela.jpg','tela2z.jpg','tela3.jpg','tela4.jpg','tela5z.jpg','tela6.jpg','tela7z.jpg'];
+            final=7; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i+1])
+                        newimg = Arrayserv[i+1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== VINIL ============
+        if(desfr[0] == "v" && desfr[1] == "i"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['vinil.jpg','vinil1.jpg','vinil2.jpg','vinil3.jpg','vinil4.jpg','vinil5.jpg','vinil6.jpg','vinil7.jpg','vinil8.jpg','vinil9.jpg','vinil10.jpg','vinil11.jpg'];
+            final=12; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i+1])
+                        newimg = Arrayserv[i+1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== VOLUMETRICO ============
+        if(desfr[0] == "v" && desfr[1] == "o"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['vol.jpg','vol2z.jpg','vol3.jpg','vol4.jpg','vol5.jpg','vol6.jpg','vol7.jpg','vol8.jpg','vol9.jpg'];
+            final=10; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i+1])
+                        newimg = Arrayserv[i+1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i+1];
+                            nueva = Arrayserv[i+1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        }         
+    }
     // document.getElementById("img").src="image/"+cars[1]+".png"
 } 
 function atr(proce, url){
-    arrarInicial =['formato.jpg','recort.jpg','sd.jpg','vinil.jpg','tela.jpg','id.jpg','playera.jpg','vol.jpg','lt.jpg','i.jpg','formato2.jpg','recort2.jpg','sd2.jpg','vinil1.jpg','tela2.jpg','id2.jpg','playera2.jpg','vol2.jpg','lt2.jpg','i2.jpg','formato3.jpg','vinil2.jpg','recort3.jpg','sd3.jpg','vinil3.jpg','tela3.jpg','playera3.jpg','vol3.jpg','lt3.jpg','i3.jpg','formato4.jpg','sd4.jpg','vinil4.jpg','tela4.jpg','id3.jpg','recort4.jpg','vol4.jpg','i4.jpg','lt4.jpg','formato5.jpg','playera4.jpg','recort5.jpg','tela5.jpg','sd5.jpg','vinil5.jpg','lt5.jpg','i5.jpg','vol5.jpg','formato6.jpg','id4.jpg','playera5.jpg','recort6.jpg','tela6.jpg','sd6.jpg','vinil6.jpg','lt6.jpg','vol6.jpg','playera6.jpg','i6.jpg','formato7.jpg','tela7.jpg','recort7.jpg','sd7.jpg','vinil7.jpg','vol7.jpg','lt7.jpg'];
-    final = 64;
+    arrarInicial =['formato.jpg','recort.jpg','sd.jpg','vinil.jpg','tela.jpg','id.jpg','vol.jpg','lt.jpg','in.jpg','formato2.jpg','recort2.jpg','sd2.jpg','vinil1.jpg','tela2z.jpg','id2.jpg','playeraz.jpg','vol2z.jpg','lt2.jpg','in2.jpg','formato3.jpg','vinil2.jpg','recort3.jpg','sd3.jpg','vinil3.jpg','tela3.jpg','playera3.jpg','vol3.jpg','lt3.jpg','in3.jpg','formato4.jpg','sd4z.jpg','vinil4.jpg','tela4.jpg','id3.jpg','recort4.jpg','vol4.jpg','in4.jpg','lt4.jpg','formato5.jpg','playera4.jpg','recort5z.jpg','tela5z.jpg','sd5z.jpg','vinil5.jpg','lt5.jpg','i5.jpg','vol5.jpg','formato6z.jpg','id4.jpg','playera5.jpg','recort6.jpg','tela6.jpg','sd6z.jpg','vinil6.jpg','lt6.jpg','vol6.jpg','playera6z.jpg','i6.jpg','formato7.jpg','tela7z.jpg','recort7.jpg','sd7.jpg','vinil7.jpg','vol7.jpg','lt7.jpg'];
+    final = 63;
     
     if(proce == 1){
         verurl = sessionStorage.getItem("ulrm");
         for(i=0; i<= final; i ++){
             if(verurl == arrarInicial[i]){
                 //alert("YA LA ENCONTRO");
-                if(i != final){
+                if(i != 0){
                     //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+arrarInicial[i-1])
-                    document.getElementById("imgind").src = "images/servicios/"+arrarInicial[i-1];
-                    nueva = arrarInicial[i-1];
+                    newimg = arrarInicial[i-1];
+                    //alert("este es el que va a deshacer"+newimg);
+                    c = newimg.length;
+                    vz = newimg.split("");
+                    //alert("tiene la z o no?"+vz[c-5]);
+                    if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                        //alert("si tiene z el que sigue");
+                        document.getElementById("imgind").classList.remove("modalhz");
+                        document.getElementById("imgind").classList.add("modalvert");
+                        document.getElementById("imgind").src = "images/servicios/"+arrarInicial[i-1];
+                        nueva = arrarInicial[i-1];
+                    }else{
+                        //alert("no tiene z el que sigue");
+                        document.getElementById("imgind").classList.remove("modalvert");
+                        document.getElementById("imgind").classList.add("modalhz");
+                        document.getElementById("imgind").src = "images/servicios/"+arrarInicial[i-1];
+                        nueva = arrarInicial[i-1];
+                    }
                 }                
             }
         }            
         //alert(nueva);
         sessionStorage.setItem("ulrm", nueva);
-    }if (proce == 2){ }
+    }if (proce == 2){
+        //alert("es la segunda seccion");
+        verurl = sessionStorage.getItem("ulrm");
+        //Descompones 
+        desfr = verurl.split("");
+        // =========== FORMATO ============
+        if(desfr[0] == "f" && desfr[1] == "o"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['formato.jpg','formato2.jpg','formato3.jpg','formato4.jpg','formato5.jpg','formato6z.jpg','formato7.jpg','formato8z.jpg','formato9.jpg'];
+            final=9; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i-1])
+                        newimg = Arrayserv[i-1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        }
+        // =========== IMPRESION DIRECTA ============
+        if(desfr[0] == "i" && desfr[1] == "d"){
+            //alert("entre al impresion directa, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['id.jpg','id2.jpg','id3.jpg','id4.jpg'];
+            final=4; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i-1])
+                        newimg = Arrayserv[i-1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== INSTALACIONES ============
+        if(desfr[0] == "i" && desfr[1] == "n"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['in.jpg','in2.jpg','in3.jpg','in4.jpg','in5.jpg','in6.jpg'];
+            final=6; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i-1])
+                        newimg = Arrayserv[i-1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        }
+        // =========== LETREROS ============
+        if(desfr[0] == "l" && desfr[1] == "t"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['lt.jpg','lt2.jpg','lt3.jpg','lt4.jpg','lt5.jpg','lt6.jpg','lt7.jpg','lt8.jpg','lt9.jpg','lt10.jpg','lt11.jpg','lt12.jpg'];
+            final=12; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i-1])
+                        newimg = Arrayserv[i-1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== CAMISAS ============
+        if(desfr[0] == "p" && desfr[1] == "l"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['playeraz.jpg','playera3.jpg','playera4.jpg','playera5.jpg'];
+            final=6; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i-1])
+                        newimg = Arrayserv[i-1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== VINIL RECORTE ============
+        if(desfr[0] == "r" && desfr[1] == "e"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['recort.jpg','recort2.jpg','recort3.jpg','recort4z.jpg','recort5z.jpg','recort6.jpg','recort7.jpg','recort8.jpg','recort9.jpg','recort10.jpg'];
+            final=10; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i-1])
+                        newimg = Arrayserv[i-1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== STANDISPLAY============
+        if(desfr[0] == "s" && desfr[1] == "d"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['sd.jpg','sd2.jpg','sd3.jpg','sd4z.jpg','sd5z.jpg','sd6z.jpg','sd7.jpg','sd8.jpg','sd9.jpg','sd10.jpg','sd11.jpg','sd12z.jpg'];
+            final=12; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){
+                       //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i-1])
+                        newimg = Arrayserv[i-1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== TELA ============
+        if(desfr[0] == "t" && desfr[1] == "e"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['tela.jpg','tela2z.jpg','tela3.jpg','tela4.jpg','tela5z.jpg','tela6.jpg','tela7z.jpg'];
+            final=7; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i-1])
+                        newimg = Arrayserv[i-1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== VINIL ============
+        if(desfr[0] == "v" && desfr[1] == "i"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['vinil.jpg','vinil1.jpg','vinil2.jpg','vinil3.jpg','vinil4.jpg','vinil5.jpg','vinil6.jpg','vinil7.jpg','vinil8.jpg','vinil9.jpg','vinil10.jpg','vinil11.jpg'];
+            final=12; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i-1])
+                        newimg = Arrayserv[i-1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+        // =========== VOLUMETRICO ============
+        if(desfr[0] == "v" && desfr[1] == "o"){
+            //alert("entre al formato, este es el valor de verurl: "+verurl);
+            //Arrayserv de cada uno 
+            Arrayserv = ['vol.jpg','vol2z.jpg','vol3.jpg','vol4.jpg','vol5.jpg','vol6.jpg','vol7.jpg','vol8.jpg','vol9.jpg'];
+            final=10; //con cantidad de elementos
+            for(i=0; i< final; i ++){
+                if(verurl == Arrayserv[i]){
+                    //alert("la encontro");
+                    if(i != final){ 
+                        //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+Arrayserv[i-1])
+                        newimg = Arrayserv[i-1];
+                        //alert("este es el que va a deshacer"+newimg);
+                        c = newimg.length;
+                        vz = newimg.split("");
+                        //alert("tiene la z o no?"+vz[c-5]);
+                        if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
+                            //alert("si tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalhz");
+                            document.getElementById("imgind").classList.add("modalvert");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }else{
+                            //alert("no tiene z el que sigue");
+                            document.getElementById("imgind").classList.remove("modalvert");
+                            document.getElementById("imgind").classList.add("modalhz");
+                            document.getElementById("imgind").src = "images/servicios/"+Arrayserv[i-1];
+                            nueva = Arrayserv[i-1];
+                        }
+                    } 
+                }
+            }
+            //alert(nueva);
+            sessionStorage.setItem("ulrm", nueva);
+        } 
+    }
     //document.getElementById("img").src="image/"+cars[0]+".png"
 }
 

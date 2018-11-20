@@ -111,6 +111,10 @@
     #foot{ margin-top: 0% !important; }
     #titface{ margin-top: 18px !important; font-size: 2em !important;}
 
+    #at{ width: 6em !important; margin-left: 55% !important; }
+    
+    #ad{ width: 6em !important; margin-left: 20% !important; }
+
 }
     /*PANTALLA CON 4K*/
 @media only screen and (min-width: 2049px) and (max-width: 3840px) {
@@ -209,6 +213,10 @@
     #senema{ font-size: 3em !important; height: 64px !important;}
     #foot{ margin-top: 0% !important; }
     #titface{ margin-top: 18px !important; font-size: 2em !important;}
+
+    #at{ width: 7em !important; margin-left: 75% !important; }
+    
+    #ad{ width: 7em !important; margin-left: 60% !important; }
 }
     /*LAPTOPS CON FULL HD */
 @media only screen and (min-width: 1681px) and (max-width: 2048px) {
@@ -270,6 +278,10 @@
 
     /*====== CONTACTOS ===*/
     #reds{ width:2em !important; filter: invert(0%) !important;}
+
+    #at{ margin-left: 70% !important; }
+    
+    #ad{ margin-left: 35% !important; }
 }
 
 /*LAPTOPS CON HD */
@@ -295,14 +307,14 @@
     
     /*===== INDEX ====*/
     #logo{ 
-        width: 11em;
-        height: 7em;
+        width: 9em;
+        height: 6em;
         margin-top: 2%;
         margin-left: -15%;
         cursor: pointer;
     }
     #titulo{ font-size: 1.5em !important; margin-top: 15% !important; }
-    .menuh{ font-size: 1em !important; margin-top: 40%;}    
+    .menuh{ font-size: 1em !important; margin-top: 35%;}    
     #reds { width: 2em !important; }    
     .imgp{}
 
@@ -324,6 +336,10 @@
 
     /*====== CONTACTOS ===*/
     #reds{ filter: invert(0%) !important;}
+
+    #at{ margin-left: 70% !important; }
+    
+    #ad{ margin-left: 35% !important; }
 }
 
 /*DISPOSITIVOS TABLETS*/
@@ -411,6 +427,10 @@
     .textod{ font-size: 13px !important; }
     #cuerpo{ height: 225px !important; }
     #senema{ height: 29px !important; width:21% !important; margin-left:75% !important;}
+
+    #at{ margin-left: 45% !important; }
+    
+    #ad{ margin-left: 45% !important; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 799px) {
@@ -492,6 +512,10 @@
     #reds{ filter: invert(0%) !important;}
     #textem{ margin-top: 2% !important; }
     #senema{ margin-left: 19% !important; }
+
+    #at{ margin-left: 25% !important; }
+    
+    #ad{ margin-left: 45% !important; }
 }
 
 /*DISPOSITIVOS SMARTPHONE width and Tablet*/
@@ -576,7 +600,7 @@
 
     /* =========== SERVICIOS ========== */
     #imgus { height: 165px !important; margin-top: -33% !important;}
-    .modalhz{ margin-left: 20% !important; margin-top: 10% !important; width: 60% !important;}
+    .modalhz{ margin-left: 20% !important; margin-top: 2% !important; width: 60% !important;}
     #piefoto{ margin-left: 15% !important;}
     .modalvert{ margin-left: 38% !important; margin-top: 3% !important; height: 280px !important;}
 
@@ -586,6 +610,10 @@
     #senema{ margin-left: 21% !important; }
     #foot{ margin-top: 2% !important; }
     #cuerpo{ height: 245px !important;}
+
+    #at{ margin-left: 2% !important; }
+    
+    #ad{ margin-left: 35% !important; }
 
 }
 
@@ -683,6 +711,10 @@
     /*====== CONTACTOS ===*/
     #reds{ filter: invert(0%) !important;}
     #senema{ margin-left: 18% !important;}
+
+    #at{ margin-left: -40px !important; }
+    
+    #ad{ margin-left: 32px !important; }
 }
 
 /*============= FIN DE MEDIAS QUERYS =================*/
@@ -1091,11 +1123,13 @@ video{ width: 150vh; margin-left: 15%; }
 #at{ 
     filter: invert(100%);
     width: 3em;
+    margin-left: 85%;
 }
 
 #ad{ 
     filter: invert(100%);
     width: 3em;
+    margin-left: 50%;
 }
 
 /*============= CONTACT =========*/
