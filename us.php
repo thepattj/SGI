@@ -5,10 +5,14 @@
     <title>SGI</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <?php
@@ -24,7 +28,7 @@
         <div id="modal"></div>
 
         <!-- *** AQUI INICIA LO QUE SE VE *** -->
-        <div class="header" style="" >
+        <div class="headeru" style="" >
             <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
               <img id="logo" src="images/logo.png">
             </div>
@@ -45,18 +49,34 @@
 
             </div>
         </div>
-        <div class="body2">
-            <div class="textn">          
-                <H1 id="titulous">NOSOTROS</H1>
-                <!-- <p id="descr" align="justify">Nos dedicamos a dar Soluciones Publicitarias en cualquier formato o medio.</p> -->
-                <div class="video-container">
-                    <div class="color-overlay"></div>
-                    <video playsinline autoplay muted loop>
-                        <source src="video/video1.mp4" type="video/mp4">
-                    </video>
-                </div>
 
+
+        <div class="body2">
+
+            <div class="main" style="background-image: url('images/video_bg2.png')">
+                    <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                        <source src="video/video1.mp4" type="video/mp4">
+                        video not support
+                    </video>
+
+                <div class="cover black" data-color="black"></div>
+
+                <div class="container" style="color: white;">
+                    <h1 class="logo cursive">
+                        Nosotros
+                    </h1>
+            <!--  H1 can have 2 designs: "logo" and "logo cursive"           -->
+                    <div class="content">
+                        <h4 class="motto">Nuestra compañia se basa en: [texto faltante]</h4>
+                        <div class="subscribe">
+                            <h5 class="info-text">
+                                Nos dedicamos a dar Soluciones Publicitarias en cualquier formato o medio.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </body>

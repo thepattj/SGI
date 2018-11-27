@@ -434,6 +434,13 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 799px) {
+    .main .container{
+        margin-bottom: 50px;
+    } 
+    #video_background{
+        display: none;
+    }
+
     /*============DIV====================*/
     .div-md-6, .div-md-2, .div-md-8, .div-md-4, .div-md-3, .div-md-12, .div-md-1, .div-md-10, .div-mdp-6 {
         float: left;
@@ -520,6 +527,13 @@
 
 /*DISPOSITIVOS SMARTPHONE width and Tablet*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .main .container{
+        margin-bottom: 50px;
+    }
+    #video_background{
+        display: none;
+    }
+
     /*============DIV====================*/
     .div-sm-6, .div-sm-2, .div-sm-8, .div-sm-4, .div-md-3, .div-sm-12, .div-sm-1, .div-sm-10, .div-smp-6 {
         float: left;
@@ -619,6 +633,13 @@
 
     /*DISPOSITIVOS SMARTPHONE*/
 @media only screen and (min-width: 0px) and (max-width: 479px) {
+    .main .container{
+        margin-bottom: 50px;
+    }
+    #video_background{
+        display: none;
+    }
+
     /*============DIV====================*/
     .div-xs-6, .div-xs-2, .div-xs-8, .div-xs-4, .div-xs-3, .div-xs-12, .div-xs-1, .div-xs-10, .div-xsp-6 {
         float: left;
@@ -750,6 +771,16 @@ span { font-size: 1.2em; font-weight: 2000; cursor: pointer;}
     position: relative;
     float: left;
     border-bottom: 3px solid var(--azul);
+}
+
+.headeru {
+    width: 100%;
+    height: 15%;
+    position: relative;
+    float: left;
+    border-bottom: 3px solid var(--azul);
+    z-index: 4;
+    background: white;
 }
 
 .body2 {
@@ -1195,3 +1226,80 @@ a:link{ text-decoration:none; color: black; }
     float: left;
     top: 9%;
 } */
+
+
+
+
+
+/*ESTO ES PARA EL VIDEO DE US.PHP*/
+
+.main{
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+.cover{
+    position: fixed;
+    opacity: 1;
+    background-color: rgba(0,0,0,.6);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.cover.black{
+    background-color: rgba(0,0,0,.6);
+}
+
+#video_background {
+    position: fixed;
+    margin-top: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    overflow: hidden;
+    background-image: url('../images/video_bg.png');
+    background-position: center center;
+    background-size: cover;
+
+}
+.main .motto{
+    min-height: 140px;
+}
+.main .motto, .main .subscribe .info-text{
+    font-size: 1.7em;
+    color: #FFFFFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.main .content{
+    position: relative;
+    z-index: 4;
+}
+
+.main .logo.cursive{
+    font-family: 'HelveNeu',cursive;
+    font-size: 4em;
+    
+}.main .logo{
+    color: #FFFFFF;
+    font-size: 56px;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+    margin-top: 150px;
+    z-index: 3;
+}

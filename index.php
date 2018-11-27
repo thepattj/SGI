@@ -2,11 +2,20 @@
 <html>
 
 <head>
-    <title>SGI</title>
+    <title>SGI - Soluciones Gráficas e Industriales</title>
+    <meta name="description" content="Damos Soluciones Publicitarias en cualquier formato o medio.">
+    <meta name="keywords" content="palabras claves separadas por comas, introduce frases cortas de dos o más palabras. Unos 1000 caracteres.">
     <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="es"/>
+    <meta http-equiv="Content-Type"content="text/html; charset=windows-1252">
+    <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="icon" href="images/lmin.png" sizes="32x32">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
