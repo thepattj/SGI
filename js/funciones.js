@@ -631,14 +631,10 @@ function verImagenModal(tipo, img, textoBtn, parrafo, modo, proce) { //MODAL DE 
                 "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
                     "<p id='piefoto'>"+ parrafo +"</p> </div>"+
                 "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
-                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'></div>" +
-                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'>"+
-                        "<div class='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
-                            "<img onclick=\"atr("+proce+",\'"+img+"\')\" id='at' src='images/flech.png'> </div>"  +
-                        "<div class='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
-                            "<img onclick=\"sig("+proce+",\'"+img+"\')\" id='ad' src='images/flecha.png'> </div>" +
-                    "</div>" +
-                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'></div>" +
+                    "<div class='col-sm-3 col-md-3 col-lg-3 col-xl-6'>" +
+                        "<img onclick=\"atr("+proce+",\'"+img+"\')\" id='at' src='images/flech.png'> </div>"  +
+                    "<div class='col-sm-3 col-md-3 col-lg-3 col-xl-6'>" +
+                        "<img onclick=\"sig("+proce+",\'"+img+"\')\" id='ad' src='images/flecha.png'> </div>" +
                 "</div>"+
             "</div>";
 

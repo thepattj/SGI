@@ -2,58 +2,73 @@
 <html>
 
 <head>
-    <title>SGI</title>
+    <title>SGI - Soluciones Gráficas e Industriales</title>
+    <meta name="description" content="Damos Soluciones Publicitarias en cualquier formato o medio.">
+    <meta name="keywords" content="palabras claves separadas por comas, introduce frases cortas de dos o más palabras. Unos 1000 caracteres.">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Language" content="es"/>
+    <meta http-equiv="Content-Type"content="text/html; charset=windows-1252">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" href="images/lmin.png" sizes="32x32">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- <script href="js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <?php
-    $arrayColores = ['#00ffff', '#ff00ff', '#ffff00'];
-    $seleccion = rand(0,2);
-    $colorsel = $arrayColores[$seleccion];
-
     $servicio = $_GET['s'];
     $vindex = $_GET['i'];
 ?>
-
 <body>
-    <div class="bg">
-        <!-- **** ESTE ES EL MODAL **** -->
-        <div id="bg-negro" onclick="cerrar()"></div>
-        <div id="modal"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+        <a class="navbar-brand" href="#">
+        <img id="logo" src="images/logo.png" width="45" height="30" class="d-inline-block align-top" alt="">
+        </a>
+        <span class="navbar-text" id="titulo"> Soluciones Gráficas e Industriales </span>
+        
+        <span class="navbar-text" id="titulo"></span>
+        <span class="navbar-text" id="titulo"></span>
+        <span class="navbar-text" id="titulo"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <!-- *** AQUI INICIA LO QUE SE VE *** -->
-        <div class="header" style="" >
-            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-              <img id="logo" src="images/logo.png">
-            </div>
-            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Gráficas e Industriales</H3>
-            </div>
-            <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-                <img id="icons" src="images/icon/menu.png">
-                <div  id="titlen" class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
-                  <h1 onclick="seccion('us')" class="menuh">Nosotros</h1>
-                </div>
-                <div id="titles"  class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
-                  <h1 style="color: cyan;" onclick="seccion('serv')" class="menuh">Servicios</h1>
-                </div>
-                <div id="titlec"  class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
-                  <h1 onclick="seccion('contact')" class="menuh">Contacto</h1>
-                </div>
-
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" onclick="seccion('us')" href="#">Nosotros </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" onclick="seccion('serv')" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" onclick="seccion('contact')" href="#">Contacto</a>
+            </li>
+        </ul>
         </div>
-        <div class="body2">
+    </nav>
+    
+    <!-- **** ESTE ES EL MODAL **** -->
+    <div id="bg-negro" onclick="cerrar()"></div>
+    <div id="modal"></div>
+    
+    <div class="bg">
+    <div class="body2">
             <div class="informacion">
                 <div class="selector">
-                    <div class="div-sm-1 div-md-1 div-lg-2 div-xl-2"></div>
-                    <div class="div-xs-12 div-sm-10 div-md-10 div-lg-8 div-xl-8">
+                    <div class="div-md-1 div-xl-2"></div>
+                    <div class="div-sm-12 div-md-10 div-lg-12 div-xl-8">
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc1" value="STANDS Y DISPLAYS"><span style="text-align: center !important;" class="secciones">STANDS Y DISPLAYS</p></div>
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc2" value="VINIL DE RECORTE"><span style="text-align: center !important;" class="secciones">VINIL PARA RECORTE</p> </div>
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc3" value="AUTOS, VINIL y ROTULACIÓN"><span style="text-align: center;" class="secciones">VINIL Y ROTULACIÓN </span> </div>
@@ -65,7 +80,7 @@
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc9" value="IMPRESIÓN DIRECTA"><span style="text-align: center !important;" class="secciones">IMPRESIÓN DIRECTA </span> </div>
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc0" value="INSTALACIONES"><span style="margin-top: 10%;" class="secciones">INSTALACIONES</span> </div>
                     </div>
-                    <div class="div-sm-1 div-md-1 div-lg-2 div-xl-2"></div>
+                    <div class="div-md-1 div-xl-2"></div>
                 </div>
                 <div class=“otro”>
                    <!-- AQUI VA LO QUE CORTASTE Y ESTA EN LA NOTA!!!!! DE TODAS FORMAS ESTA EN GIT SOLO ES COPIAR Y PEGAR SI NO FUNCIONA! -->
@@ -455,153 +470,20 @@
                         <?php   } ?>
 
                        <?php } else { ?>
-                            <div class="div-xs-12 div-sm-8 div-md-8 div-lg-8 div-xl-8" id="galery">
+                            <div class="div-sm-12 div-md-12 div-lg-12 div-xl-8" id="galery">
                                 <div class="grid" id="servicios1">
-                                <?php $arrayArchivos = ['formato',
-                                                        'recort',
-                                                        'sd',
-                                                        'vinil',
-                                                        'tela',
-                                                        'id',
-                                                        'vol',
-                                                        'lt',
-                                                        'in',
-                                                        'formato2',
-                                                        'recort2',
-                                                        'sd2',
-                                                        'vinil1',
-                                                        'tela2',
-                                                        'id2',
-                                                        'playeraz',
-                                                        'vol2',
-                                                        'lt2',
-                                                        'in2',
-                                                        'formato3',
-                                                        'vinil2',
-                                                        'recort3',
-                                                        'sd3',
-                                                        'vinil3',
-                                                        'tela3',
-                                                        'playera3',
-                                                        'vol3',
-                                                        'lt3',
-                                                        'in3',
-                                                        'formato4',
-                                                        'sd4',
-                                                        'vinil4',
-                                                        'tela4',
-                                                        'id3',
-                                                        'recort4',
-                                                        'vol4',
-                                                        'in4',
-                                                        'lt4',
-                                                        'formato5',
-                                                        'playera4',
-                                                        'recort5',
-                                                        'tela5',
-                                                        'sd5',
-                                                        'vinil5',
-                                                        'lt5',
-                                                        'in5',
-                                                        'vol5',
-                                                        'formato6',
-                                                        'id4',
-                                                        'playera5',
-                                                        'recort6',
-                                                        'tela6',
-                                                        'sd6',
-                                                        'vinil6',
-                                                        'lt6',
-                                                        'vol6',
-                                                        'playera6',
-                                                        'in6',
-                                                        'formato7',
-                                                        'tela7',
-                                                        'recort7',
-                                                        'sd7',
-                                                        'vinil7',
-                                                        'vol7',
-                                                        'lt7'];
-                                        $arrayId =['formato',
-                                                        'recort',
-                                                        'sd',
-                                                        'vinil',
-                                                        'tela',
-                                                        'id',
-                                                        'vol',
-                                                        'lt',
-                                                        'in',
-                                                        'formato2',
-                                                        'recort2',
-                                                        'sd2',
-                                                        'vinil1',
-                                                        'tela2z',
-                                                        'id2',
-                                                        'playeraz',
-                                                        'vol2z',
-                                                        'lt2',
-                                                        'in2',
-                                                        'formato3',
-                                                        'vinil2',
-                                                        'recort3',
-                                                        'sd3',
-                                                        'vinil3',
-                                                        'tela3',
-                                                        'playera3',
-                                                        'vol3',
-                                                        'lt3',
-                                                        'in3',
-                                                        'formato4',
-                                                        'sd4z',
-                                                        'vinil4',
-                                                        'tela4',
-                                                        'id3',
-                                                        'recort4z',
-                                                        'vol4',
-                                                        'in4',
-                                                        'lt4',
-                                                        'formato5z',
-                                                        'playera4',
-                                                        'recort5z',
-                                                        'tela5z',
-                                                        'sd5z',
-                                                        'vinil5',
-                                                        'lt5',
-                                                        'in5',
-                                                        'vol5',
-                                                        'formato6z',
-                                                        'id4',
-                                                        'playera5',
-                                                        'recort6',
-                                                        'tela6',
-                                                        'sd6z',
-                                                        'vinil6',
-                                                        'lt6',
-                                                        'vol6',
-                                                        'playera6z',
-                                                        'in6',
-                                                        'formato7',
-                                                        'tela7z',
-                                                        'recort7',
-                                                        'sd7',
-                                                        'vinil7',
-                                                        'vol7',
-                                                        'lt7'];
-                                for ($i=0; $i < 64; $i++) { 
-                                    $archivo = "images/servicios/".$arrayArchivos[$i].".jpg";
-                                    $img = getimagesize($archivo);
-                                    $w = $img[0];
-                                    $h = $img[1];
-                                    if($h < $w) {?>
-                                        <div class="outmarg div-xs-4 div-sm-6 div-md-4 div-lg-6 div-xl-3">
-                                            <img class="imgmuestraser" id="<?php echo $arrayId[$i]?>" onclick="igs(this.id,1)" src="<?php echo $archivo; ?>" >
-                                        </div>
-                                    <?php }elseif ($h > $w) { ?>
-                                        <div class="outmarg div-xs-4 div-sm-6 div-md-12 div-lg-6 div-xl-3">
-                                            <img class="imgmuestraser imgp2" id="<?php echo $arrayId[$i]?>" onclick="igs(this.id,1)" src="<?php echo $archivo; ?>" >
-                                        </div>
-                                <?php } ?> <!-- FINAL DE  ELSEIF -->
-                                <?php } ?> <!-- FINAL DE  FOR -->
+                                <?php $arrayArchivos = ['formato', 'recort', 'sd', 'vinil', 'tela', 'id', 'vol','lt','in','formato2','recort2','sd2','vinil1','tela2','id2','playeraz','vol2','lt2','in2','formato3','vinil2','recort3','sd3','vinil3','tela3','playera3','vol3','lt3','in3','formato4','sd4','vinil4','tela4','id3','recort4','vol4','in4','lt4','formato5','playera4','recort5','tela5','sd5','vinil5','lt5','in5','vol5','formato6','id4','playera5','recort6','tela6','sd6','vinil6','lt6','vol6','playera6','in6','formato7','tela7','recort7','sd7','vinil7','vol7','lt7'];
+                                      $arrayId =['formato','recort','sd','vinil','tela','id','vol','lt','in','formato2','recort2','sd2','vinil1','tela2z','id2','playeraz','vol2z','lt2','in2','formato3','vinil2','recort3','sd3','vinil3','tela3','playera3','vol3','lt3','in3','formato4','sd4z','vinil4','tela4','id3','recort4z','vol4','in4','lt4','formato5z','playera4','recort5z','tela5z','sd5z','vinil5','lt5','in5','vol5','formato6z','id4','playera5','recort6','tela6','sd6z','vinil6','lt6','vol6','playera6z','in6','formato7','tela7z','recort7','sd7','vinil7','vol7','lt7'];
+                                    for ($i=0; $i < 64; $i++) { 
+                                        $archivo = "images/servicios/".$arrayArchivos[$i].".jpg";
+                                        /* $img = getimagesize($archivo);
+                                        $w = $img[0];
+                                        $h = $img[1];
+                                        if($h < $w) { */?>
+                                            <div class="outserm div-sm-6 div-md-4 div-lg-6 div-xl-3">
+                                                <img class="imgmuestraser" id="<?php echo $arrayId[$i]?>" onclick="igs(this.id,1)" src="<?php echo $archivo; ?>" >
+                                            </div>
+                                    <?php } ?> <!-- FINAL DE  FOR -->
                                 </div>
                                 <div class="grid" id="servicios2">
                                 
@@ -617,8 +499,8 @@
                        <?php } ?>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> <!-- CIERRA BODY -->
+    </div><!-- CIERRA DE BG -->
 </body>
 
 </html>

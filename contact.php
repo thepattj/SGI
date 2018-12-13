@@ -2,15 +2,28 @@
 <html>
 
 <head>
-    <title>SGI</title>
+    <title>SGI - Soluciones Gráficas e Industriales</title>
+    <meta name="description" content="Damos Soluciones Publicitarias en cualquier formato o medio.">
+    <meta name="keywords" content="palabras claves separadas por comas, introduce frases cortas de dos o más palabras. Unos 1000 caracteres.">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta http-equiv="Content-Language" content="es"/>
+    <meta http-equiv="Content-Type"content="text/html; charset=windows-1252">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/lmin.png" sizes="32x32">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASQKvbTGUZ1Ds6TTJJXJAuicT0ejXwNpw"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- <script href="js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASQKvbTGUZ1Ds6TTJJXJAuicT0ejXwNpw"></script>
+
 </head>
 <?php
     $arrayColores = ['#00ffff', '#ff00ff', '#ffff00'];
@@ -20,104 +33,70 @@
 
 <body>
     <div class="bg">
-        <!-- **** ESTE ES EL MODAL **** -->
-        <div id="bg-negro" onclick="cerrar()"></div>
-        <div id="modal"></div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="images/logo.png" width="45" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <span class="navbar-text" id="titulo">
+                Soluciones Gráficas e Industriales
+            </span>
+            <span class="navbar-text" id="titulo"></span>
+            <span class="navbar-text" id="titulo"></span>
+            <span class="navbar-text" id="titulo"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- *** AQUI INICIA LO QUE SE VE *** -->
-        <div class="header" style="" >
-            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-              <img id="logo" src="images/logo.png">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" onclick="seccion('us')" href="#">Nosotros </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="seccion('serv')" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="seccion('contact')" href="#">Contacto</a>
+                </li>
+                </ul>
             </div>
-            <div class="div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-              <H3 id="titulo" style="margin-top: 8%;font-size: 4em;font-weight: bold;">Soluciones Gráficas e Industriales</H3>
-            </div>
-            <div class="extra div-xs-4 div-sm-4 div-md-4 div-lg-4 div-xl-4">
-                <img id="icons" src="images/icon/menu.png">
-                <div  id="titlen" class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
-                  <h1 onclick="seccion('us')" class="menuh">Nosotros</h1>
-                </div>
-                <div id="titles"  class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
-                  <h1 onclick="seccion('serv')" class="menuh">Servicios</h1>
-                </div>
-                <div id="titlec"  class="div-xs-3 div-sm-3 div-md-3 div-lg-3 div-xl-3">
-                  <h1 style="color: cyan;" onclick="seccion('contact')" class="menuh">Contacto</h1>
-                </div>
-
-            </div>
-        </div>
+        </nav>
         <div class="body2">
-            <div class="text">
-                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12">
+            <div class="row">
+                <!-- Letrero -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <H1 id="titlecnt">CONTACTANOS</H1>
                 </div>
-                <!-- *** ES EL MAPA *** -->
+                <!-- Primer mapa -->
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <h2 class="textoi">SUCURSAL QUERÉTARO</h2>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map"></div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <H4 class="textod"><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H4>
-                        <H4 class="textod"> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H4><br>
+                        <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H6>
+                        <H6 class="textod"> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H6><br>
                     </div>
                 </div>
+
+                <!-- Segundo Mapa -->
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <h2 class="textoi">SUCURSAL CD. MÉXICO</h2>
+                        <h2 class="textoi">SUCURSAL CD. MÉXICO</h2>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map2"></div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <H4 class="textod"><img id="imgc" src="images/icon/mark.png"> Enrique Rebsamen 22. Col. Piedad Narvarte C.P. 03000</H4>
-                        <H4 class="textod"><img id="imgc" src="images/icon/phone.png"> (55) 5530 7046</H4><br>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h2 style="text-align:center;" class="textoi">CELULAR - CORREO</h2>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <H4 class="textod"><b> Ulises Reséndiz (Director Comercial)</b><br> <img id="imgc" src="images/icon/whatsapp.png">55 4192 1881<br><img id="imgc" src="images/icon/mail.png">ulises@gruposgi.com.mx</H4><br>
-                        <H4 class="textod"><b> Alberto Martínez (Director de Operaciones)</b><br> <img id="imgc" src="images/icon/whatsapp.png">55 4056 098<br><img id="imgc" src="images/icon/mail.png">alberto@gruposgi.com.mx</H4><br>
+                        <H6 class="textod"><img id="imgc" src="images/icon/mark.png"> Enrique Rebsamen 22. Col. Piedad Narvarte C.P. 03000</H6>
+                        <H6 class="textod"><img id="imgc" src="images/icon/phone.png"> (55) 5530 7046</H6><br>
                     </div>
                 </div>
 
-
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div id="renglon" class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                            <p id="textem" style="margin-top:3.5%; text-align:center;"> Coloca tu correo: </p>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-4">
-                            <input id="mail" type="text" placeholder="ejemplos@servidor.com">
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-4">
-                        <textarea id="cuerpo"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                        <button id="senema">Enviar</button>
-                    </div>
-                </div>
-                
-
-                
-
-                <!-- *** ES LA PARTE DE LOS ICONOS *** -->
-                <div class="div-xs-12 div-sm-12 div-md-12 div-lg-12 div-xl-12" id="foot">
-                <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img id="reds" src="images/icon/facebook.png"> </a> <p id="titface"> SOLUCIONES GRÁFICAS E INDUSTRIALES </p> 
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="foot">
+                    <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img id="reds" src="images/icon/facebook.png"> </a> <p id="titface"> SOLUCIONES GRÁFICAS E INDUSTRIALES </p> 
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 </html>
