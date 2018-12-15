@@ -112,7 +112,12 @@
             <div class="col-sm-4 col-lg-4 col-xl-4" id="f1">
               <img style="width:48%;" src="images/foot1.png">
             </div>
-          
+            <div class="col-sm-4 col-lg-4 col-xl-4" id="f2">
+              <img style="width:80%;" src="images/foot2.png">
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xl-4" id="f3">
+              <img style="width:55%;" src="images/foot3.png">
+            </div>
         </div>
     </div>
 </body>
