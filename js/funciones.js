@@ -20,545 +20,860 @@ $(document).ready(function () {
     });
 
     $('#slc1').click(function () { //STANDS bien
-        $('#servicios1').css({ "display": "none" });
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd' src='images/servicios/sd.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd2' src='images/servicios/sd2.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd3' src='images/servicios/sd3.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd4z' src='images/servicios/sd4.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd5z' src='images/servicios/sd5.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd6z' src='images/servicios/sd6.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd7' src='images/servicios/sd7.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd8' src='images/servicios/sd8.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd9' src='images/servicios/sd9.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd10' src='images/servicios/sd10.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd11' src='images/servicios/sd11.jpg'>" +
-            "</div>"+
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='sd12z' src='images/servicios/sd12.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-
+        $('#galerias').css({ "display": "none" });
+        $('#slc2').css({"border-bottom":"", "font-weight":""});
+        $('#slc3').css({"border-bottom":"", "font-weight":""});
+        $('#slc4').css({"border-bottom":"", "font-weight":""});
+        $('#slc5').css({"border-bottom":"", "font-weight":""});
+        $('#slc6').css({"border-bottom":"", "font-weight":""});
+        $('#slc7').css({"border-bottom":"", "font-weight":""});
+        $('#slc8').css({"border-bottom":"", "font-weight":""});
+        $('#slc9').css({"border-bottom":"", "font-weight":""});
+        $('#slc0').css({"border-bottom":"", "font-weight":""});
+        
         var texto = $('#slc1').attr('value');
-        $('#title').html(texto);
-        var desc = "<b> Materiales: <br> MDF, triplay, trovicel, coroplast, foamboard, lámina, microalambre, aluminio entre otros</b>";
-        $('#descrip').html(desc);
-
+        var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                            "<div id='fotosdservi' class='row'>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd' src='images/servicios/sd.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd2' src='images/servicios/sd2.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd3' src='images/servicios/sd3.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd4z' src='images/servicios/sd4.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd5z' src='images/servicios/sd5.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd6z' src='images/servicios/sd6.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd7' src='images/servicios/sd7.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd8' src='images/servicios/sd8.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd10' src='images/servicios/sd10.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd11' src='images/servicios/sd11.jpg'> </div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                            "<div id='infoservicio' class='row'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                    "<h4>"+texto+"</h4>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                    "<h6><b> Materiales: <br> MDF, triplay, trovicel, coroplast, foamboard, lámina, microalambre, aluminio entre otros</b> </h6>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+        $('#unicoservi').html(imagenes);
+        $('#slc1').css({"border-bottom":"3px solid #00FFFF", "font-weight":"bold"});
         $ventana_ancho = $(window).width();
-        //alert($ventana_ancho);
-        if ($ventana_ancho >=1024) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
-
-        } else if ($ventana_ancho < 1024) {
+        if ($ventana_ancho < 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
+            $('#seleccion').css({"float":"none"});
             $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
-            /* $('.informacion').scrollTop(); */
         }
     });
     $('#slc2').click(function () { //VINIL DE RECORTE bien
-        $('#servicios1').css({ "display": "none" });
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort' src='images/servicios/recort.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort2' src='images/servicios/recort2.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort3' src='images/servicios/recort3.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort4z' src='images/servicios/recort4.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort5z' src='images/servicios/recort5.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort6' src='images/servicios/recort6.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort7' src='images/servicios/recort7.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort8' src='images/servicios/recort8.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort9' src='images/servicios/recort9.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='recort10' src='images/servicios/recort10.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-
+        $('#galerias').css({ "display": "none" });
         var texto = $('#slc2').attr('value');
-        $('#title').html(texto);
-        var desc = "<b>Materiales: <br> RECORTE </b> <br>(a uno o varios colores)<br><b>ESMERILADO </b> (recorte e impreso)";
-        $('#descrip').html(desc);
-
+        $('#slc1').css({"border-bottom":"", "font-weight":""});
+        $('#slc3').css({"border-bottom":"", "font-weight":""});
+        $('#slc4').css({"border-bottom":"", "font-weight":""});
+        $('#slc5').css({"border-bottom":"", "font-weight":""});
+        $('#slc6').css({"border-bottom":"", "font-weight":""});
+        $('#slc7').css({"border-bottom":"", "font-weight":""});
+        $('#slc8').css({"border-bottom":"", "font-weight":""});
+        $('#slc9').css({"border-bottom":"", "font-weight":""});
+        $('#slc0').css({"border-bottom":"", "font-weight":""});
+        var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                            "<div id='fotosdservi' class='row'>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort' src='images/servicios/recort.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort2' src='images/servicios/recort2.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort3' src='images/servicios/recort3.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort4z' src='images/servicios/recort4.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort5z' src='images/servicios/recort5.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort6' src='images/servicios/recort6.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort7' src='images/servicios/recort7.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort8' src='images/servicios/recort8.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort9' src='images/servicios/recort9.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort10' src='images/servicios/recort10.jpg'> </div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                            "<div id='infoservicio' class='row'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                    "<h4>"+texto+"</h4>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                    "<h6><b>Materiales: <br> RECORTE </b> <br>(a uno o varios colores)<br><b>ESMERILADO </b> (recorte e impreso)</h6>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+        $('#unicoservi').html(imagenes);
+        $('#slc2').css({"border-bottom":"3px solid #FF00FF", "font-weight":"bold"});
         $ventana_ancho = $(window).width();
-        //alert($ventana_ancho);
-        if ($ventana_ancho >=1024) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
-        } else if ($ventana_ancho < 1024) {
+        if ($ventana_ancho < 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
+            $('#seleccion').css({"float":"none"});
             $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
-            /* $('.informacion').scrollTop(); */
         }
     });
     $('#slc3').click(function () { // VINIL bien
-        $('#servicios1').css({ "display": "none" });
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil' src='images/servicios/vinil.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil1' src='images/servicios/vinil1.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil2' src='images/servicios/vinil2.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil3' src='images/servicios/vinil3.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil4' src='images/servicios/vinil4.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil5' src='images/servicios/vinil5.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil6' src='images/servicios/vinil6.jpg'>" +
-            "</div>"+
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil7' src='images/servicios/vinil7.jpg'>" +
-            "</div>"+
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil8' src='images/servicios/vinil8.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil9' src='images/servicios/vinil9.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil10' src='images/servicios/vinil10.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vinil11' src='images/servicios/vinil11.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-
+        $('#galerias').css({ "display": "none" });
         var texto = $('#slc3').attr('value');
-        $('#title').html(texto);
-        var desc = "<b>Materiales: <br> WALL GRAPHIC <br> FLOOR GRAPHIC </b> <br><b>ELECTROESTÁTICO </b> (blanco, transparente)<br><b>AUTOADHERIBLE </b> (mate, blanco, covencional, con fondo gris o negro, microperforado)";
-        $('#descrip').html(desc);
-
+        $('#slc1').css({"border-bottom":"", "font-weight":""});
+        $('#slc2').css({"border-bottom":"", "font-weight":""});
+        $('#slc4').css({"border-bottom":"", "font-weight":""});
+        $('#slc5').css({"border-bottom":"", "font-weight":""});
+        $('#slc6').css({"border-bottom":"", "font-weight":""});
+        $('#slc7').css({"border-bottom":"", "font-weight":""});
+        $('#slc8').css({"border-bottom":"", "font-weight":""});
+        $('#slc9').css({"border-bottom":"", "font-weight":""});
+        $('#slc0').css({"border-bottom":"", "font-weight":""});
+        var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                            "<div id='fotosdservi' class='row'>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil' src='images/servicios/vinil.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil1' src='images/servicios/vinil1.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil2' src='images/servicios/vinil2.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil3' src='images/servicios/vinil3.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil4' src='images/servicios/vinil4.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil5' src='images/servicios/vinil5.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil6' src='images/servicios/vinil6.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil7' src='images/servicios/vinil7.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil8' src='images/servicios/vinil8.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil9' src='images/servicios/vinil9.jpg'> </div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                            "<div id='infoservicio' class='row'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                    "<h4>"+texto+"</h4>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                    "<h6><b>Materiales: <br> WALL GRAPHIC <br> FLOOR GRAPHIC </b> <br><b>ELECTROESTÁTICO </b> (blanco, transparente)<br><b>AUTOADHERIBLE </b> (mate, blanco, covencional, con fondo gris o negro, microperforado)</h6>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+        $('#unicoservi').html(imagenes);
+        $('#slc3').css({"border-bottom":"3px solid #FFFF00", "font-weight":"bold"}); 
         $ventana_ancho = $(window).width();
-        //alert($ventana_ancho);
-        if ($ventana_ancho >=1024) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
-        } else if ($ventana_ancho < 1024) {
+        if ($ventana_ancho < 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
+            $('#seleccion').css({"float":"none"});
             $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
-            /* $('.informacion').scrollTop(); */
         }
     });
     $('#slc4').click(function () { // GRAN FORMATO bien
-        $('#servicios1').css({ "display": "none" });
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato' src='images/servicios/formato.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato2' src='images/servicios/formato2.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato3' src='images/servicios/formato3.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato4' src='images/servicios/formato4.jpg'>" +
-            "</div>"+
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato5' src='images/servicios/formato5.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato6z' src='images/servicios/formato6.jpg'>" +
-            "</div>"+
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato7' src='images/servicios/formato7.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato8z' src='images/servicios/formato8.jpg'>" +
-            "</div>"+
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='formato9' src='images/servicios/formato9.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-
+        $('#galerias').css({ "display": "none" });
+        $('#slc1').css({"border-bottom":"", "font-weight":""});
+        $('#slc2').css({"border-bottom":"", "font-weight":""});
+        $('#slc3').css({"border-bottom":"", "font-weight":""});
+        $('#slc5').css({"border-bottom":"", "font-weight":""});
+        $('#slc6').css({"border-bottom":"", "font-weight":""});
+        $('#slc7').css({"border-bottom":"", "font-weight":""});
+        $('#slc8').css({"border-bottom":"", "font-weight":""});
+        $('#slc9').css({"border-bottom":"", "font-weight":""});
+        $('#slc0').css({"border-bottom":"", "font-weight":""});
         var texto = $('#slc4').attr('value');
-        $('#title').html(texto);
-        var desc = "<b>Materiales: <br> LONAS Tradicionales</b> (de 13 onzas) <b><br> APLICACIÓN DE LONAS</b> (en bastidores) <b><br> LONA BLACKLIGHT <br> LONA MESH <br> LONA BLACKOUT <br> LONA SOLIDA <br> PARA TOLDOS <br> VINIL </b> (blanco, con adhesivo gris o negro)";
-        $('#descrip').html(desc);
-
+        var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                            "<div id='fotosdservi' class='row'>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato' src='images/servicios/formato.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato2' src='images/servicios/formato2.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato3' src='images/servicios/formato3.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato4' src='images/servicios/formato4.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato5' src='images/servicios/formato5.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato6z' src='images/servicios/formato6.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato7' src='images/servicios/formato7.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato8z' src='images/servicios/formato8.jpg'> </div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                            "<div id='infoservicio' class='row'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                    "<h4>"+texto+"</h4>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                    "<h6><b>Materiales: <br> LONAS Tradicionales</b> (de 13 onzas) <b><br> APLICACIÓN DE LONAS</b> (en bastidores) <b><br> LONA BLACKLIGHT <br> LONA MESH <br> LONA BLACKOUT <br> LONA SOLIDA <br> PARA TOLDOS <br> VINIL </b> (blanco, con adhesivo gris o negro)</h6>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+        $('#unicoservi').html(imagenes);
+        $('#slc4').css({"border-bottom":"3px solid #00FFFF", "font-weight":"bold"}); 
         $ventana_ancho = $(window).width();
-        //alert($ventana_ancho);
-        if ($ventana_ancho >=1024) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
-        } else if ($ventana_ancho < 1024) {
+        if ($ventana_ancho < 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
+            $('#seleccion').css({"float":"none"});
             $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
-            /* $('.informacion').scrollTop(); */
         }
     });
     $('#slc5').click(function () { // TELA bien
-        $('#servicios1').css({ "display": "none" });
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela' src='images/servicios/tela.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela2z' src='images/servicios/tela2.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela3' src='images/servicios/tela3.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela4' src='images/servicios/tela4.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela5z' src='images/servicios/tela5.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela6' src='images/servicios/tela6.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='tela7z' src='images/servicios/tela7.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-
-
+        $('#galerias').css({ "display": "none" });
+        $('#slc1').css({"border-bottom":"", "font-weight":""});
+        $('#slc2').css({"border-bottom":"", "font-weight":""});
+        $('#slc3').css({"border-bottom":"", "font-weight":""});
+        $('#slc4').css({"border-bottom":"", "font-weight":""});
+        $('#slc6').css({"border-bottom":"", "font-weight":""});
+        $('#slc7').css({"border-bottom":"", "font-weight":""});
+        $('#slc8').css({"border-bottom":"", "font-weight":""});
+        $('#slc9').css({"border-bottom":"", "font-weight":""});
+        $('#slc0').css({"border-bottom":"", "font-weight":""});
         var texto = $('#slc5').attr('value');
-        $('#title').html(texto);
-        var desc = "<b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)";
-        $('#descrip').html(desc);
-
+        var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                            "<div id='fotosdservi' class='row'>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela' src='images/servicios/tela.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela2z' src='images/servicios/tela2.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela3' src='images/servicios/tela3.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela4' src='images/servicios/tela4.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela5z' src='images/servicios/tela5.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela6' src='images/servicios/tela6.jpg'> </div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                            "<div id='infoservicio' class='row'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                    "<h4>"+texto+"</h4>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                    "<h6><b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+        $('#unicoservi').html(imagenes);
+        $('#slc5').css({"border-bottom":"3px solid #FF00FF", "font-weight":"bold"});
         $ventana_ancho = $(window).width();
-        //alert($ventana_ancho);
-        if ($ventana_ancho >=1024) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
-        } else if ($ventana_ancho < 1024) {
+        if ($ventana_ancho < 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
+            $('#seleccion').css({"float":"none"});
             $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
-            /* $('.informacion').scrollTop(); */
         }
     });
     $('#slc6').click(function () { //LETREROS EN 3D
-        $('#servicios1').css({ "display": "none" });
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt' src='images/servicios/lt.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt2' src='images/servicios/lt2.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt3' src='images/servicios/lt3.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt4' src='images/servicios/lt4.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt5' src='images/servicios/lt5.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt6' src='images/servicios/lt6.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt7' src='images/servicios/lt7.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt8' src='images/servicios/lt8.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt9' src='images/servicios/lt9.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt10' src='images/servicios/lt10.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt11' src='images/servicios/lt11.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='lt12' src='images/servicios/lt12.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-
+        $('#galerias').css({ "display": "none" });
+        $('#slc1').css({"border-bottom":"", "font-weight":""});
+        $('#slc2').css({"border-bottom":"", "font-weight":""});
+        $('#slc3').css({"border-bottom":"", "font-weight":""});
+        $('#slc4').css({"border-bottom":"", "font-weight":""});
+        $('#slc5').css({"border-bottom":"", "font-weight":""});
+        $('#slc7').css({"border-bottom":"", "font-weight":""});
+        $('#slc8').css({"border-bottom":"", "font-weight":""});
+        $('#slc9').css({"border-bottom":"", "font-weight":""});
+        $('#slc0').css({"border-bottom":"", "font-weight":""});
         var texto = $('#slc6').attr('value');
-        $('#title').html(texto);
-        var desc = "<b> LETREROS EN 3D <br> Materiales:<br> ROUTER FABRICACIÓN E INSTALACIÓN ANUNCIOSOS LUMINOSOS</b><br>(Estireno, coroplast, trovicel, foamboard, MDF)"+
-                    "<b> TOLDOS <br> Materiales:<br> FABRICACIÓN DE ESTRUCTURAS E INSTALACIÓN DE LONAS</b><br>(Estireno, coroplast, trovicel, foamboard, MDF)"+
-                    "<b> CAJAS DE LUZ <br> Materiales:<br> DISEÑO Y FABRICACIÓN DE CAJAS DE LUZ</b>";
-        $('#descrip').html(desc);
-
+        var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                            "<div id='fotosdservi' class='row'>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt' src='images/servicios/lt.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt2' src='images/servicios/lt2.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt3' src='images/servicios/lt3.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt4' src='images/servicios/lt4.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt5' src='images/servicios/lt5.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt6' src='images/servicios/lt6.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt7' src='images/servicios/lt7.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt8' src='images/servicios/lt8.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt9' src='images/servicios/lt9.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt10' src='images/servicios/lt10.jpg'> </div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                            "<div id='infoservicio' class='row'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                    "<h4>"+texto+"</h4>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                    "<h6><b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+        $('#unicoservi').html(imagenes);
+        $('#slc6').css({"border-bottom":"3px solid #FFFF00", "font-weight":"bold"}); 
         $ventana_ancho = $(window).width();
-        //alert($ventana_ancho);
-        if ($ventana_ancho >=1024) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
-        } else if ($ventana_ancho < 1024) {
+        if ($ventana_ancho < 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
+            $('#seleccion').css({"float":"none"});
             $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
-            /* $('.informacion').scrollTop(); */
-        }
+        } 
     });
     $('#slc7').click(function () { //VOLUMETRICOS
-        $('#servicios1').css({ "display": "none" });
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol' src='images/servicios/vol.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol2z' src='images/servicios/vol2.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol3' src='images/servicios/vol3.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol4' src='images/servicios/vol4.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol5' src='images/servicios/vol5.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol6' src='images/servicios/vol6.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol7' src='images/servicios/vol7.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='vol8' src='images/servicios/vol8.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-
-
+        $('#slc1').css({"border-bottom":"", "font-weight":""});
+        $('#slc2').css({"border-bottom":"", "font-weight":""});
+        $('#slc3').css({"border-bottom":"", "font-weight":""});
+        $('#slc4').css({"border-bottom":"", "font-weight":""});
+        $('#slc5').css({"border-bottom":"", "font-weight":""});
+        $('#slc6').css({"border-bottom":"", "font-weight":""});
+        $('#slc8').css({"border-bottom":"", "font-weight":""});
+        $('#slc9').css({"border-bottom":"", "font-weight":""});
+        $('#slc0').css({"border-bottom":"", "font-weight":""});
+        $('#galerias').css({ "display": "none" });
         var texto = $('#slc7').attr('value');
-        $('#title').html(texto);
-        var desc = "<b> DISEÑO Y PRODUCCIÓN</b>";
-        $('#descrip').html(desc);
-
+        var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                            "<div id='fotosdservi' class='row'>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol' src='images/servicios/vol.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol2z' src='images/servicios/vol2.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol3' src='images/servicios/vol3.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol4' src='images/servicios/vol4.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol5' src='images/servicios/vol5.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol6' src='images/servicios/vol6.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol7' src='images/servicios/vol7.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol8' src='images/servicios/vol8.jpg'> </div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                            "<div id='infoservicio' class='row'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                    "<h4>"+texto+"</h4>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                    "<h6><b> DISEÑO Y PRODUCCIÓN</b></h6>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+        $('#unicoservi').html(imagenes);
+        $('#slc7').css({"border-bottom":"3px solid #00ffff", "font-weight":"bold"});  
         $ventana_ancho = $(window).width();
-        //alert($ventana_ancho);
-        if ($ventana_ancho >=1024) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
-        } else if ($ventana_ancho < 1024) {
+        if ($ventana_ancho < 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
+            $('#seleccion').css({"float":"none"});
             $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
-            /* $('.informacion').scrollTop(); */
         }
     });
     $('#slc8').click(function () { // PLAYERAS bien
-        $('#servicios1').css({ "display": "none" });
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playeraz' src='images/servicios/playeraz.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera3' src='images/servicios/playera3.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera4' src='images/servicios/playera4.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='playera5' src='images/servicios/playera5.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-
-
+        $('#galerias').css({ "display": "none" });
+        $('#slc1').css({"border-bottom":"", "font-weight":""});
+        $('#slc2').css({"border-bottom":"", "font-weight":""});
+        $('#slc3').css({"border-bottom":"", "font-weight":""});
+        $('#slc4').css({"border-bottom":"", "font-weight":""});
+        $('#slc5').css({"border-bottom":"", "font-weight":""});
+        $('#slc6').css({"border-bottom":"", "font-weight":""});
+        $('#slc7').css({"border-bottom":"", "font-weight":""});
+        $('#slc9').css({"border-bottom":"", "font-weight":""});
+        $('#slc0').css({"border-bottom":"", "font-weight":""});
         var texto = $('#slc8').attr('value');
-        $('#title').html(texto);
-        var desc = "<b>Materiales: <br> PLAYERAS DE CUALQUIER TIPO DE SERIGRAFIA Y VINIL TEXTIL</b> <br> (brillosa, mate y repelente al agua)";
-        $('#descrip').html(desc);
-
+        var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                            "<div id='fotosdservi' class='row'>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='playeraz' src='images/servicios/playeraz.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='playera3' src='images/servicios/playera3.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='playera4' src='images/servicios/playera4.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='playera5' src='images/servicios/playera5.jpg'> </div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                            "<div id='infoservicio' class='row'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                    "<h4>"+texto+"</h4>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                    "<h6><b>Materiales: <br> PLAYERAS DE CUALQUIER TIPO DE SERIGRAFIA Y VINIL TEXTIL</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+        $('#unicoservi').html(imagenes);
+        $('#slc8').css({"border-bottom":"3px solid #FF00FF", "font-weight":"bold"});  
         $ventana_ancho = $(window).width();
-        //alert($ventana_ancho);
-        if ($ventana_ancho >= 1024) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
-        } else if ($ventana_ancho < 1024) {
+        if ($ventana_ancho < 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
+            $('#seleccion').css({"float":"none"});
             $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
-            /* $('.informacion').scrollTop(); */
         }
     });
     $('#slc9').click(function () { // IMPRESION DIRECTA bien
-        $('#servicios1').css({ "display": "none" });
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='id' src='images/servicios/id.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='id2' src='images/servicios/id2.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='id3' src='images/servicios/id3.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='id3' src='images/servicios/id4.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-
-
+        $('#slc1').css({"border-bottom":"", "font-weight":""});
+        $('#slc2').css({"border-bottom":"", "font-weight":""});
+        $('#slc3').css({"border-bottom":"", "font-weight":""});
+        $('#slc4').css({"border-bottom":"", "font-weight":""});
+        $('#slc5').css({"border-bottom":"", "font-weight":""});
+        $('#slc6').css({"border-bottom":"", "font-weight":""});
+        $('#slc7').css({"border-bottom":"", "font-weight":""});
+        $('#slc8').css({"border-bottom":"", "font-weight":""});
+        $('#slc0').css({"border-bottom":"", "font-weight":""});
+        $('#galerias').css({ "display": "none" });
         var texto = $('#slc9').attr('value');
-        $('#title').html(texto);
-        var desc = "<b>Materiales: <br>SUSTRATOS RIGIDOS</b> <br> (PVC, acrilico, vidrio, estireno, foamboard, coroplast, madera, MDF impreso)";
-        $('#descrip').html(desc);
-
+        var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                            "<div id='fotosdservi' class='row'>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='id' src='images/servicios/id.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='id2' src='images/servicios/id2.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='id3' src='images/servicios/id3.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='id4' src='images/servicios/id4.jpg'> </div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                            "<div id='infoservicio' class='row'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                    "<h4>"+texto+"</h4>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                    "<h6><b>Materiales: <br>SUSTRATOS RIGIDOS</b> <br> (PVC, acrilico, vidrio, estireno, foamboard, coroplast, madera, MDF impreso)</h6>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+        $('#unicoservi').html(imagenes);
+        $('#slc9').css({"border-bottom":"3px solid #FFFF00", "font-weight":"bold"}); 
         $ventana_ancho = $(window).width();
-        //alert($ventana_ancho);
-        if ($ventana_ancho >=1024) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
-        } else if ($ventana_ancho < 1024) {
+        if ($ventana_ancho < 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
+            $('#seleccion').css({"float":"none"});
             $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
-            /* $('.informacion').scrollTop(); */
         }
     });
     $('#slc0').click(function () { // INSTALACIONES bien
-        $('#servicios1').css({ "display": "none" });
-        var imagenes = "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in' src='images/servicios/in.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in2' src='images/servicios/in2.jpg'>" +
-            "</div>"+
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in3' src='images/servicios/in3.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in4' src='images/servicios/in4.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in5' src='images/servicios/in5.jpg'>" +
-            "</div>" +
-            "<div class=' div-xs-4 div-sm-6 div-md-6 div-lg-6 div-xl-3'>" +
-            "<img class='imgmuestraser' onclick='igs(this.id,2)' id='in6' src='images/servicios/in6.jpg'>" +
-            "</div>";
-        $('#servicios2').html(imagenes);
-
-
+        $('#slc1').css({"border-bottom":"", "font-weight":""});
+        $('#slc2').css({"border-bottom":"", "font-weight":""});
+        $('#slc3').css({"border-bottom":"", "font-weight":""});
+        $('#slc4').css({"border-bottom":"", "font-weight":""});
+        $('#slc5').css({"border-bottom":"", "font-weight":""});
+        $('#slc6').css({"border-bottom":"", "font-weight":""});
+        $('#slc7').css({"border-bottom":"", "font-weight":""});
+        $('#slc8').css({"border-bottom":"", "font-weight":""});
+        $('#slc9').css({"border-bottom":"", "font-weight":""});
+        $('#galerias').css({ "display": "none" });
         var texto = $('#slc0').attr('value');
-        $('#title').html(texto);
-        var desc = "<b>En cualquier lugar, con cualquier material</b>";
-        $('#descrip').html(desc);
-
+        var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                            "<div id='fotosdservi' class='row'>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in' src='images/servicios/in.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in2' src='images/servicios/in2.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in3' src='images/servicios/in3.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in4' src='images/servicios/in4.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in5' src='images/servicios/in5.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in6' src='images/servicios/in6.jpg'> </div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                            "<div id='infoservicio' class='row'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                    "<h4>"+texto+"</h4>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                    "<h6><b>En cualquier lugar, con cualquier material</b></h6>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+        $('#unicoservi').html(imagenes);
+        $('#slc0').css({"border-bottom":"3px solid #00ffff", "font-weight":"bold"});
         $ventana_ancho = $(window).width();
-        //alert($ventana_ancho);
-        if ($ventana_ancho >=1024) {
-            $('#galery').addClass("movgalery");
-            $('#flex').addClass("movflex");
-            $('#flext').addClass("movflex");
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 3000);
-        } else if ($ventana_ancho < 1024) {
+        if ($ventana_ancho < 1024) {
             //alert("es un dispositivo movil");
-            $('#flex').css({ "display": "block" });
-            $('#flext').css({ "display": "block" });
-            $('#flex').css({ "margin-left": "0%" });
-            $('#flext').css({ "margin-left": "0%" });
-            //alert($(".informacion").scrollTop() + " px INFO");
+            $('#seleccion').css({"float":"none"});
             $('.informacion').animate({ scrollTop: 9999 }, 2000);
-            setTimeout(function () { $('#flext').css({ "opacity": 1 }); $('#flex').css({ "opacity": 1 }); }, 50);
-            /* $('.informacion').scrollTop(); */
-        }
+        } 
     });
+
+    $( "select" )
+    .change(function() {
+        var str = "";
+        $( "select option:selected" ).each(function() {
+            str += $( this ).text(); //variable que trae el titulo
+            if(str == "STANDS Y DISPLAYS"){
+                //alert(str);
+                $('#galerias').css({ "display": "none" });
+                $('#slc2').css({"border-bottom":"", "font-weight":""});
+                $('#slc3').css({"border-bottom":"", "font-weight":""});
+                $('#slc4').css({"border-bottom":"", "font-weight":""});
+                $('#slc5').css({"border-bottom":"", "font-weight":""});
+                $('#slc6').css({"border-bottom":"", "font-weight":""});
+                $('#slc7').css({"border-bottom":"", "font-weight":""});
+                $('#slc8').css({"border-bottom":"", "font-weight":""});
+                $('#slc9').css({"border-bottom":"", "font-weight":""});
+                $('#slc0').css({"border-bottom":"", "font-weight":""});
+                
+                var texto = $('#slc1').attr('value');
+                var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                                    "<div id='fotosdservi' class='row'>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd' src='images/servicios/sd.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd2' src='images/servicios/sd2.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd3' src='images/servicios/sd3.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd4z' src='images/servicios/sd4.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd5z' src='images/servicios/sd5.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd6z' src='images/servicios/sd6.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd7' src='images/servicios/sd7.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd8' src='images/servicios/sd8.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd10' src='images/servicios/sd10.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='sd11' src='images/servicios/sd11.jpg'> </div>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                                    "<div id='infoservicio' class='row'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                            "<h4>"+texto+"</h4>"+
+                                        "</div>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                            "<h6><b> Materiales: <br> MDF, triplay, trovicel, coroplast, foamboard, lámina, microalambre, aluminio entre otros</b> </h6>"+
+                                        "</div>"+
+                                    "</div>"+
+                                "</div>";
+                $('#unicoservi').html(imagenes);
+                $('#slc1').css({"border-bottom":"3px solid #00FFFF", "font-weight":"bold"});
+                $ventana_ancho = $(window).width();
+                if ($ventana_ancho < 1024) {
+                    //alert("es un dispositivo movil");
+                    $('#seleccion').css({"float":"none"});
+                    $('.informacion').animate({ scrollTop: 9999 }, 2000);
+                }
+            }if(str == "VINIL DE RECORTE"){
+                $('#galerias').css({ "display": "none" });
+                var texto = $('#slc2').attr('value');
+                $('#slc1').css({"border-bottom":"", "font-weight":""});
+                $('#slc3').css({"border-bottom":"", "font-weight":""});
+                $('#slc4').css({"border-bottom":"", "font-weight":""});
+                $('#slc5').css({"border-bottom":"", "font-weight":""});
+                $('#slc6').css({"border-bottom":"", "font-weight":""});
+                $('#slc7').css({"border-bottom":"", "font-weight":""});
+                $('#slc8').css({"border-bottom":"", "font-weight":""});
+                $('#slc9').css({"border-bottom":"", "font-weight":""});
+                $('#slc0').css({"border-bottom":"", "font-weight":""});
+                var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                                    "<div id='fotosdservi' class='row'>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort' src='images/servicios/recort.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort2' src='images/servicios/recort2.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort3' src='images/servicios/recort3.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort4z' src='images/servicios/recort4.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort5z' src='images/servicios/recort5.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort6' src='images/servicios/recort6.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort7' src='images/servicios/recort7.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort8' src='images/servicios/recort8.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort9' src='images/servicios/recort9.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='recort10' src='images/servicios/recort10.jpg'> </div>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                                    "<div id='infoservicio' class='row'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                            "<h4>"+texto+"</h4>"+
+                                        "</div>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                            "<h6><b>Materiales: <br> RECORTE </b> <br>(a uno o varios colores)<br><b>ESMERILADO </b> (recorte e impreso)</h6>"+
+                                        "</div>"+
+                                    "</div>"+
+                                "</div>";
+                $('#unicoservi').html(imagenes);
+                $('#slc2').css({"border-bottom":"3px solid #FF00FF", "font-weight":"bold"});
+                $ventana_ancho = $(window).width();
+                if ($ventana_ancho < 1024) {
+                    //alert("es un dispositivo movil");
+                    $('#seleccion').css({"float":"none"});
+                    $('.informacion').animate({ scrollTop: 9999 }, 2000);
+                }
+            }if(str == "AUTOS, VINIL y ROTULACIÓN"){
+                $('#galerias').css({ "display": "none" });
+                var texto = $('#slc3').attr('value');
+                $('#slc1').css({"border-bottom":"", "font-weight":""});
+                $('#slc2').css({"border-bottom":"", "font-weight":""});
+                $('#slc4').css({"border-bottom":"", "font-weight":""});
+                $('#slc5').css({"border-bottom":"", "font-weight":""});
+                $('#slc6').css({"border-bottom":"", "font-weight":""});
+                $('#slc7').css({"border-bottom":"", "font-weight":""});
+                $('#slc8').css({"border-bottom":"", "font-weight":""});
+                $('#slc9').css({"border-bottom":"", "font-weight":""});
+                $('#slc0').css({"border-bottom":"", "font-weight":""});
+                var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                                    "<div id='fotosdservi' class='row'>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil' src='images/servicios/vinil.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil1' src='images/servicios/vinil1.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil2' src='images/servicios/vinil2.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil3' src='images/servicios/vinil3.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil4' src='images/servicios/vinil4.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil5' src='images/servicios/vinil5.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil6' src='images/servicios/vinil6.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil7' src='images/servicios/vinil7.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil8' src='images/servicios/vinil8.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vinil9' src='images/servicios/vinil9.jpg'> </div>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                                    "<div id='infoservicio' class='row'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                            "<h4>"+texto+"</h4>"+
+                                        "</div>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                            "<h6><b>Materiales: <br> WALL GRAPHIC <br> FLOOR GRAPHIC </b> <br><b>ELECTROESTÁTICO </b> (blanco, transparente)<br><b>AUTOADHERIBLE </b> (mate, blanco, covencional, con fondo gris o negro, microperforado)</h6>"+
+                                        "</div>"+
+                                    "</div>"+
+                                "</div>";
+                $('#unicoservi').html(imagenes);
+                $('#slc3').css({"border-bottom":"3px solid #FFFF00", "font-weight":"bold"});
+                $ventana_ancho = $(window).width();
+                if ($ventana_ancho < 1024) {
+                    //alert("es un dispositivo movil");
+                    $('#seleccion').css({"float":"none"});
+                    $('.informacion').animate({ scrollTop: 9999 }, 2000);
+                } 
+            }if(str == "GRAN FORMATO"){
+                $('#galerias').css({ "display": "none" });
+                $('#slc1').css({"border-bottom":"", "font-weight":""});
+                $('#slc2').css({"border-bottom":"", "font-weight":""});
+                $('#slc3').css({"border-bottom":"", "font-weight":""});
+                $('#slc5').css({"border-bottom":"", "font-weight":""});
+                $('#slc6').css({"border-bottom":"", "font-weight":""});
+                $('#slc7').css({"border-bottom":"", "font-weight":""});
+                $('#slc8').css({"border-bottom":"", "font-weight":""});
+                $('#slc9').css({"border-bottom":"", "font-weight":""});
+                $('#slc0').css({"border-bottom":"", "font-weight":""});
+                var texto = $('#slc4').attr('value');
+                var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                                    "<div id='fotosdservi' class='row'>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato' src='images/servicios/formato.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato2' src='images/servicios/formato2.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato3' src='images/servicios/formato3.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato4' src='images/servicios/formato4.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato5' src='images/servicios/formato5.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato6z' src='images/servicios/formato6.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato7' src='images/servicios/formato7.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato8z' src='images/servicios/formato8.jpg'> </div>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                                    "<div id='infoservicio' class='row'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                            "<h4>"+texto+"</h4>"+
+                                        "</div>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                            "<h6><b>Materiales: <br> LONAS Tradicionales</b> (de 13 onzas) <b><br> APLICACIÓN DE LONAS</b> (en bastidores) <b><br> LONA BLACKLIGHT <br> LONA MESH <br> LONA BLACKOUT <br> LONA SOLIDA <br> PARA TOLDOS <br> VINIL </b> (blanco, con adhesivo gris o negro)</h6>"+
+                                        "</div>"+
+                                    "</div>"+
+                                "</div>";
+                $('#unicoservi').html(imagenes);
+                $('#slc4').css({"border-bottom":"3px solid #00FFFF", "font-weight":"bold"});
+                $ventana_ancho = $(window).width();
+                if ($ventana_ancho < 1024) {
+                    //alert("es un dispositivo movil");
+                    $('#seleccion').css({"float":"none"});
+                    $('.informacion').animate({ scrollTop: 9999 }, 2000);
+                }
+            }if(str == "TELA"){
+                $('#galerias').css({ "display": "none" });
+                $('#slc1').css({"border-bottom":"", "font-weight":""});
+                $('#slc2').css({"border-bottom":"", "font-weight":""});
+                $('#slc3').css({"border-bottom":"", "font-weight":""});
+                $('#slc4').css({"border-bottom":"", "font-weight":""});
+                $('#slc6').css({"border-bottom":"", "font-weight":""});
+                $('#slc7').css({"border-bottom":"", "font-weight":""});
+                $('#slc8').css({"border-bottom":"", "font-weight":""});
+                $('#slc9').css({"border-bottom":"", "font-weight":""});
+                $('#slc0').css({"border-bottom":"", "font-weight":""});
+                var texto = $('#slc5').attr('value');
+                var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                                    "<div id='fotosdservi' class='row'>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela' src='images/servicios/tela.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela2z' src='images/servicios/tela2.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela3' src='images/servicios/tela3.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela4' src='images/servicios/tela4.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela5z' src='images/servicios/tela5.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='tela6' src='images/servicios/tela6.jpg'> </div>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                                    "<div id='infoservicio' class='row'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                            "<h4>"+texto+"</h4>"+
+                                        "</div>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                            "<h6><b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                        "</div>"+
+                                    "</div>"+
+                                "</div>";
+                $('#unicoservi').html(imagenes);
+                $('#slc5').css({"border-bottom":"3px solid #FF00FF", "font-weight":"bold"}); 
+                $ventana_ancho = $(window).width();
+                if ($ventana_ancho < 1024) {
+                    //alert("es un dispositivo movil");
+                    $('#seleccion').css({"float":"none"});
+                    $('.informacion').animate({ scrollTop: 9999 }, 2000);
+                }
+            }if(str == "LETREROS EN 3D, TOLDOS Y CAJAS DE LUZ"){
+                $('#galerias').css({ "display": "none" });
+                $('#slc1').css({"border-bottom":"", "font-weight":""});
+                $('#slc2').css({"border-bottom":"", "font-weight":""});
+                $('#slc3').css({"border-bottom":"", "font-weight":""});
+                $('#slc4').css({"border-bottom":"", "font-weight":""});
+                $('#slc5').css({"border-bottom":"", "font-weight":""});
+                $('#slc7').css({"border-bottom":"", "font-weight":""});
+                $('#slc8').css({"border-bottom":"", "font-weight":""});
+                $('#slc9').css({"border-bottom":"", "font-weight":""});
+                $('#slc0').css({"border-bottom":"", "font-weight":""});
+                var texto = $('#slc6').attr('value');
+                var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                                    "<div id='fotosdservi' class='row'>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt' src='images/servicios/lt.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt2' src='images/servicios/lt2.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt3' src='images/servicios/lt3.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt4' src='images/servicios/lt4.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt5' src='images/servicios/lt5.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt6' src='images/servicios/lt6.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt7' src='images/servicios/lt7.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt8' src='images/servicios/lt8.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt9' src='images/servicios/lt9.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='lt10' src='images/servicios/lt10.jpg'> </div>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                                    "<div id='infoservicio' class='row'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                            "<h4>"+texto+"</h4>"+
+                                        "</div>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                            "<h6><b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                        "</div>"+
+                                    "</div>"+
+                                "</div>";
+                $('#unicoservi').html(imagenes);
+                $('#slc6').css({"border-bottom":"3px solid #FFFF00", "font-weight":"bold"});
+                $ventana_ancho = $(window).width();
+                if ($ventana_ancho < 1024) {
+                    //alert("es un dispositivo movil");
+                    $('#seleccion').css({"float":"none"});
+                    $('.informacion').animate({ scrollTop: 9999 }, 2000);
+                }
+            }if(str == "VOLUMETRICOS"){
+                $('#slc1').css({"border-bottom":"", "font-weight":""});
+                $('#slc2').css({"border-bottom":"", "font-weight":""});
+                $('#slc3').css({"border-bottom":"", "font-weight":""});
+                $('#slc4').css({"border-bottom":"", "font-weight":""});
+                $('#slc5').css({"border-bottom":"", "font-weight":""});
+                $('#slc6').css({"border-bottom":"", "font-weight":""});
+                $('#slc8').css({"border-bottom":"", "font-weight":""});
+                $('#slc9').css({"border-bottom":"", "font-weight":""});
+                $('#slc0').css({"border-bottom":"", "font-weight":""});
+                $('#galerias').css({ "display": "none" });
+                var texto = $('#slc7').attr('value');
+                var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                                    "<div id='fotosdservi' class='row'>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol' src='images/servicios/vol.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol2z' src='images/servicios/vol2.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol3' src='images/servicios/vol3.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol4' src='images/servicios/vol4.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol5' src='images/servicios/vol5.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol6' src='images/servicios/vol6.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol7' src='images/servicios/vol7.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='vol8' src='images/servicios/vol8.jpg'> </div>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                                    "<div id='infoservicio' class='row'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                            "<h4>"+texto+"</h4>"+
+                                        "</div>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                            "<h6><b> DISEÑO Y PRODUCCIÓN</b></h6>"+
+                                        "</div>"+
+                                    "</div>"+
+                                "</div>";
+                $('#unicoservi').html(imagenes);
+                $('#slc7').css({"border-bottom":"3px solid #00ffff", "font-weight":"bold"});
+                $ventana_ancho = $(window).width();
+                if ($ventana_ancho < 1024) {
+                    //alert("es un dispositivo movil");
+                    $('#seleccion').css({"float":"none"});
+                    $('.informacion').animate({ scrollTop: 9999 }, 2000);
+                }
+            }if(str == "PLAYERAS"){
+                $('#galerias').css({ "display": "none" });
+                $('#slc1').css({"border-bottom":"", "font-weight":""});
+                $('#slc2').css({"border-bottom":"", "font-weight":""});
+                $('#slc3').css({"border-bottom":"", "font-weight":""});
+                $('#slc4').css({"border-bottom":"", "font-weight":""});
+                $('#slc5').css({"border-bottom":"", "font-weight":""});
+                $('#slc6').css({"border-bottom":"", "font-weight":""});
+                $('#slc7').css({"border-bottom":"", "font-weight":""});
+                $('#slc9').css({"border-bottom":"", "font-weight":""});
+                $('#slc0').css({"border-bottom":"", "font-weight":""});
+                var texto = $('#slc8').attr('value');
+                var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                                    "<div id='fotosdservi' class='row'>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='playeraz' src='images/servicios/playeraz.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='playera3' src='images/servicios/playera3.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='playera4' src='images/servicios/playera4.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='playera5' src='images/servicios/playera5.jpg'> </div>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                                    "<div id='infoservicio' class='row'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                            "<h4>"+texto+"</h4>"+
+                                        "</div>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                            "<h6><b>Materiales: <br> PLAYERAS DE CUALQUIER TIPO DE SERIGRAFIA Y VINIL TEXTIL</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                        "</div>"+
+                                    "</div>"+
+                                "</div>";
+                $('#unicoservi').html(imagenes);
+                $('#slc8').css({"border-bottom":"3px solid #FF00FF", "font-weight":"bold"});
+                $ventana_ancho = $(window).width();
+                if ($ventana_ancho < 1024) {
+                    //alert("es un dispositivo movil");
+                    $('#seleccion').css({"float":"none"});
+                    $('.informacion').animate({ scrollTop: 9999 }, 2000);
+                }
+            }if(str == "IMPRESIÓN DIRECTA"){
+                $('#slc1').css({"border-bottom":"", "font-weight":""});
+                $('#slc2').css({"border-bottom":"", "font-weight":""});
+                $('#slc3').css({"border-bottom":"", "font-weight":""});
+                $('#slc4').css({"border-bottom":"", "font-weight":""});
+                $('#slc5').css({"border-bottom":"", "font-weight":""});
+                $('#slc6').css({"border-bottom":"", "font-weight":""});
+                $('#slc7').css({"border-bottom":"", "font-weight":""});
+                $('#slc8').css({"border-bottom":"", "font-weight":""});
+                $('#slc0').css({"border-bottom":"", "font-weight":""});
+                $('#galerias').css({ "display": "none" });
+                var texto = $('#slc9').attr('value');
+                var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                                    "<div id='fotosdservi' class='row'>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='id' src='images/servicios/id.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='id2' src='images/servicios/id2.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='id3' src='images/servicios/id3.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='id4' src='images/servicios/id4.jpg'> </div>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                                    "<div id='infoservicio' class='row'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                            "<h4>"+texto+"</h4>"+
+                                        "</div>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                            "<h6><b>Materiales: <br>SUSTRATOS RIGIDOS</b> <br> (PVC, acrilico, vidrio, estireno, foamboard, coroplast, madera, MDF impreso)</h6>"+
+                                        "</div>"+
+                                    "</div>"+
+                                "</div>";
+                $('#unicoservi').html(imagenes);
+                $('#slc9').css({"border-bottom":"3px solid #FFFF00", "font-weight":"bold"});
+                $ventana_ancho = $(window).width();
+                if ($ventana_ancho < 1024) {
+                    //alert("es un dispositivo movil");
+                    $('#seleccion').css({"float":"none"});
+                    $('.informacion').animate({ scrollTop: 9999 }, 2000);
+                }
+            }if(str == "INSTALACIONES"){
+                $('#slc1').css({"border-bottom":"", "font-weight":""});
+                $('#slc2').css({"border-bottom":"", "font-weight":""});
+                $('#slc3').css({"border-bottom":"", "font-weight":""});
+                $('#slc4').css({"border-bottom":"", "font-weight":""});
+                $('#slc5').css({"border-bottom":"", "font-weight":""});
+                $('#slc6').css({"border-bottom":"", "font-weight":""});
+                $('#slc7').css({"border-bottom":"", "font-weight":""});
+                $('#slc8').css({"border-bottom":"", "font-weight":""});
+                $('#slc9').css({"border-bottom":"", "font-weight":""});
+                $('#galerias').css({ "display": "none" });
+                var texto = $('#slc0').attr('value');
+                var imagenes = "<div class='col-sm-12 col-md-12 col-lg-7 col-xl-7'>"+
+                                    "<div id='fotosdservi' class='row'>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in' src='images/servicios/in.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in2' src='images/servicios/in2.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in3' src='images/servicios/in3.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in4' src='images/servicios/in4.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in5' src='images/servicios/in5.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='in6' src='images/servicios/in6.jpg'> </div>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
+                                    "<div id='infoservicio' class='row'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
+                                            "<h4>"+texto+"</h4>"+
+                                        "</div>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>"+
+                                            "<h6><b>En cualquier lugar, con cualquier material</b></h6>"+
+                                        "</div>"+
+                                    "</div>"+
+                                "</div>";
+                $('#unicoservi').html(imagenes);
+                $('#slc0').css({"border-bottom":"3px solid #00ffff", "font-weight":"bold"});
+                $ventana_ancho = $(window).width();
+                if ($ventana_ancho < 1024) {
+                    //alert("es un dispositivo movil");
+                    $('#seleccion').css({"float":"none"});
+                    $('.informacion').animate({ scrollTop: 9999 }, 2000);
+                }
+            }
+        });        
+    })
+    .trigger( "change" );
 
     $('#senema').click(function () {
         var contenido = $('#cuerpo').val();
@@ -576,7 +891,7 @@ $(document).ready(function () {
     });
 });
 
-function igs(url,lugar){
+ function igs(url,lugar){
     enunc = "";
     cadena = '';
     if (url == "playeraz") {
@@ -630,34 +945,30 @@ function verImagenModal(tipo, img, textoBtn, parrafo, modo, proce) { //MODAL DE 
                     "<img class='imgmodal modalhz' id='imgind' src='images/servicios/"+img+"'> </div>"+
                 "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
                     "<p id='piefoto'>"+ parrafo +"</p> </div>"+
-                "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
-                    "<div class='col-sm-3 col-md-3 col-lg-3 col-xl-6'>" +
+                "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'> <div class='row'>" +
+                    "<div class='div-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
                         "<img onclick=\"atr("+proce+",\'"+img+"\')\" id='at' src='images/flech.png'> </div>"  +
-                    "<div class='col-sm-3 col-md-3 col-lg-3 col-xl-6'>" +
+                    "<div class='div-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
                         "<img onclick=\"sig("+proce+",\'"+img+"\')\" id='ad' src='images/flecha.png'> </div>" +
-                "</div>"+
+                "</div> </div>"+
             "</div>";
 
         modal.classList.add(tipo);
 
         tipo = tipo;
     }if(modo == 'vertical'){
-        modal.innerHTML = "<button onclick='cerrar()' id='cierra' class='bmodal col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'><H1>" + textoBtn + "</H1></button>" +
-            "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
-                "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+        modal.innerHTML = "<button onclick='cerrar()' id='cierra' class='bmodal col-sm-12 col-md-12 col-lg-12 col-xl-12'><H1>" + textoBtn + "</H1></button>" +
+            "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
                     "<img class='imgmodal modalvert' id='imgind' src='images/servicios/"+img+"'> </div>"+
-                "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
+                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
                     "<p id='piefoto'>"+ parrafo +"</p> </div>"+
-                "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>" +
-                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'></div>" +
-                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'>"+
-                        "<div class='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
-                            "<img onclick=\"atr("+proce+",\'"+img+"\')\" id='at' src='images/flech.png'> </div>"  +
-                        "<div class='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
-                            "<img onclick=\"sig("+proce+",\'"+img+"\')\" id='ad' src='images/flecha.png'> </div>" +
-                    "</div>" +
-                    "<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4'></div>" +
-                "</div>"+
+                    "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'> <div class='row'>" +
+                    "<div class='div-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
+                        "<img onclick=\"atr("+proce+",\'"+img+"\')\" id='at' src='images/flech.png'> </div>"  +
+                    "<div class='div-sm-6 col-md-6 col-lg-6 col-xl-6'>" +
+                        "<img onclick=\"sig("+proce+",\'"+img+"\')\" id='ad' src='images/flecha.png'> </div>" +
+                "</div> </div>"+
             "</div>";
 
         modal.classList.add(tipo);
@@ -679,9 +990,9 @@ function sig(proce, url){
                 if(i != final){
                     //alert("de aqui vengo"+verurl+ " esta es la imagen a la cual va a pasar images/servicios/"+arrarInicial[i+1])
                     newimg = arrarInicial[i+1];
-                    //alert("este es el que va a deshacer"+newimg);
+                    //alert("este es el que va a deshacer"+newimg);3
                     c = newimg.length;
-                    vz = newimg.split("");
+                    vz = newimg.split("");3
                     //alert("tiene la z o no?"+vz[c-5]);
                     if(vz[c-5] == 'z' && newimg != "playeraz.jpg"){
                         //alert("si tiene z el que sigue");
@@ -705,7 +1016,7 @@ function sig(proce, url){
         sessionStorage.setItem("ulrm", nueva);
         
     }if (proce == 2){
-        alert("es la segunda seccion");
+        /* alert("es la segunda seccion"); */
         verurl = sessionStorage.getItem("ulrm");
         //Descompones 
         desfr = verurl.split("");

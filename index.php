@@ -27,11 +27,11 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
     <a class="navbar-brand" href="#">
       <img id="logo" src="images/logo.png" width="45" height="30" class="d-inline-block align-top" alt="">
     </a>
-    <span class="navbar-text" id="titulo"> Soluciones Gráficas e Industriales </span>
+    <span class="navbar-text" id="titulo" style="font-weight: bolder;"> SOLUCIONES GRÁFICAS E INDUSTRIALES </span>
       
     <span class="navbar-text" id="titulo"></span>
     <span class="navbar-text" id="titulo"></span>
@@ -43,13 +43,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" onclick="seccion('us')" href="#">Nosotros </a>
+          <a class="nav-link" onclick="seccion('us')" href="#">NOSOTROS </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onclick="seccion('serv')" href="#">Servicios</a>
+          <a class="nav-link" onclick="seccion('serv')" href="#">SERVICIOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onclick="seccion('contact')" href="#">Contacto</a>
+          <a class="nav-link" onclick="seccion('contact')" href="#">CONTACTO</a>
         </li>
       </ul>
     </div>
@@ -101,14 +101,17 @@
                   </div>
                 <?php }?>
               </div>
-          <?php } ?> <!-- FINAL DE  FOR --> 
-              
+          <?php } ?> <!-- FINAL DE  FOR -->               
           </div>
         </div>
 
         
         
         <div class="footer">
+           <div class="row" id="f">
+            <div class="col-sm-4 col-lg-4 col-xl-4" id="f1">
+              <img style="width:48%;" src="images/foot1.png">
+            </div>
           
         </div>
     </div>

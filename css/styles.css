@@ -8,8 +8,8 @@
 :root {
     --base: rgba(0, 0, 0, .7);
     --azul: rgba(1, 175, 235,1);
-    --blanco: rgba(0, 0, 0, 1);
-    --gris: rgba(0, 0, 0, .1);
+    --negro: rgba(0, 0, 0, 1);
+    --gris: rgba(133, 133, 133, 1);
     --blanco: #ffff;
     --magenta: rgba(229, 9, 127, 1);
 }
@@ -21,6 +21,8 @@
 
 /*=============== MEDIA QUERYS ===================*/
 @media (min-width:4000px)and (max-width: 5000px) {
+    #titulo{ margin-left: 37%; margin-right: -20%; font-size: 1.1vw !important; }
+
     .imgmuestraser{ 
         width: 100%;
         height: 19vh;
@@ -28,7 +30,7 @@
         float: left;
         cursor: pointer;
     }
-
+    #reds { width: 7em !important; height: 6em !important; margin-left: 25vh !important; }
     .modalhz{ 
         margin-top: 4%; 
         height: 60vh;
@@ -50,6 +52,7 @@
         filter: invert(100%);
         width: 6em;
         margin-left: 85%;
+        
     }
     
     #ad{ 
@@ -57,94 +60,24 @@
         width: 6em;
         margin-left: 50%;
     }
+    .menu{ display: none !important;}
 }
 
-@media (min-width:2048px){
+@media (min-width:2048px) {
     /* GENERAL */
     .navbar{
         height: 7vh !important;
     }
     #logo{ width: 5vw; height: 5vh; }
-    #titulo{ margin-left: 37%; margin-right: -20%; font-size: .8vw; }
+    #titulo{ margin-left: 37%; margin-right: -20%; font-size: 1vw !important; }
     .nav-item > a{
         font-size: 1vw;
     }
+    #reds { width: 3em; height: 2em; margin-left: 28vh;}
+
     /* INICIO */
     .imgmuestra{
-        width: 22vw;
-        height: 35vh;
-        position: relative;
-        float: left;
-    }
-
-    /* SERVICIOS */
-    .div-xl-6, .div-xl-4, .div-xl-3, .div-xl-12, .div-xl-8, .div-xl-2 {
-        float: left;
-        margin-right: 1%;
-        margin-bottom: 10px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
-    .div-xl-2 { width: 15.666666666667%; }
-    .div-xl-3 { width: 24%; }
-    .div-xl-4 { width: 32.3333333%; }
-    .div-xl-6 { width: 49%; }
-    .div-xl-8 { width: 65.666666666667%; }
-    .div-xl-12 { width: 99%; }
-
-    span { font-size: 1.5vh; font-weight: 2000;}
-
-    .imgmuestraser{ 
         width: 100%;
-        height: 19vh;
-        position: relative;
-        float: left;
-        cursor: pointer;
-    }
-
-    .modalhz{ 
-        margin-top: 4%; 
-        height: 60vh;
-        margin-left: 27.5%;
-    }
-    .modalvert{ 
-        margin-top: 6%; 
-        margin-left: 44%;
-        height: 25vw;
-    }
-    #piefoto{ 
-        color: white;
-        margin-left: 36%; 
-        font-size: 2vh;
-    }
-    h1{ font-size: 4.5rem;}
-
-    #at{ 
-        filter: invert(100%);
-        width: 4em;
-        margin-left: 85%;
-    }
-    
-    #ad{ 
-        filter: invert(100%);
-        width: 4em;
-        margin-left: 50%;
-    }
-}
-
-@media (min-width:1200px){
-    /* GENERAL */
-    #logo{ width: 4vw; height: 4.5vh; }
-    #titulo{ margin-left: 40%; margin-right: -24%; font-size: .8vw; }
-    .nav-item > a{
-        font-size: 1vw;
-    }
-    /* INICIO */
-    .imgmuestra{
-        width: 22vw;
-        height: 28vh;
         position: relative;
         float: left;
     }
@@ -171,7 +104,7 @@
     .div-xl-12 { width: 99%; }
 
     span { font-size: 1.5vh; font-weight: 2000;}
-
+    .menu{ display: none !important;}
     .imgmuestraser{ 
         width: 100%;
         height: 19vh;
@@ -180,19 +113,144 @@
         cursor: pointer;
     }
 
+    #fotosdservi{
+        width: 100%;
+        /* background: black; */
+        margin-top: 7vh;
+        margin-left: 7vh;
+    }
+
+    #infoservicio{ 
+        width: 91%;
+        height: 75vh;
+        background: var(--gris);
+        margin-top: 7vh;
+        margin-left: 4vh;
+    }
+    #tituloserv{ margin-top: 28vh; }
+    #infoser{ margin-top: -21vh; }
+    #tituloserv > h4{ border-bottom: 2px}
+            
+    .imgserviunico{
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
     .modalhz{ 
-        margin-top: 5%; 
-        height: 60vh;
-        margin-left: 25.5%;
+        margin-top: 4%; 
+        height: 53vh;
+        margin-left: 27.5%;
     }
     .modalvert{ 
-        margin-top: 7%; 
+        margin-top: 6%; 
         margin-left: 44%;
-        height: 30vw;
+        height: 26vw;
     }
     #piefoto{ 
         color: white;
         margin-left: 36%; 
+        font-size: 2vh;
+    }
+    h1{ font-size: 4.5rem;}
+
+    #at{ 
+        filter: invert(100%);
+        width: 4em;
+        margin-left: 90%;
+    }
+    
+    #ad{ 
+        filter: invert(100%);
+        width: 4em;
+        margin-left: 10%;
+    }
+} 
+
+@media (min-width:1200px) and (max-width:2047px){
+    /* GENERAL */
+    #logo{ width: 4vw; height: 4.5vh; }
+    #titulo{ margin-left: 40%; margin-right: -24%; font-size: .8vw; }
+    .nav-item > a{
+        font-size: 1vw;
+    }
+    /* INICIO */
+    .imgmuestra{
+        width: 100%;
+        /* height: 28vh; */
+        position: relative;
+        float: left;
+    }
+    .outmarg{
+        margin-right: -1.5%;
+        margin-bottom: .5%;
+    }
+     #reds { width: 3em; height: 2em; margin-left: 13rem;}
+
+    /* SERVICIOS */
+    .div-xl-6, .div-xl-4, .div-xl-3, .div-xl-12, .div-xl-8, .div-xl-2 {
+        float: left;
+        margin-right: 1%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .div-xl-2 { width: 15.666666666667%; }
+    .div-xl-3 { width: 24%; }
+    .div-xl-4 { width: 32.3333333%; }
+    .div-xl-6 { width: 49%; }
+    .div-xl-8 { width: 65.666666666667%; }
+    .div-xl-12 { width: 99%; }
+
+    span { font-size: 1.5vh; font-weight: 2000;}
+    .menu{ display: none !important;}
+    .imgmuestraser{ 
+        width: 100%;
+        height: 19vh;
+        position: relative;
+        float: left;
+        cursor: pointer;
+    }
+
+    #fotosdservi{
+        width: 100%;
+        /* background: black; */
+        margin-top: 7vh;
+        margin-left: 7vh;
+    }
+
+    #infoservicio{ 
+        width: 91%;
+        height: 75vh;
+        background: var(--gris);
+        margin-top: 7vh;
+        margin-left: 4vh;
+    }
+    #tituloserv{ margin-top: 28vh; }
+    #infoser{ margin-top: -21vh; }
+    #tituloserv > h4{ border-bottom: 2px}
+            
+    .imgserviunico{
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
+    .modalhz{ 
+        margin-top: 5vh;
+        height: 50vh;
+        margin-left: 25.5vw;
+    }
+    .modalvert{ 
+        margin-top: 7vh;
+        margin-left: 41vw;
+        height: 27vw;
+    }
+    #piefoto{ 
+        color: white;
+        margin-left: 31.5vw;
         font-size: 2vh;
     }
     h1{ font-size: 4.5rem;}
@@ -206,7 +264,7 @@
     #ad{ 
         filter: invert(100%);
         width: 4em;
-        margin-left: 50%;
+        margin-left: 10%;
     }
 
     h1{ font-size: 3.5rem;}
@@ -219,10 +277,11 @@
     .nav-item > a{
         font-size: 1vw;
     }
+    .body{ height: 93% !important;}
     /* INICIO */
     .imgmuestra{
-        width: 22vw;
-        height: 24vh;
+        width: 100%;
+        /* height: 24vh; */
         position: relative;
         float: left;
     }
@@ -249,7 +308,7 @@
     .div-xl-12 { width: 99%; }
     
     span { font-size: 1.3vh; font-weight: 2000;}
-
+    .menu{ display: none !important;}
     .imgmuestraser{ 
         width: 100%;
         height: 16vh;
@@ -258,19 +317,43 @@
         cursor: pointer;
     }
 
+    #fotosdservi{
+        width: 100%;
+        /* background: black; */
+        margin-top: 7vh;
+        margin-left: 7vh;
+    }
+
+    #infoservicio{ 
+        width: 91%;
+        height: 75vh;
+        background: var(--gris);
+        margin-top: 7vh;
+        margin-left: 4vh;
+    }
+    #tituloserv{ margin-top: 28vh; }
+    #infoser{ margin-top: -21vh; }
+    #tituloserv > h4{ border-bottom: 2px}
+            
+    .imgserviunico{
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
     .modalhz{ 
-        margin-top: 10%;
+        margin-top: 10vh;
         height: 40vh;
-        margin-left: 26.5%;
+        margin-left: 26.5vw;
     }
     .modalvert{ 
-        margin-top: 7%;
-        margin-left: 39%;
+        margin-top: 7vh;
+        margin-left: 39vw;
         height: 42vw;
     }
     #piefoto{ 
         color: white;
-        margin-left: 26%; 
+        margin-left: 26vw; 
         font-size: 2vh;
     }
     h1{ font-size: 2.5rem;}
@@ -278,14 +361,17 @@
     #at{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 85%;
+        margin-left: 42vw;
     }
     
     #ad{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 50%;
+        margin-left: 8vw;
     }
+
+    /* CONTACTO */
+    #reds { width: 3em; height: 2em; margin-left: 19vh;}
 }
 
 
@@ -293,6 +379,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1025px) {
     /* GENERAL */
     #titulo{ margin-left: 38%; margin-right: -24%; font-size: .8vw; }
+    .body{ height: 93% !important;}
     
 
     /* INDEX */
@@ -317,6 +404,7 @@
         justify-content: center;
         position: relative;
     }
+    .menu{ display: none !important;}
 
     .div-lg-2 { width: 15.666666666667%; }
     .div-lg-3 { width: 24%; }
@@ -329,12 +417,36 @@
     span{ font-size: .8em !important; }
     .imgmuestraser{ height: 38vh;}
     .outserm{ margin-bottom: .5%; }
+    #fotosdservi{
+        width: 100%;
+        /* background: black; */
+        margin-top: 7vh;
+        margin-left: 7vh;
+    }
+
+    #infoservicio{ 
+        width: 91%;
+        height: 75vh;
+        background: var(--gris);
+        margin-top: 7vh;
+        margin-left: 4vh;
+    }
+    #tituloserv{ margin-top: 28vh; }
+    #infoser{ margin-top: -21vh; }
+    #tituloserv > h4{ border-bottom: 2px}
+            
+    .imgserviunico{
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
     .modalhz{ margin-left: 18% !important; margin-top: 7% !important; width: 67% !important;}
     .modalvert{ margin-left: 37% !important; margin-top: 5% !important; height: 467px !important;}
 
     #piefoto{ 
         color: white;
-        margin-left: 26%; 
+        margin-left: 26vw; 
         font-size: 2vh;
     }
     h1{ font-size: 2.5rem;}
@@ -342,13 +454,13 @@
     #at{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 85%;
+        margin-left: 37vw;
     }
     
     #ad{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 50%;
+        margin-left: 7vw;
     }
 
 }
@@ -369,10 +481,11 @@
         float: left;
     }
     .outmarg{
-        margin-right: -3.5%;
+        margin-right: -2.5%;
         margin-bottom: .5%;
     }
     #grid { margin-left:2% !important;}
+    #reds { width: 3em; height: 2em; margin-left: 75vh;}
 
     /* SERVICIOS */
     .div-lg-6, .div-lg-2, .div-lg-8, .div-lg-4, .div-lg-3, .div-lg-12{
@@ -392,9 +505,33 @@
     .div-lg-8 { width: 65.666666666667%; }
     .div-lg-12 { width: 99%; }
 
+    .menu{ display: none !important;}
     #galery{ margin-left: .7% !important; }
     span{ font-size: .8em !important; }
     .imgmuestraser{ height: 46vh !important;}
+    #fotosdservi{
+        width: 100%;
+        /* background: black; */
+        margin-top: 7vh;
+        margin-left: 2vh;
+    }
+
+    #infoservicio{ 
+        width: 91%;
+        height: 75vh;
+        background: var(--gris);
+        margin-top: 7vh;
+        margin-left: 4vh;
+    }
+    #tituloserv{ margin-top: 28vh; }
+    #infoser{ margin-top: -21vh; }
+    #tituloserv > h4{ border-bottom: 2px}
+            
+    .imgserviunico{
+        width: 100%;
+        position: relative;
+        float: left;
+    }
     .outserm{ margin-bottom: .5%; }
     .modalhz{ margin-left: 16% !important; margin-top: 4% !important; width: 67% !important;}
     .modalvert{ margin-left: 39% !important; margin-top: 4% !important; height: 352px !important;}
@@ -408,13 +545,13 @@
     #at{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 85%;
+        margin-left: 36vw;
     }
     
     #ad{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 50%;
+        margin-left: 6vw;
     }
 }
 
@@ -439,6 +576,7 @@
         margin-bottom: .5%;
     }
     #grid { margin-left:2% !important;}
+    #reds { width: 3em; height: 2em; margin-left: 29vh;}
 
 
     /*NOSOTROS*/
@@ -469,15 +607,39 @@
     .div-lg-8 { width: 65.666666666667%; }
     .div-lg-12 { width: 99%; }
 
+    .menu{ display: none !important;}
     #galery{ margin-left: .7% !important; }
     span{ font-size: .8em !important; }
     .imgmuestraser{ height: 18vh !important;}
+    #fotosdservi{
+        width: 100%;
+        /* background: black; */
+        margin-top: 7vh;
+        margin-left: 1vh;
+    }
+
+    #infoservicio{ 
+        width: 91%;
+        height: 40vh;
+        background: var(--gris);
+        margin-top: 1vh;
+        margin-left: 2vh;
+    }
+    #tituloserv{ margin-top: 16vh; }
+    #infoser{ margin-top: -10vh; }
+    #tituloserv > h4{ border-bottom: 2px}
+            
+    .imgserviunico{
+        width: 100%;
+        position: relative;
+        float: left;
+    }
     .outserm{ margin-bottom: .5%; }
     .modalhz{ margin-left: 5% !important; margin-top: 28% !important; width: 90% !important;}
     .modalvert{ margin-left: 28% !important; margin-top: 21% !important; height: 595px !important;}
     #piefoto{ 
         color: white;
-        margin-left: 13%; 
+        margin-left: 10vw; 
         font-size: 1.4vh;
     }
     h1{ font-size: 2.5rem;}
@@ -485,19 +647,20 @@
     #at{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 85%;
+        margin-left: 38vw;
     }
     
     #ad{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 50%;
+        margin-left: 7vw;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 799px) {
     /* GENERAL */
     #titulo{ display: none;}
+    .body{ height: 99% !important;}
     /* INDEX */
     .imgmuestra{
         width: 46vw !important;
@@ -510,6 +673,8 @@
         margin-bottom: .5%;
     }
     #grid { margin-left:2% !important;}
+
+    #reds { width: 3em; height: 2em; margin-left: 35vh;}
 
 
     /*NOSOTROS*/
@@ -544,15 +709,40 @@
     .div-md-10 { width: 82.33333333333%; }
     .div-md-12 { width: 99%; }
 
+    .menu{ display: none !important;}
     #galery{ margin-left: 1% !important; }
     span{ font-size: .8em !important; }
     .imgmuestraser{ height: 14.2vh !important;}
+    #fotosdservi{
+        width: 100%;
+        /* background: black; */
+        margin-top: 4vh;
+        margin-left: 1vh;
+    }
+
+    #infoservicio{ 
+        width: 91%;
+        height: 40vh;
+        background: var(--gris);
+        margin-top: 2vh;
+        margin-left: 3vh;
+    }
+    #tituloserv{ margin-top: 16vh; }
+    #infoser{ margin-top: -7vh; }
+    #tituloserv > h4{ border-bottom: 2px}
+            
+    .imgserviunico{
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+    
     .outserm{ margin-bottom: .5%; }
     .modalhz{ margin-left: 7% !important; margin-top: 28% !important; width: 90% !important;}
     .modalvert{ margin-left: 24% !important; height: 550px !important; margin-top: 15% !important; }
     #piefoto{ 
         color: white;
-        margin-left: 13%; 
+        margin-left: 7vw; 
         font-size: 1.4vh;
     }
     h1{ font-size: 2.5rem;}
@@ -560,14 +750,17 @@
     #at{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 85%;
+        margin-left: 7vw;
     }
     
     #ad{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 50%;
+        margin-left: 7vw;
     }
+
+    /* CONTACTO */
+    #senema{ margin-left: 0vh; }
     
 }
 
@@ -584,6 +777,7 @@
         position: relative;
         float: left;
     }
+    #reds { width: 3em; height: 2em; margin-left: 28vh;}
     
     
     
@@ -596,7 +790,7 @@
     }
 
     /* SERVICIOS */
-    .div-sm-6, .div-sm-2, .div-sm-8, .div-sm-4, .div-md-3, .div-sm-12, .div-sm-1, .div-sm-10, .div-smp-6 {
+    .div-sm-6, .div-sm-2, .div-sm-8, .div-sm-4, .div-md-3, .div-sm-1, .div-sm-10, .div-smp-6 {
         float: left;
         margin-right: 1%;
         margin-bottom: 10px;
@@ -615,15 +809,40 @@
     .div-sm-10 { width: 82.33333333333%; }
     .div-sm-12 { width: 99%; }
 
+    .selector{ display: none !important;}
     #galery{ margin-left: 1% !important; }
     span{ font-size: .6em !important; }
     .imgmuestraser{ height: 18vh !important;}
+    #fotosdservi{
+        width: 100%;
+        /* background: black; */
+        margin-top: 4vh;
+        margin-left: 1vh;
+    }
+
+    #infoservicio{ 
+        width: 91%;
+        height: 40vh;
+        background: var(--gris);
+        margin-top: 2vh;
+        margin-left: 3vh;
+    }
+    #tituloserv{ margin-top: 16vh; }
+    #infoser{ margin-top: -8vh; }
+    #tituloserv > h4{ border-bottom: 2px}
+            
+    .imgserviunico{
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+    #galerias{ float:left;}
     .outserm{ margin-bottom: .5%; }
     .modalhz{ margin-left: 7% !important; margin-top: 40% !important; width: 90% !important;}
     .modalvert{ margin-left: 24% !important; height: 550px !important; margin-top: 15% !important; }
     #piefoto{ 
         color: white;
-        margin-left: 13%; 
+        margin-left: 8vw; 
         font-size: 1.4vh;
     }
     h1{ font-size: 2.5rem;}
@@ -631,14 +850,17 @@
     #at{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 85%;
+        margin-left: 30vw;
     }
     
     #ad{ 
         filter: invert(100%);
         width: 3em;
-        margin-left: 50%;
+        margin-left: 7vw;
     }
+
+    /* CONTACTO */
+    #senema{ margin-left: 0vh; }
 }
 
     /*DISPOSITIVOS SMARTPHONE*/
@@ -654,7 +876,8 @@
         position: relative;
         float: left;
     }
-    
+   
+       
     /* NOSOTROS  */
     .main .container{
         margin-bottom: 50px;
@@ -664,7 +887,7 @@
     }
 
     /* SERVICIOS */
-    .div-sm-6, .div-sm-2, .div-sm-8, .div-sm-4, .div-md-3, .div-sm-12, .div-sm-1, .div-sm-10, .div-smp-6 {
+    .div-sm-6, .div-sm-2, .div-sm-8, .div-sm-4, .div-md-3,  .div-sm-1, .div-sm-10, .div-smp-6 {
         float: left;
         margin-right: 1%;
         margin-bottom: 10px;
@@ -683,15 +906,41 @@
     .div-sm-10 { width: 82.33333333333%; }
     .div-sm-12 { width: 99%; }
 
+    .selector{ display: none !important;}
+
     #galery{ margin-left: 1% !important; }
     span{ font-size: .3em !important; }
-    .imgmuestraser{ height: 16vh !important;}
-    .outserm{ margin-bottom: .5%; }
+    .imgmuestraser{ height: 13vh !important;}
+    #fotosdservi{
+        width: 100%;
+        /* background: black; */
+        margin-top: 4vh;
+        margin-left: 1vh;
+    }
+
+    #infoservicio{ 
+        width: 91%;
+        height: 40vh;
+        background: var(--gris);
+        margin-top: 2vh;
+        margin-left: 3vh;
+    }
+    #tituloserv{ margin-top: 2vh; }
+    #infoser{ margin-top: -2vh; }
+    #tituloserv > h4{ border-bottom: 2px}
+            
+    .imgserviunico{
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+    #galerias{ float:left;}
+    .outserm{ margin-bottom: .5vh; }
     .modalhz{ margin-left: 7% !important; margin-top: 58% !important; width: 90% !important;}
     .modalvert{ margin-left: 24% !important; height: 325px !important; margin-top: 38% !important;}
     #piefoto{ 
         color: white;
-        margin-left: 10.5%; 
+        margin-left: 8vw; 
         font-size: 1.2vh;
     }
     h1{ font-size: 2.5rem;}
@@ -699,14 +948,19 @@
     #at{ 
         filter: invert(100%);
         width: 2em;
-        margin-left: 85%;
+        height: 2em;
+        margin-left: 19vw;
     }
     
     #ad{ 
         filter: invert(100%);
         width: 2em;
-        margin-left: 50%;
+        height: 2em;
+        margin-left: -17vw;
     }
+
+    /* CONTACTO */
+    #senema{ margin-left: 0vh; }
 }
 
 /*============= FIN DE MEDIAS QUERYS =================*/
@@ -717,21 +971,41 @@
 /*======= BASICA =======*/
 .bg { /* BACKGROUND DE TODAS LAS PANTALLAS - FONDO  */
     width: 100%;
-    height: 92%;
+    height: 79.5%;
     position: absolute;
     float: left;
-    background: var(--blanco);
+    background-image: url(../images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.bgn { /* BACKGROUND DE TODAS LAS PANTALLAS - FONDO  */
+.bgn { /* BACKGROUND EN NOSOTROS - FONDO  */
     width: 100%;
     height: 94%;
     position: absolute;
     float: left;
     background: var(--blanco);
 }
+.bgs { /* BACKGROUND EN LOS SERVICIOS - FONDO  */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    float: left;
+    background-image: url(../images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgc { /* BACKGROUND EN LOS SERVICIOS - FONDO  */
+    width: 100%;
+    position: absolute;
+    float: left;
+    background-image: url(../images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .navbar{
-    border-bottom: 3px solid var(--azul) !important;
+    border-bottom: 3px solid var(--negro) !important;
 }
 
 #barraus{
@@ -762,7 +1036,7 @@
     height: 2em;
     display: none;
 }
-#reds { width: 3em; height: 2em; filter: invert(100%);}
+
 #redes {
     width: 2.5vw;
     height: 3.5vh;
@@ -829,7 +1103,7 @@ h3{ margin-top: -15px !important; }
 }
 
 #modal>h1 {
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-weight: 400;
     color: var(--blanco) !important;
@@ -883,10 +1157,11 @@ h3{ margin-top: -15px !important; }
 
 .footer {
     width: 100%;
-    height: 5%;
+    height: 21%;
+    background: var(--negro);
     position: relative;
     float: left;
-    border-top: 3px solid var(--azul);
+    border-top: 3px solid var(--negro);
 }   
 
 
@@ -953,8 +1228,8 @@ h3{ margin-top: -15px !important; }
     right: 30px;
     bottom: 50%;
     left: 30px;
-    border-top: 1px solid rgba(0, 0, 0, 0.8);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     content: '';
     opacity: 0;
     -webkit-transition: all 0.4s;
@@ -1059,32 +1334,32 @@ video{ width: 150vh; margin-left: 15%; }
 /*============= SERVICIO =========*/
 
 #slc1, #slc2, #slc3, #slc4, #slc5, #slc6, #slc7, #slc8, #slc9, #slc0 { margin-top: 1.5%; }
-#slc1 { border-bottom: 3px solid #00FFFF; } 
-#slc2 { border-bottom: 3px solid #FF00FF; }
-#slc3 { border-bottom: 3px solid #FFEF00; }
-#slc4 { border-bottom: 3px solid #00FFFF; }
-#slc5 { border-bottom: 3px solid #FF00FF; }
-#slc6 { border-bottom: 3px solid #FFEF00; }
-#slc7 { border-bottom: 3px solid #00FFFF; }
-#slc8 { border-bottom: 3px solid #FF00FF; }
-#slc9 { border-bottom: 3px solid #FFEF00; }
-#slc0 { border-bottom: 3px solid #00FFFF; }
+/* #slc1 {  } 
+#slc2 {  }
+#slc3 {  }
+#slc4 {  }
+#slc5 {  }
+#slc6 {  }
+#slc7 {  }
+#slc8 { }
+#slc9 {  }
+#slc0 {  } */
 
 
-#slc1:hover { color:var(--magenta);}
-#slc3:hover { color:var(--magenta);}
-#slc4:hover { color:var(--magenta);}
-#slc2:hover { color:var(--magenta);}
-#slc5:hover { color:var(--magenta);}
-#slc6:hover { color:var(--magenta);}
-#slc7:hover { color:var(--magenta);}
-#slc8:hover { color:var(--magenta);}
-#slc9:hover { color:var(--magenta);}
-#slc0:hover { color:var(--magenta);}
+#slc1:hover { border-bottom: 3px solid #00FFFF; color:var(--magenta);}
+#slc3:hover { border-bottom: 3px solid #FFFF00; color:var(--magenta);}
+#slc4:hover { border-bottom: 3px solid #00FFFF; color:var(--magenta);}
+#slc2:hover { border-bottom: 3px solid #FF00FF; color:var(--magenta);}
+#slc5:hover { border-bottom: 3px solid #FF00FF; color:var(--magenta);}
+#slc6:hover { border-bottom: 3px solid #FFFF00; color:var(--magenta);}
+#slc7:hover { border-bottom: 3px solid #00ffff; color:var(--magenta);}
+#slc8:hover { border-bottom: 3px solid #FF00FF; color:var(--magenta);}
+#slc9:hover { border-bottom: 3px solid #FFEF00; color:var(--magenta);}
+#slc0:hover { border-bottom: 3px solid #00FFFF;color:var(--magenta);}
 
 .selector {
     background: var(--gris);
-    float: left;
+    /* float: left; */
     justify-content: center;
     display: flex;
     width: 100%;
@@ -1092,7 +1367,7 @@ video{ width: 150vh; margin-left: 15%; }
 }
 
 .informacion {
-    background: var(--blanco);
+    /* background: var(--blanco); */
     width: 100%;
     height: 100%;
     position: relative;
@@ -1110,12 +1385,13 @@ video{ width: 150vh; margin-left: 15%; }
 }
 #galery {
     display: block;
-    margin-left: 17.7%;
+    margin-left: 15%;
     -webkit-transition: 3s; /* For Safari 3.1 to 6.0 */
     transition: 3s;
 }
 .movgalery{
-    margin-left: 0% !important;
+    margin-left: 6% !important;
+    margin-top: 2%;
 }
 
 .movflex{
@@ -1182,6 +1458,7 @@ video{ width: 150vh; margin-left: 15%; }
     outline: none;
     font-size: 1em;
     border-radius: 10px;
+    margin-left: 83vh;
 }
 #titface{ margin-top:7px;}
 
@@ -1272,3 +1549,6 @@ a:link{ text-decoration:none; color: black; }
     margin-top: 150px;
     z-index: 3;
 }
+
+
+#f{ width: 99%; }
