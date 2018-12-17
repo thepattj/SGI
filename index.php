@@ -105,9 +105,24 @@
           </div>
         </div>
 
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+                <div class="col col-sm-4 col-md-4 col-lg-3 col-xl-4">
+                  <img style="width:48%;" src="images/foot1.png">
+                </div>
+                <div class="col col-sm-4 col-md-4 col-lg-3 col-xl-4 ">
+                  <img style="width:80%;" src="images/foot2.png">
+                </div>
+                <div class="col col-sm-4 col-md-4 col-lg-3 col-xl-4">
+                  <img style="width:55%;" src="images/foot3.png">
+                </div>
+            </div>
+          </div>
+        </footer>
         
-        
-        <div class="footer">
+        <!-- <div class="footer">
            <div class="row" id="f">
             <div class="col-sm-4 col-lg-4 col-xl-4" id="f1">
               <img style="width:48%;" src="images/foot1.png">
@@ -118,7 +133,7 @@
             <div class="col-sm-4 col-lg-4 col-xl-4" id="f3">
               <img style="width:55%;" src="images/foot3.png">
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>

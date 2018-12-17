@@ -772,8 +772,7 @@
     #grid{ margin-left: .5% !important; }
     .outmarg{ margin-bottom: .5%; margin-right: -3.5%;}
     .imgmuestra{
-        width: 46vw !important;
-        height: 18vh !important;
+        width: 100% !important;
         position: relative;
         float: left;
     }
