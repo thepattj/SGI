@@ -878,11 +878,11 @@ $(document).ready(function () {
     $('#senema').click(function () {
         var contenido = $('#cuerpo').val();
         var envia = $('#mail').val();
-        alert("envia el correo: "+envia+" el texto:"+contenido);
+        //alert("envia el correo: "+envia+" el texto:"+contenido);
 
         $.ajax({
             method: 'POST',
-            url: 'envio.php',
+            url: 'correo.php',
             data: {'cuerpo':contenido, 'remi':envia},
         })
         .done(function( msg ) {

@@ -107,17 +107,21 @@
 
         <!-- FOOTER -->
         <footer class="footer">
-          <div class="container">
-            <div class="row">
-                <div class="col col-sm-4 col-md-4 col-lg-3 col-xl-4">
-                  <img style="width:48%;" src="images/foot1.png">
-                </div>
-                <div class="col col-sm-4 col-md-4 col-lg-3 col-xl-4 ">
-                  <img style="width:80%;" src="images/foot2.png">
-                </div>
-                <div class="col col-sm-4 col-md-4 col-lg-3 col-xl-4">
-                  <img style="width:55%;" src="images/foot3.png">
-                </div>
+          <div class="row" id="rf" style="width:99%;">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+              <p id="face-foo" class="center-block" style="">SÍGUENOS EN: <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img class="" id="imagfoo" src="images/icon/facebook.png" style="" > </a> </p>
+            </div>
+            <div id="col-foo1" class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+              <p class="textofoo" style="">CONTÁCTANOS:</p>
+              <p class="textofoo" style="">Ulises Reséndiz / Director Comercial</p>
+              <p class="textofoo" style="">55 4192 1881</p>
+              <p class="textofoo" style="">ulises@gruposgi.com.mx</p>              
+            </div>
+            <div id="col-foo" class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+              <p class="textofoo" style="">CONTÁCTANOS:</p>
+              <p class="textofoo" style="">Alberto Martínez / Director de Operaciones</p>
+              <p class="textofoo" style="">55 4056 098</p>
+              <p class="textofoo" style="">alberto@gruposgi.com.mx</p>              
             </div>
           </div>
         </footer>

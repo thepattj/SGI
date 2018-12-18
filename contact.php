@@ -35,92 +35,166 @@
 ?>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
-                <img id="logo" src="images/logo.png" width="45" height="30" class="d-inline-block align-top" alt="">
-            </a>
-            <span class="navbar-text" id="titulo">
-                Soluciones Gráficas e Industriales
-            </span>
-            <span class="navbar-text" id="titulo"></span>
-            <span class="navbar-text" id="titulo"></span>
-            <span class="navbar-text" id="titulo"></span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" onclick="seccion('us')" href="#">Nosotros </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="seccion('serv')" href="#">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="seccion('contact')" href="#">Contacto</a>
-                </li>
-                </ul>
-            </div>
-        </nav>
-    <div class="bgc">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+        <a class="navbar-brand" href="#">
+        <img id="logo" src="images/logo.png" width="45" height="30" class="d-inline-block align-top" alt="">
+        </a>
+        <span class="navbar-text" id="titulo" style="font-weight: bolder;"> SOLUCIONES GRÁFICAS E INDUSTRIALES </span>
         
-        <div class="body2">
-            <div class="row" style=" width: 100%;">
-                <!-- Letrero -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <h2 id="titlecnt">UBÍCANOS</h2>
+        <span class="navbar-text" id="titulo"></span>
+        <span class="navbar-text" id="titulo"></span>
+        <span class="navbar-text" id="titulo"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" onclick="seccion('us')" href="#">NOSOTROS </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" onclick="seccion('serv')" href="#">SERVICIOS</a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" onclick="seccion('contact')" href="#">CONTACTO</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="bg">
+        <!-- **** ESTE ES EL MODAL **** -->
+        <!--  <div id="bg-negro" onclick="cerrar()"></div>
+        <div id="modal"></div> -->
+
+        <!-- *** AQUI INICIA LO QUE SE VE *** -->
+        <div class="body">
+          <div class="row" id="conta">
+            <!-- AQUI PUEDE IR UN IF CON EL WIDTH PARA VER SI FUNCIONA Y DECIR QUE CUANDO SE MENOR A  992ENTRE -->
+            <!-- PUEDE COLOCARSE AL IGUAL ALGUNA TRABA PARA HTML CON EL CSS Y LOS ID -->
+            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <H5 style="font-weight:bold;">VISÍTANOS </H5>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <H5 style="font-weight:bold; margin-left: 3vw;"> ESCRÍBENOS</H5>
+            </div>
+
+
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h6 class="textoi">SUCURSAL QUERÉTARO</h6>
                 </div>
-                <!-- Primer mapa -->
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h2 class="textoi">SUCURSAL QUERÉTARO</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map"></div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H6>
-                        <H6 class="textod"> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H6><br>
-                    </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H6>
+                    <H6 class="textod"> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H6><br>
                 </div>
 
-                <!-- Segundo Mapa -->
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h2 class="textoi">SUCURSAL CD. MÉXICO</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map2"></div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <H6 class="textod"><img id="imgc" src="images/icon/mark.png"> Enrique Rebsamen 22. Col. Piedad Narvarte C.P. 03000</H6>
-                        <H6 class="textod"><img id="imgc" src="images/icon/phone.png"> (55) 5530 7046</H6><br>
-                    </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"></div>
+
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h6 class="textoi">SUCURSAL CDMX</h6>
                 </div>
-
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="foot">
-                    <h2 id="titlecnt">CONTÁCTANOS</h2>
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div id="renglon" class="col-sm-6 col-md-12 col-lg-12 col-xl-12">
-                            <p id="textem" style="margin-top:3.5%; text-align:center;"> Envíanos un correo, con tus datos y el tema a tratar: </p>
-                        </div>
-                        <div class="col-sm-16 col-md-16 col-lg-6 col-xl-6">
-                            <input id="mail" type="text" placeholder="ejemplos@servidor.com">
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <textarea id="cuerpo"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                        <button id="senema">Enviar</button>
-                    </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Enrique Rebsamen 22, Piedad Nararte<br>MUNICIPIO, CDMX C.P. 03000</H6>
+                    <H6 class="textod"> <img id="imgc" src="images/icon/phone.png">(55) 5530 7046</H6><br>
                 </div>
             </div>
+
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map2"></div>
+            </div>
+
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <input id="mail" type="text" placeholder="ejemplos@servidor.com">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <textarea id="cuerpo" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <button id="senema">Enviar</button>
+                </div>
+            </div>            
+          </div>
+
+          <div class="row" id="mini">
+            <!-- AQUI PUEDE IR UN IF CON EL WIDTH PARA VER SI FUNCIONA Y DECIR QUE CUANDO SE MENOR A  992ENTRE -->
+            <!-- PUEDE COLOCARSE AL IGUAL ALGUNA TRABA PARA HTML CON EL CSS Y LOS ID -->
+            <div class="col-12 col-sm-12 col-md-12 text-center">
+                <H5 style="font-weight:bold;">VISÍTANOS </H5>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 text-center">
+                <h6 class="textoi">SUCURSAL QUERÉTARO</h6>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 text-center">
+                <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H6>
+                <H6 class="textod"> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H6><br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12" id="map3"></div>
+
+            <div class="col-12 col-sm-12 col-md-12 text-center">
+                <h6 class="textoi">SUCURSAL CDMX</h6>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 text-center">
+                <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Enrique Rebsamen 22, Piedad Nararte<br>MUNICIPIO, CDMX C.P. 03000</H6>
+                <H6 class="textod"> <img id="imgc" src="images/icon/phone.png">(55) 5530 7046</H6><br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12" id="map4"></div>
+
+
+
+
+
+            <div class="col-12 col-sm-12 col-md-12 text-center">
+                <H5 style="font-weight:bold; margin-left: 3vw;"> ESCRÍBENOS</H5>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12">
+                <input id="mail" type="text" placeholder="ejemplos@servidor.com">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12">
+                <textarea id="cuerpo" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12">
+                <button id="senema">Enviar</button>
+            </div>
+          </div>
         </div>
 
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="row" id="rf" style="width:99%;">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+              <p id="face-foo" class="center-block" style="">SÍGUENOS EN: <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img class="" id="imagfoo" src="images/icon/facebook.png" style="" > </a> </p>
+            </div>
+            <div id="col-foo1" class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+              <p class="textofoo" style="">CONTÁCTANOS:</p>
+              <p class="textofoo" style="">Ulises Reséndiz / Director Comercial</p>
+              <p class="textofoo" style="">55 4192 1881</p>
+              <p class="textofoo" style="">ulises@gruposgi.com.mx</p>              
+            </div>
+            <div id="col-foo" class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+              <p class="textofoo" style="">CONTÁCTANOS:</p>
+              <p class="textofoo" style="">Alberto Martínez / Director de Operaciones</p>
+              <p class="textofoo" style="">55 4056 098</p>
+              <p class="textofoo" style="">alberto@gruposgi.com.mx</p>              
+            </div>
+          </div>
+        </footer>
+        
+        <!-- <div class="footer">
+           <div class="row" id="f">
+            <div class="col-sm-4 col-lg-4 col-xl-4" id="f1">
+              <img style="width:48%;" src="images/foot1.png">
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xl-4" id="f2">
+              <img style="width:80%;" src="images/foot2.png">
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xl-4" id="f3">
+              <img style="width:55%;" src="images/foot3.png">
+            </div>
+        </div> -->
     </div>
 </body>
 </html>
@@ -152,6 +226,11 @@ function initMap() { //FUNCION QUE CARGA EL MAPA CON LA GEOLOCALIZACION ACTUAL
           zoom: 14
         });
 
+        var map3 = new google.maps.Map(document.getElementById('map3'), {
+          center: myLatLng,
+          zoom: 14
+        });
+
         // Create a marker and set its position.
         var marker = new google.maps.Marker({
           map: map,
@@ -164,5 +243,36 @@ function initMap() { //FUNCION QUE CARGA EL MAPA CON LA GEOLOCALIZACION ACTUAL
           position: myLatLng2,
           icon: 'images/icon/markg.png'
         });
+
+
+         // Create a map object and specify the DOM element
+        // for display.
+       
+
+        var map4 = new google.maps.Map(document.getElementById('map4'), {
+          center: myLatLng2,
+          zoom: 14
+        });
+
+        // Create a marker and set its position.
+        var marker3 = new google.maps.Marker({
+          map: map3,
+          position: myLatLng,
+          icon: 'images/icon/markg.png'
+        });
+
+        var marker4 = new google.maps.Marker({
+          map: map4,
+          position: myLatLng2,
+          icon: 'images/icon/markg.png'
+        });
+        
 }
 </script>
+
+    
+
+
+
+
+    
