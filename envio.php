@@ -28,10 +28,10 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
                                             <h4>STANDS Y DISPLAYS</h4>
                                         </div>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
                                             <h6><b> Materiales: <br> MDF, triplay, trovicel, coroplast, foamboard, lámina, microalambre, aluminio entre otros</b> </h6>
                                         </div>
                                     </div>
@@ -55,10 +55,10 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
                                             <h4>VINIL DE RECORTE</h4>
                                         </div>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
                                             <h6><b>Materiales: <br> RECORTE </b> <br>(a uno o varios colores)<br><b>ESMERILADO </b> (recorte e impreso)</h6>
                                         </div>
                                     </div>
@@ -82,10 +82,10 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
                                             <h4>AUTOS, VINIL Y ROTULACIÓN</h4>
                                         </div>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
                                             <h6><b>Materiales: <br> WALL GRAPHIC <br> FLOOR GRAPHIC </b> <br><b>ELECTROESTÁTICO </b> (blanco, transparente)<br><b>AUTOADHERIBLE </b> (mate, blanco, covencional, con fondo gris o negro, microperforado)</h6>
                                         </div>
                                     </div>
@@ -107,10 +107,10 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
                                             <h4>GRAN FORMATO</h4>
                                         </div>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
                                             <h6><b>Materiales: <br> LONAS Tradicionales</b> (de 13 onzas) <b><br> APLICACIÓN DE LONAS</b> (en bastidores) <b><br> LONA BLACKLIGHT <br> LONA MESH <br> LONA BLACKOUT <br> LONA SOLIDA <br> PARA TOLDOS <br> VINIL </b> (blanco, con adhesivo gris o negro)</h6>
                                         </div>
                                     </div>
@@ -130,10 +130,10 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
                                             <h4>TELA</h4>
                                         </div>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
                                             <h6><b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)</h6>
                                         </div>
                                     </div>
@@ -157,10 +157,10 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
                                             <h4>LETREROS EN 3D/CAJAS DE LUZ</h4>
                                         </div>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
                                             <h6><b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)</h6>
                                         </div>
                                     </div>
@@ -182,10 +182,10 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
                                             <h4>VOLUMETRICOS</h4>
                                         </div>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
                                             <h6><b> DISEÑO Y PRODUCCIÓN</b></h6>
                                         </div>
                                     </div>
@@ -203,10 +203,10 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
                                             <h4>PLAYERAS</h4>
                                         </div>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
                                             <h6><b>Materiales: <br> PLAYERAS DE CUALQUIER TIPO DE SERIGRAFIA Y VINIL TEXTIL</b> <br> (brillosa, mate y repelente al agua)</h6>
                                         </div>
                                     </div>
@@ -224,10 +224,10 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
                                             <h4>IMPRESIÓN DIRECTA</h4>
                                         </div>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
                                             <h6><b>Materiales: <br>SUSTRATOS RIGIDOS</b> <br> (PVC, acrilico, vidrio, estireno, foamboard, coroplast, madera, MDF impreso)</h6>
                                         </div>
                                     </div>
@@ -246,10 +246,10 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center'  id='tituloserv'>
                                             <h4>INSTALACIÓN</h4>
                                         </div>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='infoser'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
                                             <h6><b>En cualquier lugar, con cualquier material</b></h6>
                                         </div>
                                     </div>
