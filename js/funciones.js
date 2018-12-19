@@ -176,7 +176,7 @@ $(document).ready(function () {
                                 "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato5' src='images/servicios/formato5.jpg'> </div>"+
                                 "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato6z' src='images/servicios/formato6.jpg'> </div>"+
                                 "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato7' src='images/servicios/formato7.jpg'> </div>"+
-                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato8z' src='images/servicios/formato8.jpg'> </div>"+
+                                "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato8' src='images/servicios/formato8.jpg'> </div>"+
                             "</div>"+
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
@@ -607,7 +607,7 @@ $(document).ready(function () {
                                         "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato5' src='images/servicios/formato5.jpg'> </div>"+
                                         "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato6z' src='images/servicios/formato6.jpg'> </div>"+
                                         "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato7' src='images/servicios/formato7.jpg'> </div>"+
-                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato8z' src='images/servicios/formato8.jpg'> </div>"+
+                                        "<div class='outmarg col-sm-6 col-md-6 col-lg-6 col-xl-6'> <img class='imgserviunico' onclick='igs(this.id,2)' id='formato8' src='images/servicios/formato8.jpg'> </div>"+
                                     "</div>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
@@ -886,7 +886,7 @@ $(document).ready(function () {
             data: {'cuerpo':contenido, 'remi':envia},
         })
         .done(function( msg ) {
-            alert( "Data Saved: " + msg );
+            //alert( "Data Saved: " + msg );
           });
     });
 });
@@ -1024,7 +1024,7 @@ function sig(proce, url){
         if(desfr[0] == "f" && desfr[1] == "o"){
             //alert("entre al formato, este es el valor de verurl: "+verurl);
             //Arrayserv de cada uno 
-            Arrayserv = ['formato.jpg','formato2.jpg','formato3.jpg','formato4.jpg','formato5.jpg','formato6z.jpg','formato7.jpg','formato8z.jpg','formato9.jpg'];
+            Arrayserv = ['formato.jpg','formato2.jpg','formato3.jpg','formato4.jpg','formato5.jpg','formato6z.jpg','formato7.jpg','formato8.jpg',];
             final=9; //con cantidad de elementos
             for(i=0; i< final; i ++){
                 if(verurl == Arrayserv[i]){
@@ -1052,7 +1052,7 @@ function sig(proce, url){
                     } 
                 }
             }
-            alert(nueva);
+            //alert(nueva);
             sessionStorage.setItem("ulrm", nueva);
         }
         // =========== IMPRESION DIRECTA ============
@@ -1269,7 +1269,7 @@ function sig(proce, url){
         if(desfr[0] == "t" && desfr[1] == "e"){
             //alert("entre al formato, este es el valor de verurl: "+verurl);
             //Arrayserv de cada uno 
-            Arrayserv = ['tela.jpg','tela2z.jpg','tela3.jpg','tela4.jpg','tela5z.jpg','tela6.jpg','tela7z.jpg'];
+            Arrayserv = ['tela.jpg','tela2z.jpg','tela3.jpg','tela4.jpg','tela5z.jpg','tela6.jpg'];
             final=7; //con cantidad de elementos
             for(i=0; i< final; i ++){
                 if(verurl == Arrayserv[i]){
@@ -1339,7 +1339,7 @@ function sig(proce, url){
         if(desfr[0] == "v" && desfr[1] == "o"){
             //alert("entre al formato, este es el valor de verurl: "+verurl);
             //Arrayserv de cada uno 
-            Arrayserv = ['vol.jpg','vol2z.jpg','vol3.jpg','vol4.jpg','vol5.jpg','vol6.jpg','vol7.jpg','vol8.jpg','vol9.jpg'];
+            Arrayserv = ['vol.jpg','vol2z.jpg','vol3.jpg','vol4.jpg','vol5.jpg','vol6.jpg','vol7.jpg','vol8.jpg'];
             final=10; //con cantidad de elementos
             for(i=0; i< final; i ++){
                 if(verurl == Arrayserv[i]){
@@ -1416,7 +1416,7 @@ function atr(proce, url){
         if(desfr[0] == "f" && desfr[1] == "o"){
             //alert("entre al formato, este es el valor de verurl: "+verurl);
             //Arrayserv de cada uno 
-            Arrayserv = ['formato.jpg','formato2.jpg','formato3.jpg','formato4.jpg','formato5.jpg','formato6z.jpg','formato7.jpg','formato8z.jpg','formato9.jpg'];
+            Arrayserv = ['formato.jpg','formato2.jpg','formato3.jpg','formato4.jpg','formato5.jpg','formato6z.jpg','formato7.jpg','formato8.jpg'];
             final=9; //con cantidad de elementos
             for(i=0; i< final; i ++){
                 if(verurl == Arrayserv[i]){
@@ -1661,7 +1661,7 @@ function atr(proce, url){
         if(desfr[0] == "t" && desfr[1] == "e"){
             //alert("entre al formato, este es el valor de verurl: "+verurl);
             //Arrayserv de cada uno 
-            Arrayserv = ['tela.jpg','tela2z.jpg','tela3.jpg','tela4.jpg','tela5z.jpg','tela6.jpg','tela7z.jpg'];
+            Arrayserv = ['tela.jpg','tela2z.jpg','tela3.jpg','tela4.jpg','tela5z.jpg','tela6.jpg'];
             final=7; //con cantidad de elementos
             for(i=0; i< final; i ++){
                 if(verurl == Arrayserv[i]){
@@ -1731,7 +1731,7 @@ function atr(proce, url){
         if(desfr[0] == "v" && desfr[1] == "o"){
             //alert("entre al formato, este es el valor de verurl: "+verurl);
             //Arrayserv de cada uno 
-            Arrayserv = ['vol.jpg','vol2z.jpg','vol3.jpg','vol4.jpg','vol5.jpg','vol6.jpg','vol7.jpg','vol8.jpg','vol9.jpg'];
+            Arrayserv = ['vol.jpg','vol2z.jpg','vol3.jpg','vol4.jpg','vol5.jpg','vol6.jpg','vol7.jpg','vol8.jpg'];
             final=10; //con cantidad de elementos
             for(i=0; i< final; i ++){
                 if(verurl == Arrayserv[i]){

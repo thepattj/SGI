@@ -1500,7 +1500,7 @@
 
     #infoservicio{ 
         width: 91%;
-        height: 25vh;
+        height: 30vh;
         background: rgba(214,214,214,.7);
         margin-top: 2vh;
         margin-left: 3vh;
@@ -1528,13 +1528,15 @@
     #at{ 
         filter: invert(100%);
         width: 2.5em;
-        margin-left: 30vw;
+        height: 2.5em;
+        margin-left: 20vw;
     }
     
     #ad{ 
         filter: invert(100%);
         width: 2.5em;
-        margin-left: 7vw;
+        height: 2.5em;
+        margin-left: -13vw;
     }
 
 
@@ -1701,7 +1703,7 @@
     #galerias{ float:left;}
     .outserm{ margin-bottom: .5vh; }
     .modalhz{ margin-left: 6vw !important; margin-top: 13vh !important; width: 90% !important;}
-    .modalvert{ margin-left: 24% !important; height: 325px !important; margin-top: 38% !important;}
+    .modalvert{ margin-left: 24% !important; height: 325px !important; margin-top: 4vh!important;}
     #piefoto{ 
         color: white;
         margin-left: 8vw; 

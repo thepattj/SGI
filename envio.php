@@ -28,7 +28,7 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
                                             <h4>STANDS Y DISPLAYS</h4>
                                         </div>
                                         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
@@ -55,7 +55,7 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
                                             <h4>VINIL DE RECORTE</h4>
                                         </div>
                                         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
@@ -82,7 +82,7 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
                                             <h4>AUTOS, VINIL Y ROTULACIÓN</h4>
                                         </div>
                                         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
@@ -107,7 +107,7 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
                                             <h4>GRAN FORMATO</h4>
                                         </div>
                                         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
@@ -130,7 +130,7 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
                                             <h4>TELA</h4>
                                         </div>
                                         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
@@ -157,7 +157,7 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
                                             <h4>LETREROS EN 3D/CAJAS DE LUZ</h4>
                                         </div>
                                         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
@@ -182,7 +182,7 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
                                             <h4>VOLUMETRICOS</h4>
                                         </div>
                                         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
@@ -203,7 +203,7 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
                                             <h4>PLAYERAS</h4>
                                         </div>
                                         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
@@ -224,7 +224,7 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>
                                             <h4>IMPRESIÓN DIRECTA</h4>
                                         </div>
                                         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
@@ -246,7 +246,7 @@ function correo(){
                                 </div>
                                 <div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                                     <div id='infoservicio' class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center'  id='tituloserv'>
+                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'  id='tituloserv'>
                                             <h4>INSTALACIÓN</h4>
                                         </div>
                                         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>
