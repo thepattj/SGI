@@ -15,6 +15,7 @@
     <link rel="icon" href="images/lmin.png" sizes="32x32">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -43,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-            <a class="nav-link" onclick="seccion('us')" href="#">NOSOTROS </a>
+            <a class="nav-link" onclick="seccion('us')" href="#"><b>NOSOTROS</b> </a>
             </li>
             <li class="nav-item">
             <a class="nav-link" onclick="seccion('serv')" href="#">SERVICIOS</a>

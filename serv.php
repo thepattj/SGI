@@ -15,6 +15,7 @@
     <link rel="icon" href="images/lmin.png" sizes="32x32">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -50,7 +51,7 @@
           <a class="nav-link" style="color: black !important" onclick="seccion('us')" href="#">NOSOTROS</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" style="color: black !important"  onclick="seccion('serv')" href="#"><strong>SERVICIOS</strong></a>
+          <a class="nav-link" style="color: black !important"  onclick="seccion('serv')" href="#"><b>SERVICIOS</b></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" style="color: black !important"  onclick="seccion('contact')" href="#">CONTACTO</a>
@@ -69,16 +70,16 @@
                 <div class="selector">
                     <div class="div-md-1"></div>
                     <div class="div-sm-12 div-md-10 div-lg-12 div-xl-12">
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc1" value="STANDS Y DISPLAYS"><span style="text-align: center !important;" class="secciones">STANDS Y DISPLAYS</p></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc2" value="VINIL DE RECORTE"><span style="text-align: center !important;" class="secciones">VINIL PARA RECORTE</p> </div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc3" value="AUTOS, VINIL y ROTULACIÓN"><span style="text-align: center;" class="secciones">VINIL Y ROTULACIÓN </span> </div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc4" value="GRAN FORMATO"><span style="text-align: center !important;" class="secciones">GRAN FORMATO</span></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc5" value="TELA"><span class="secciones">TELA</span></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc6" value="LETREROS EN 3D, TOLDOS Y CAJAS DE LUZ "><span style="text-align: center !important;" class="secciones">LETREROS EN 3D y MÁS</span></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc7" value="VOLUMÉTRICOS"><span  class="secciones">VOLUMÉTRICOS</span></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc8" value="PLAYERAS"><span  class="secciones">PLAYERAS </span> </div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc9" value="IMPRESIÓN DIRECTA"><span style="text-align: center !important;" class="secciones">IMPRESIÓN DIRECTA </span> </div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc0" value="INSTALACIONES"><span  class="secciones">INSTALACIONES</span> </div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc1" value="STANDS Y DISPLAYS"><span style="text-align: center !important;" class="secciones"><b>STANDS Y DISPLAYS</b></span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc2" value="VINIL DE RECORTE"><span style="text-align: center !important;" class="secciones"><b>VINIL PARA RECORTE</b></span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc3" value="AUTOS, VINIL y ROTULACIÓN"><span style="text-align: center;" class="secciones"><b>VINIL Y ROTULACIÓN</b> </span> </div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc4" value="GRAN FORMATO"><span style="text-align: center !important;" class="secciones"><b>GRAN FORMATO</b></span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc5" value="TELA"><span class="secciones"><b>TELA</b></span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc6" value="LETREROS EN 3D, TOLDOS Y CAJAS DE LUZ "><span style="text-align: center !important;" class="secciones"><b>LETREROS EN 3D y MÁS</b></span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc7" value="VOLUMÉTRICOS"><span  class="secciones"><b>VOLUMÉTRICOS</b></span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc8" value="PLAYERAS"><span  class="secciones"><b>PLAYERAS</b> </span> </div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc9" value="IMPRESIÓN DIRECTA"><span style="text-align: center !important;" class="secciones"><b>IMPRESIÓN DIRECTA</b> </span> </div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc0" value="INSTALACIONES"><span  class="secciones"><b>INSTALACIONES</b></span> </div>
                     </div>
                     <div class="div-md-1"></div>
                 </div>
@@ -156,18 +157,18 @@
         <!-- FOOTER -->
         <footer class="footer">
           <div class="row" id="rf" style="width:99%;">
-            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 ">
               <p id="face-foo" class="center-block" style=""><b>SÍGUENOS EN:</b> <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img class="" id="imagfoo" src="images/icon/facebook.png" style="" > </a> </p>
             </div>
-            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="border-left: 2px solid white; margin-top: 1.5vh;" id="divfoo">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="border-left: 2px solid white; margin-top: 1.5vh;" id="divfoo">
               <p id="title-foo" class="center-block" style=""><b>CONTÁCTANOS: </b></p>
             </div>
-            <div id="col-foo1" class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left">
+            <div id="col-foo1" class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 text-left">
                <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/contact.png" style="" > Ulises Reséndiz / Director Comercial</p>
                <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/phone.png" style="" > 55 4192 1881</p>
                <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/mail.png" style="" >  ulises@gruposgi.com.mx</p>              
             </div>
-            <div id="col-foo" class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left">
+            <div id="col-foo" class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 text-left">
               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/contact.png" style=""> Alberto Martínez / Director de Operaciones</p>
               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/phone.png" style="" > 55 4056 098</p>
               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/mail.png" style="" >  alberto@gruposgi.com.mx</p>              

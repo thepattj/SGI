@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     /* color: var(--negro); */
-    font-family: HelveNeu, sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 :root {
@@ -12,16 +12,6 @@
     --gris: rgba(133, 133, 133, 1);
     --blanco: #ffff;
     --magenta: rgba(229, 9, 127, 1);
-}
-
-@font-face {
-    font-family: HelveNeu;
-    src: url(../fonts/HelveticaNeue.ttc);
-}
-
-@font-face {
-    font-family: HelveNeuN;
-    src: url(../fonts/HelveticaNeueLTStd-BdCn.otf);
 }
 
 /*=============== MEDIA QUERYS ===================*/
@@ -76,7 +66,7 @@
         height: 7vh !important;
     }
     #logo{ width: 5vw; height: 5.5vh; }
-    #titulo{ margin-left: 37%; margin-right: -24%; font-size: 1vw !important; }
+    #titulo{ margin-left: 37%; margin-right: -24%; font-size: 1vw !important; color: black !important;}
     .nav-item > a{
         font-size: 1vw;
     }
@@ -240,6 +230,7 @@
         margin-top:2vh;
         width: 60vh;
         margin-left: 16vh;
+        border:2px solid black;
     }
     #map { 
         height: 22vh;
@@ -247,6 +238,7 @@
         float: left;
         width: 60vh;
         margin-left: 16vh;
+        border:2px solid black;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
@@ -435,6 +427,7 @@
         margin-top:2vh;
         width: 60vh;
         margin-left: 4vh;
+        border:2px solid black;
     }
     #map { 
         height: 180px;
@@ -442,6 +435,7 @@
         float: left;
         width: 60vh;
         margin-left: 4vh;
+        border:2px solid black;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
@@ -478,7 +472,7 @@
 @media only screen and (min-width: 1026px) and (max-width: 1199px) {
     /* GENERAL */
     #logo{ width: 3.5vw; height: 3.5vh; }
-    #titulo{ margin-left: 36%; margin-right: -22%; font-size: .8vw; }
+    #titulo{ margin-left: 36%; margin-right: -22%; font-size: .8vw; color: black !important;}
     .nav-item > a{
         font-size: 1vw;
     }
@@ -630,6 +624,7 @@
         margin-top:2vh;
         width: 60vh;
         margin-left: 2vh;
+        border:2px solid black;
     }
     #map { 
         height: 180px;
@@ -637,6 +632,7 @@
         float: left;
         width: 60vh;
         margin-left: 2vh;
+        border:2px solid black;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
@@ -674,7 +670,7 @@
 /*DISPOSITIVOS TABLETS*/
 @media only screen and (min-width: 992px) and (max-width: 1025px) {
     /* GENERAL */
-    #titulo{ margin-left: 28%; margin-right: -19%; font-size: .8vw; }
+    #titulo{ margin-left: 28%; margin-right: -19%; font-size: .8vw; color: black !important;}
     .body{ height: 93% !important;}
     
 
@@ -814,6 +810,7 @@
         margin-top:2vh;
         width: 60vh;
         margin-left: 2vh;
+        border:2px solid black;
     }
     #map { 
         height: 180px;
@@ -821,6 +818,7 @@
         float: left;
         width: 60vh;
         margin-left: 2vh;
+        border:2px solid black;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
@@ -994,12 +992,14 @@
         height: 230px;
         margin-left: 2vh;
         float: left;
+        border:2px solid black;
     }
     #map4 { 
         height: 230px;
         margin-left: 2vh;
         margin-top: 5vh;
         float: left;
+        border:2px solid black;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
@@ -1183,11 +1183,13 @@
         height: 230px;
         margin-left: 2vh;
         float: left;
+        border:2px solid black;
     }
     #map4 { 
         height: 230px;
         margin-left: 2vh;
         float: left;
+        border:2px solid black;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
@@ -1371,11 +1373,13 @@
         height: 230px;
         margin-left: 2vh;
         float: left;
+        border:2px solid black;
     }
     #map4 { 
         height: 230px;
         margin-left: 2vh;
         float: left;
+        border:2px solid black;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
@@ -1419,6 +1423,7 @@
         position: relative;
         float: left;
     }
+    #divfoo{display: none;}
     .footer {
         width: 100%;
         height: 23%;
@@ -1550,11 +1555,13 @@
         height: 230px;
         margin-left: 2vh;
         float: left;
+        border:2px solid black;
     }
     #map4 { 
         height: 230px;
         margin-left: 2vh;
         float: left;
+        border:2px solid black;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
@@ -1601,7 +1608,7 @@
     }
     .footer {
         width: 100%;
-        height: 22%;
+        height: 16vh;
         background: var(--negro);
         color:white;
         position: relative;
@@ -1693,7 +1700,7 @@
     }
     #galerias{ float:left;}
     .outserm{ margin-bottom: .5vh; }
-    .modalhz{ margin-left: 7% !important; margin-top: 58% !important; width: 90% !important;}
+    .modalhz{ margin-left: 6vw !important; margin-top: 13vh !important; width: 90% !important;}
     .modalvert{ margin-left: 24% !important; height: 325px !important; margin-top: 38% !important;}
     #piefoto{ 
         color: white;
@@ -1731,13 +1738,15 @@
     }
     #map3 { 
         height: 230px;
-        margin-left: 2vh;
+        margin-left: 2.5vh;
         float: left;
+        border:2px solid black;
     }
     #map4 { 
         height: 230px;
-        margin-left: 2vh;
+        margin-left: 2.5vh;
         float: left;
+        border:2px solid black;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
@@ -2153,16 +2162,16 @@ video{ width: 150vh; margin-left: 15%; }
 #slc0 {  } */
 
 
-#slc1:hover { border-bottom: 3px solid #00FFFF; color:var(--magenta);}
-#slc3:hover { border-bottom: 3px solid #FFFF00; color:var(--magenta);}
-#slc4:hover { border-bottom: 3px solid #00FFFF; color:var(--magenta);}
-#slc2:hover { border-bottom: 3px solid #FF00FF; color:var(--magenta);}
-#slc5:hover { border-bottom: 3px solid #FF00FF; color:var(--magenta);}
-#slc6:hover { border-bottom: 3px solid #FFFF00; color:var(--magenta);}
-#slc7:hover { border-bottom: 3px solid #00ffff; color:var(--magenta);}
-#slc8:hover { border-bottom: 3px solid #FF00FF; color:var(--magenta);}
-#slc9:hover { border-bottom: 3px solid #FFEF00; color:var(--magenta);}
-#slc0:hover { border-bottom: 3px solid #00FFFF;color:var(--magenta);}
+#slc1:hover { border-bottom: 3px solid #00FFFF; }
+#slc3:hover { border-bottom: 3px solid #FFFF00; }
+#slc4:hover { border-bottom: 3px solid #00FFFF; }
+#slc2:hover { border-bottom: 3px solid #FF00FF; }
+#slc5:hover { border-bottom: 3px solid #FF00FF; }
+#slc6:hover { border-bottom: 3px solid #FFFF00; }
+#slc7:hover { border-bottom: 3px solid #00ffff; }
+#slc8:hover { border-bottom: 3px solid #FF00FF; }
+#slc9:hover { border-bottom: 3px solid #FFEF00; }
+#slc0:hover { border-bottom: 3px solid #00FFFF;}
 
 .selector {
     background: var(--gris);

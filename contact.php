@@ -15,6 +15,7 @@
     <link rel="icon" href="images/lmin.png" sizes="32x32">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -57,7 +58,7 @@
             <a class="nav-link" onclick="seccion('serv')" href="#">SERVICIOS</a>
             </li>
             <li class="nav-item active">
-            <a class="nav-link" onclick="seccion('contact')" href="#"><strong>CONTACTO</strong></a>
+            <a class="nav-link" onclick="seccion('contact')" href="#"><b>CONTACTO</b></a>
             </li>
         </ul>
         </div>
@@ -76,7 +77,7 @@
                 <H5 style="margin-left: 9vh;">VISÍTANOS </H5>
             </div>
             <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <H5 style="margin-left: 3vw;"> ESCRÍBENOS</H5>
+                <H5 style="margin-left: 1vw;"> ESCRÍBENOS</H5>
             </div>
 
 
@@ -89,7 +90,7 @@
                     <H6 class="textod"> <img id="imgc" src="images/icon/phone2.png">(442) 195 5042</H6><br>
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"></div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:7vh;"></div>
 
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -132,7 +133,7 @@
                 <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H6>
                 <H6 class="textod"> <img id="imgc" src="images/icon/phone2.png">(442) 195 5042</H6><br>
             </div>
-            <div class="col-12 col-sm-12 col-md-12" id="map3"></div>
+            <div class="col-11 col-sm-11 col-md-11" id="map3"></div>
 
             <div class="col-12 col-sm-12 col-md-12 text-center">
                 <h6 class="textoi">SUCURSAL CDMX</h6>
@@ -141,7 +142,7 @@
                 <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Enrique Rebsamen 22, Piedad Nararte<br>MUNICIPIO, CDMX C.P. 03000</H6>
                 <H6 class="textod"> <img id="imgc" src="images/icon/phone2.png">(55) 5530 7046</H6><br>
             </div>
-            <div class="col-12 col-sm-12 col-md-12" id="map4"></div>
+            <div class="col-11 col-sm-11 col-md-11" id="map4"></div>
 
 
 
@@ -165,18 +166,18 @@
         <!-- FOOTER -->
         <footer class="footer">
           <div class="row" id="rf" style="width:99%;">
-            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 ">
               <p id="face-foo" class="center-block" style=""><b>SÍGUENOS EN:</b> <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img class="" id="imagfoo" src="images/icon/facebook.png" style="" > </a> </p>
             </div>
-            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="border-left: 2px solid white; margin-top: 1.5vh;" id="divfoo">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="border-left: 2px solid white; margin-top: 1.5vh;" id="divfoo">
               <p id="title-foo" class="center-block" style=""><b>CONTÁCTANOS: </b></p>
             </div>
-            <div id="col-foo1" class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left">
+            <div id="col-foo1" class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 text-left">
                <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/contact.png" style="" > Ulises Reséndiz / Director Comercial</p>
                <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/phone.png" style="" > 55 4192 1881</p>
                <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/mail.png" style="" >  ulises@gruposgi.com.mx</p>              
             </div>
-            <div id="col-foo" class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left">
+            <div id="col-foo" class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 text-left">
               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/contact.png" style=""> Alberto Martínez / Director de Operaciones</p>
               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/phone.png" style="" > 55 4056 098</p>
               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/mail.png" style="" >  alberto@gruposgi.com.mx</p>              
