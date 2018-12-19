@@ -27,11 +27,11 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+  <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
     <a class="navbar-brand" href="#">
       <img id="logo" src="images/logo.png" width="45" height="30" class="d-inline-block align-top" alt="">
     </a>
-    <span class="navbar-text" id="titulo" style="font-weight: bolder;"> SOLUCIONES GRÁFICAS E INDUSTRIALES </span>
+    <span class="navbar-text" id="titulo";> <strong> SOLUCIONES GRÁFICAS E INDUSTRIALES </strong> </span>
       
     <span class="navbar-text" id="titulo"></span>
     <span class="navbar-text" id="titulo"></span>
@@ -43,13 +43,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" onclick="seccion('us')" href="#">NOSOTROS </a>
+          <a class="nav-link" style="color: black !important" onclick="seccion('us')" href="#">NOSOTROS </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onclick="seccion('serv')" href="#">SERVICIOS</a>
+          <a class="nav-link" style="color: black !important"  onclick="seccion('serv')" href="#">SERVICIOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onclick="seccion('contact')" href="#">CONTACTO</a>
+          <a class="nav-link" style="color: black !important"  onclick="seccion('contact')" href="#">CONTACTO</a>
         </li>
       </ul>
     </div>
@@ -108,20 +108,21 @@
         <!-- FOOTER -->
         <footer class="footer">
           <div class="row" id="rf" style="width:99%;">
-            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-              <p id="face-foo" class="center-block" style="">SÍGUENOS EN: <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img class="" id="imagfoo" src="images/icon/facebook.png" style="" > </a> </p>
+            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+              <p id="face-foo" class="center-block" style=""><b>SÍGUENOS EN:</b> <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img class="" id="imagfoo" src="images/icon/facebook.png" style="" > </a> </p>
             </div>
-            <div id="col-foo1" class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
-              <p class="textofoo" style="">CONTÁCTANOS:</p>
-              <p class="textofoo" style="">Ulises Reséndiz / Director Comercial</p>
-              <p class="textofoo" style="">55 4192 1881</p>
-              <p class="textofoo" style="">ulises@gruposgi.com.mx</p>              
+            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="border-left: 2px solid white; margin-top: 1.5vh;" id="divfoo">
+              <p id="title-foo" class="center-block" style=""><b>CONTÁCTANOS: </b></p>
             </div>
-            <div id="col-foo" class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
-              <p class="textofoo" style="">CONTÁCTANOS:</p>
-              <p class="textofoo" style="">Alberto Martínez / Director de Operaciones</p>
-              <p class="textofoo" style="">55 4056 098</p>
-              <p class="textofoo" style="">alberto@gruposgi.com.mx</p>              
+            <div id="col-foo1" class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left">
+               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/contact.png" style="" > Ulises Reséndiz / Director Comercial</p>
+               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/phone.png" style="" > 55 4192 1881</p>
+               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/mail.png" style="" >  ulises@gruposgi.com.mx</p>              
+            </div>
+            <div id="col-foo" class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left">
+              <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/contact.png" style=""> Alberto Martínez / Director de Operaciones</p>
+              <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/phone.png" style="" > 55 4056 098</p>
+              <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/mail.png" style="" >  alberto@gruposgi.com.mx</p>              
             </div>
           </div>
         </footer>

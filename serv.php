@@ -31,40 +31,40 @@
     $vindex = $_GET['i'];
 ?>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
-        <a class="navbar-brand" href="#">
-        <img id="logo" src="images/logo.png" width="45" height="30" class="d-inline-block align-top" alt="">
-        </a>
-        <span class="navbar-text" id="titulo" style="font-weight: bolder;"> SOLUCIONES GRÁFICAS E INDUSTRIALES </span>
-        
-        <span class="navbar-text" id="titulo"></span>
-        <span class="navbar-text" id="titulo"></span>
-        <span class="navbar-text" id="titulo"></span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+    <a class="navbar-brand" href="#">
+      <img id="logo" src="images/logo.png" width="45" height="30" class="d-inline-block align-top" alt="">
+    </a>
+    <span class="navbar-text" id="titulo";> <strong> SOLUCIONES GRÁFICAS E INDUSTRIALES </strong> </span>
+      
+    <span class="navbar-text" id="titulo"></span>
+    <span class="navbar-text" id="titulo"></span>
+    <span class="navbar-text" id="titulo"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-            <a class="nav-link" onclick="seccion('us')" href="#">NOSOTROS </a>
-            </li>
-            <li class="nav-item active">
-            <a class="nav-link" onclick="seccion('serv')" href="#">SERVICIOS</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" onclick="seccion('contact')" href="#">CONTACTO</a>
-            </li>
-        </ul>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" style="color: black !important" onclick="seccion('us')" href="#">NOSOTROS</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" style="color: black !important"  onclick="seccion('serv')" href="#"><strong>SERVICIOS</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black !important"  onclick="seccion('contact')" href="#">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
     
     <!-- **** ESTE ES EL MODAL **** -->
     <div id="bg-negro" onclick="cerrar()"></div>
     <div id="modal"></div>
     
     <div class="bgs">
-    <div class="body2">
+        <div class="body2">
             <div class="informacion">
                 <div class="selector">
                     <div class="div-md-1"></div>
@@ -74,8 +74,8 @@
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc3" value="AUTOS, VINIL y ROTULACIÓN"><span style="text-align: center;" class="secciones">VINIL Y ROTULACIÓN </span> </div>
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc4" value="GRAN FORMATO"><span style="text-align: center !important;" class="secciones">GRAN FORMATO</span></div>
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc5" value="TELA"><span class="secciones">TELA</span></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc6" value="LETREROS EN 3D, TOLDOS Y CAJAS DE LUZ "><span style="text-align: center !important;" class="secciones">LETREROS EN 3D y mas</span></div>
-                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc7" value="VOLUMETRICOS"><span  class="secciones">VOLUMETRICOS</span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc6" value="LETREROS EN 3D, TOLDOS Y CAJAS DE LUZ "><span style="text-align: center !important;" class="secciones">LETREROS EN 3D y MÁS</span></div>
+                        <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc7" value="VOLUMÉTRICOS"><span  class="secciones">VOLUMÉTRICOS</span></div>
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc8" value="PLAYERAS"><span  class="secciones">PLAYERAS </span> </div>
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc9" value="IMPRESIÓN DIRECTA"><span style="text-align: center !important;" class="secciones">IMPRESIÓN DIRECTA </span> </div>
                         <div class="div-xs-2 div-sm-2 div-md-2 div-lg-2 div-xl-2" id="slc0" value="INSTALACIONES"><span  class="secciones">INSTALACIONES</span> </div>
@@ -93,7 +93,7 @@
                             <option  value="">GRAN FORMATO</option>
                             <option  value="">TELA</option>
                             <option  value="">LETREROS EN 3D, TOLDOS Y CAJAS DE LUZ</option>
-                            <option  value="">VOLUMETRICOS</option>
+                            <option  value="">VOLUMÉTRICOS</option>
                             <option  value="">PLAYERAS</option>
                             <option  value="">IMPRESIÓN DIRECTA</option>
                             <option  value="">INSTALACIONES</option>
@@ -153,6 +153,27 @@
                 <?php } ?>
             </div>
         </div> <!-- CIERRA BODY -->
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="row" id="rf" style="width:99%;">
+            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+              <p id="face-foo" class="center-block" style=""><b>SÍGUENOS EN:</b> <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img class="" id="imagfoo" src="images/icon/facebook.png" style="" > </a> </p>
+            </div>
+            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="border-left: 2px solid white; margin-top: 1.5vh;" id="divfoo">
+              <p id="title-foo" class="center-block" style=""><b>CONTÁCTANOS: </b></p>
+            </div>
+            <div id="col-foo1" class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left">
+               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/contact.png" style="" > Ulises Reséndiz / Director Comercial</p>
+               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/phone.png" style="" > 55 4192 1881</p>
+               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/mail.png" style="" >  ulises@gruposgi.com.mx</p>              
+            </div>
+            <div id="col-foo" class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left">
+              <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/contact.png" style=""> Alberto Martínez / Director de Operaciones</p>
+              <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/phone.png" style="" > 55 4056 098</p>
+              <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/mail.png" style="" >  alberto@gruposgi.com.mx</p>              
+            </div>
+          </div>
+        </footer>
     </div><!-- CIERRA DE BG -->
 </body>
 

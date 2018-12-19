@@ -57,7 +57,7 @@
             <a class="nav-link" onclick="seccion('serv')" href="#">SERVICIOS</a>
             </li>
             <li class="nav-item active">
-            <a class="nav-link" onclick="seccion('contact')" href="#">CONTACTO</a>
+            <a class="nav-link" onclick="seccion('contact')" href="#"><strong>CONTACTO</strong></a>
             </li>
         </ul>
         </div>
@@ -73,20 +73,20 @@
             <!-- AQUI PUEDE IR UN IF CON EL WIDTH PARA VER SI FUNCIONA Y DECIR QUE CUANDO SE MENOR A  992ENTRE -->
             <!-- PUEDE COLOCARSE AL IGUAL ALGUNA TRABA PARA HTML CON EL CSS Y LOS ID -->
             <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                <H5 style="font-weight:bold;">VISÍTANOS </H5>
+                <H5 style="margin-left: 9vh;">VISÍTANOS </H5>
             </div>
             <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <H5 style="font-weight:bold; margin-left: 3vw;"> ESCRÍBENOS</H5>
+                <H5 style="margin-left: 3vw;"> ESCRÍBENOS</H5>
             </div>
 
 
-            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <h6 class="textoi">SUCURSAL QUERÉTARO</h6>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H6>
-                    <H6 class="textod"> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H6><br>
+                    <H6 class="textod"> <img id="imgc" src="images/icon/phone2.png">(442) 195 5042</H6><br>
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"></div>
@@ -97,11 +97,11 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Enrique Rebsamen 22, Piedad Nararte<br>MUNICIPIO, CDMX C.P. 03000</H6>
-                    <H6 class="textod"> <img id="imgc" src="images/icon/phone.png">(55) 5530 7046</H6><br>
+                    <H6 class="textod"> <img id="imgc" src="images/icon/phone2.png">(55) 5530 7046</H6><br>
                 </div>
             </div>
 
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map"></div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="map2"></div>
             </div>
@@ -123,14 +123,14 @@
             <!-- AQUI PUEDE IR UN IF CON EL WIDTH PARA VER SI FUNCIONA Y DECIR QUE CUANDO SE MENOR A  992ENTRE -->
             <!-- PUEDE COLOCARSE AL IGUAL ALGUNA TRABA PARA HTML CON EL CSS Y LOS ID -->
             <div class="col-12 col-sm-12 col-md-12 text-center">
-                <H5 style="font-weight:bold;">VISÍTANOS </H5>
+                <H5 style="">VISÍTANOS </H5>
             </div>
             <div class="col-12 col-sm-12 col-md-12 text-center">
                 <h6 class="textoi">SUCURSAL QUERÉTARO</h6>
             </div>
             <div class="col-12 col-sm-12 col-md-12 text-center">
                 <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Candiles 309-201, Valle Real Residencial.<br>Corregidora, Querétaro C.P. 07086</H6>
-                <H6 class="textod"> <img id="imgc" src="images/icon/phone.png">(442) 195 5042</H6><br>
+                <H6 class="textod"> <img id="imgc" src="images/icon/phone2.png">(442) 195 5042</H6><br>
             </div>
             <div class="col-12 col-sm-12 col-md-12" id="map3"></div>
 
@@ -139,7 +139,7 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 text-center">
                 <H6 class="textod"><img id="imgc" src="images/icon/mark.png">  Enrique Rebsamen 22, Piedad Nararte<br>MUNICIPIO, CDMX C.P. 03000</H6>
-                <H6 class="textod"> <img id="imgc" src="images/icon/phone.png">(55) 5530 7046</H6><br>
+                <H6 class="textod"> <img id="imgc" src="images/icon/phone2.png">(55) 5530 7046</H6><br>
             </div>
             <div class="col-12 col-sm-12 col-md-12" id="map4"></div>
 
@@ -148,7 +148,7 @@
 
 
             <div class="col-12 col-sm-12 col-md-12 text-center">
-                <H5 style="font-weight:bold; margin-left: 3vw;"> ESCRÍBENOS</H5>
+                <H5 style="margin-left: 3vw;"> ESCRÍBENOS</H5>
             </div>
             <div class="col-12 col-sm-12 col-md-12">
                 <input id="mail" type="text" placeholder="ejemplos@servidor.com">
@@ -165,20 +165,21 @@
         <!-- FOOTER -->
         <footer class="footer">
           <div class="row" id="rf" style="width:99%;">
-            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-              <p id="face-foo" class="center-block" style="">SÍGUENOS EN: <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img class="" id="imagfoo" src="images/icon/facebook.png" style="" > </a> </p>
+            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+              <p id="face-foo" class="center-block" style=""><b>SÍGUENOS EN:</b> <a href="https://www.facebook.com/sgimexico/" target="_blank"> <img class="" id="imagfoo" src="images/icon/facebook.png" style="" > </a> </p>
             </div>
-            <div id="col-foo1" class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
-              <p class="textofoo" style="">CONTÁCTANOS:</p>
-              <p class="textofoo" style="">Ulises Reséndiz / Director Comercial</p>
-              <p class="textofoo" style="">55 4192 1881</p>
-              <p class="textofoo" style="">ulises@gruposgi.com.mx</p>              
+            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="border-left: 2px solid white; margin-top: 1.5vh;" id="divfoo">
+              <p id="title-foo" class="center-block" style=""><b>CONTÁCTANOS: </b></p>
             </div>
-            <div id="col-foo" class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
-              <p class="textofoo" style="">CONTÁCTANOS:</p>
-              <p class="textofoo" style="">Alberto Martínez / Director de Operaciones</p>
-              <p class="textofoo" style="">55 4056 098</p>
-              <p class="textofoo" style="">alberto@gruposgi.com.mx</p>              
+            <div id="col-foo1" class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left">
+               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/contact.png" style="" > Ulises Reséndiz / Director Comercial</p>
+               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/phone.png" style="" > 55 4192 1881</p>
+               <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/mail.png" style="" >  ulises@gruposgi.com.mx</p>              
+            </div>
+            <div id="col-foo" class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left">
+              <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/contact.png" style=""> Alberto Martínez / Director de Operaciones</p>
+              <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/phone.png" style="" > 55 4056 098</p>
+              <p class="textofoo" style=""> <img class="iconfoo" id="" src="images/icon/mail.png" style="" >  alberto@gruposgi.com.mx</p>              
             </div>
           </div>
         </footer>

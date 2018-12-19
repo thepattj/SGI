@@ -1,8 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: HelveNeu;
-    color: var(--negro);
+    /* color: var(--negro); */
+    font-family: HelveNeu, sans-serif !important;
 }
 
 :root {
@@ -17,6 +17,11 @@
 @font-face {
     font-family: HelveNeu;
     src: url(../fonts/HelveticaNeue.ttc);
+}
+
+@font-face {
+    font-family: HelveNeuN;
+    src: url(../fonts/HelveticaNeueLTStd-BdCn.otf);
 }
 
 /*=============== MEDIA QUERYS ===================*/
@@ -82,7 +87,7 @@
         color:white;
         position: relative;
         float: left;
-        border-top: 3px solid var(--negro);
+        border-top: 3px solid rgb(81,81,81);
     } 
     .textofoo{
         color:white !important;
@@ -95,10 +100,17 @@
         margin-top: 5vh;
         margin-left: 2vw;
     }
+    #title-foo{
+        color: white !important;
+        font-size: 1.2rem !important;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
     #imagfoo{
         width: 12% !important;
         margin-left: 3vw;
     }
+    .iconfoo{ width: 2vh; }
     #col-foo{ margin-top: 3vh; }
     #col-foo1{ margin-top: 3vh; }
 
@@ -160,14 +172,14 @@
 
     #infoservicio{ 
         width: 37vw;
-        height: 50vh;
+        height: 55vh;
         background: rgba(214,214,214,.7);
-        margin-top: 10vh;
+        margin-top: 7vh;
         margin-left: 3vh;
         position: fixed;
     }
-    #tituloserv{ margin-top: 5vh; }
-    /* #infoser{ margin-top: -70vh; } */
+    #tituloserv{ margin-top: 10vh; }
+    #infoser{ margin-top: -12vh; }
     #tituloserv > h4{ font-size:4.5vh!important; border-bottom: 2px solid;}
     h6{ font-size:2.5vh!important;}
             
@@ -192,17 +204,17 @@
         margin-left: 36%; 
         font-size: 2vh;
     }
-    h1{ font-size: 4.5rem;}
+    h1{ font-size: 3rem;}
 
     #at{ 
         filter: invert(100%);
-        width: 4em;
+        width: 3em;
         margin-left: 90%;
     }
     
     #ad{ 
         filter: invert(100%);
-        width: 4em;
+        width: 3em;
         margin-left: 10%;
     }
 
@@ -215,7 +227,7 @@
         background: var(--negro);
         height: 40px;
         width: 100%;
-        border: 2px solid rgba(192, 192, 192, .6);
+        border: 2px solid var(--negro);
         color: white;
         outline: none;
         font-size: 1.6em;
@@ -226,16 +238,21 @@
         margin-left: 2vh;
         float: left;
         margin-top:2vh;
+        width: 60vh;
+        margin-left: 16vh;
     }
     #map { 
         height: 22vh;
         margin-left: 2vh;
         float: left;
+        width: 60vh;
+        margin-left: 16vh;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
         margin-top: 1%;
         background: rgba(192, 192, 192, 1); 
+        border: 2px solid rgba(192, 192, 192, 1) !important; 
         border-radius: 5px;
         width: 100%;
         float: left;
@@ -259,14 +276,14 @@
         border-radius: 5px;
         resize: none;
     }
-    .textoi{ Font-weight:bold; }
-    .textod{font-size: 3vh;}
+    .textoi{ font-weight:bold; margin-left: 7vh; border-bottom: 1px solid var(--negro); }
+    .textod{ margin-left: 7vh; }
 } 
 
 @media (min-width:1200px) and (max-width:2047px){
     /* GENERAL */
     #logo{ width: 4vw; height: 4.5vh; }
-    #titulo{ margin-left: 40%; margin-right: -24%; font-size: .8vw; }
+    #titulo{ margin-left: 24%; margin-right: -15%; font-size: 1.8vw; color: black !important; }
     .nav-item > a{
         font-size: 1vw;
     }
@@ -288,7 +305,7 @@
         color:white;
         position: relative;
         float: left;
-        border-top: 3px solid var(--negro);
+        border-top: 3px solid rgb(81,81,81);
     } 
     .textofoo{
         color:white !important;
@@ -297,14 +314,21 @@
     }
     #face-foo{
         color:white !important;
-        font-size: .9rem !important;
+        font-size: 1.2rem !important;
         margin-top: 5vh;
+        margin-left: 2vw;
+    }
+    #title-foo{
+        color: white !important;
+        font-size: 1.2rem !important;
+        margin-top: 4vh;
         margin-left: 2vw;
     }
     #imagfoo{
         width: 15% !important;
         margin-left: 3vw;
     }
+    .iconfoo{ width: 2vh; }
     #col-foo{ margin-top: 3vh; }
     #col-foo1{ margin-top: 3vh; }
 
@@ -350,8 +374,8 @@
         margin-left: 3vh;
         position: fixed;
     }
-    #tituloserv{ margin-top: 10vh; }
-    /* #infoser{ margin-top: -43vh; } */
+    #tituloserv{ margin-top: 15vh; }
+    #infoser{ margin-top: -10vh; }
     #tituloserv > h4{ border-bottom: 2px solid;}
             
     .imgserviunico{
@@ -379,13 +403,13 @@
 
     #at{ 
         filter: invert(100%);
-        width: 4em;
+        width: 3em;
         margin-left: 85%;
     }
     
     #ad{ 
         filter: invert(100%);
-        width: 4em;
+        width: 3em;
         margin-left: 10%;
     }
 
@@ -398,7 +422,7 @@
         background: var(--negro);
         height: 40px;
         width: 100%;
-        border: 2px solid rgba(192, 192, 192, .6);
+        border: 2px solid var(--negro);
         color: white;
         outline: none;
         font-size: 1em;
@@ -409,16 +433,21 @@
         margin-left: 2vh;
         float: left;
         margin-top:2vh;
+        width: 60vh;
+        margin-left: 4vh;
     }
     #map { 
         height: 180px;
         margin-left: 2vh;
         float: left;
+        width: 60vh;
+        margin-left: 4vh;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
         margin-top: 1%;
         background: rgba(192, 192, 192, 1); 
+        border: 2px solid rgba(192, 192, 192, 1) !important; 
         border-radius: 5px;
         width: 100%;
         float: left;
@@ -442,13 +471,14 @@
         border-radius: 5px;
         resize: none;
     }
-    .textoi{ Font-weight:bold; }
+    .textoi{ font-weight:bold; margin-left: 7vh; border-bottom: 1px solid var(--negro);}
+    .textod{ margin-left: 7vh; }
 }
 
 @media only screen and (min-width: 1026px) and (max-width: 1199px) {
     /* GENERAL */
     #logo{ width: 3.5vw; height: 3.5vh; }
-    #titulo{ margin-left: 40%; margin-right: -24%; font-size: .8vw; }
+    #titulo{ margin-left: 36%; margin-right: -22%; font-size: .8vw; }
     .nav-item > a{
         font-size: 1vw;
     }
@@ -471,7 +501,7 @@
         color:white;
         position: relative;
         float: left;
-        border-top: 3px solid var(--negro);
+        border-top: 3px solid rgb(81,81,81);
     } 
     .textofoo{
         color:white !important;
@@ -488,6 +518,13 @@
         width: 15% !important;
         margin-left: 3vw;
     }
+    #title-foo{
+        color: white !important;
+        font-size: 1.2rem !important;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+    .iconfoo{ width: 2vh; }
     #col-foo{ margin-top: 3vh; }
     #col-foo1{ margin-top: 3vh; }
 
@@ -534,7 +571,7 @@
         position: fixed;
     }
     #tituloserv{ margin-top: 8vh; }
-    /* #infoser{ margin-top: -21vh; } */
+    #infoser{ margin-top: -15vh; }
     #tituloserv > h4{ border-bottom: 2px solid;}
             
     .imgserviunico{
@@ -562,13 +599,13 @@
 
     #at{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 42vw;
     }
     
     #ad{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 8vw;
     }
 
@@ -580,7 +617,7 @@
         background: var(--negro);
         height: 40px;
         width: 100%;
-        border: 2px solid rgba(192, 192, 192, .6);
+        border: 2px solid var(--negro);
         color: white;
         outline: none;
         font-size: 1em;
@@ -591,16 +628,21 @@
         margin-left: 2vh;
         float: left;
         margin-top:2vh;
+        width: 60vh;
+        margin-left: 2vh;
     }
     #map { 
         height: 180px;
         margin-left: 2vh;
         float: left;
+        width: 60vh;
+        margin-left: 2vh;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
         margin-top: 1%;
         background: rgba(192, 192, 192, 1); 
+        border: 2px solid rgba(192, 192, 192, 1) !important; 
         border-radius: 5px;
         width: 100%;
         float: left;
@@ -624,14 +666,15 @@
         border-radius: 5px;
         resize: none;
     }
-    .textoi{ Font-weight:bold; }
+    .textoi{ font-weight:bold; margin-left: 7vh; border-bottom: 1px solid var(--negro);}
+    .textod{ margin-left: 7vh; }    
 }
 
 
 /*DISPOSITIVOS TABLETS*/
 @media only screen and (min-width: 992px) and (max-width: 1025px) {
     /* GENERAL */
-    #titulo{ margin-left: 38%; margin-right: -24%; font-size: .8vw; }
+    #titulo{ margin-left: 28%; margin-right: -19%; font-size: .8vw; }
     .body{ height: 93% !important;}
     
 
@@ -653,7 +696,7 @@
         color:white;
         position: relative;
         float: left;
-        border-top: 3px solid var(--negro);
+        border-top: 3px solid rgb(81,81,81);
     } 
     .textofoo{
         color:white !important;
@@ -670,6 +713,13 @@
         width: 17% !important;
         margin-left: 3vw;
     }
+    #title-foo{
+        color: white !important;
+        font-size: 1.2rem !important;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+    .iconfoo{ width: 2vh; }
     #col-foo{ margin-top: 3vh; }
     #col-foo1{ margin-top: 3vh; }
 
@@ -733,13 +783,13 @@
 
     #at{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 37vw;
     }
     
     #ad{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 7vw;
     }
 
@@ -750,7 +800,7 @@
         background: var(--negro);
         height: 40px;
         width: 100%;
-        border: 2px solid rgba(192, 192, 192, .6);
+        border: 2px solid var(--negro);
         color: white;
         outline: none;
         font-size: 1em;
@@ -762,16 +812,21 @@
         margin-left: 2vh;
         float: left;
         margin-top:2vh;
+        width: 60vh;
+        margin-left: 2vh;
     }
     #map { 
         height: 180px;
         margin-left: 2vh;
         float: left;
+        width: 60vh;
+        margin-left: 2vh;
     }
     #imgc { width: 1.2em; height: 1.2em; }
     #mail{ 
         margin-top: 1%;
         background: rgba(192, 192, 192, 1); 
+        border: 2px solid rgba(192, 192, 192, 1) !important; 
         border-radius: 5px;
         width: 100%;
         float: left;
@@ -797,7 +852,8 @@
         resize: none;
         margin-left: 2vw;
     }
-    .textoi{ Font-weight:bold; }
+    .textoi{ font-weight:bold; margin-left: 7vh; border-bottom: 1px solid var(--negro);}
+    .textod{ margin-left: 7vh; } 
 }
 
 @media only screen and (min-width: 900px) and (max-width: 991px) {
@@ -827,7 +883,7 @@
         color:white;
         position: relative;
         float: left;
-        border-top: 3px solid var(--negro);
+        border-top: 3px solid rgb(81,81,81);
     } 
     .textofoo{
         color:white !important;
@@ -841,9 +897,16 @@
         margin-left: 2vw;
     }
     #imagfoo{
-        width: 24% !important;
+        width: 5vh !important;
         margin-left: 3vw;
     }
+    #title-foo{
+        color: white !important;
+        font-size: 1.2rem !important;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+    .iconfoo{ width: 2vh; }
     #col-foo{ margin-top: 3vh; }
     #col-foo1{ margin-top: 3vh; }
 
@@ -904,13 +967,13 @@
 
     #at{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 36vw;
     }
     
     #ad{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 6vw;
     }
 
@@ -921,7 +984,7 @@
         background: var(--negro);
         height: 40px;
         width: 100%;
-        border: 2px solid rgba(192, 192, 192, .6);
+        border: 2px solid var(--negro);
         color: white;
         outline: none;
         font-size: 1em;
@@ -975,6 +1038,7 @@
         height: 98% !important;
     }
     .bgn { height: 95.5% !important; }
+    .bgs { /* BACKGROUND EN LOS SERVICIOS - FONDO  */ height: 78% !important; }
     
 
     /* INDEX */
@@ -996,7 +1060,7 @@
         color:white;
         position: relative;
         float: left;
-        border-top: 3px solid var(--negro);
+        border-top: 3px solid rgb(81,81,81);
     } 
     .textofoo{
         color:white !important;
@@ -1012,6 +1076,13 @@
     #imagfoo{
         width: 24% !important;
         margin-left: 3vw;
+    }
+    .iconfoo{ width: 2vh; }
+    #title-foo{
+        color: white !important;
+        font-size: 1.2rem !important;
+        margin-top: 4vh;
+        margin-left: 2vw;
     }
     #col-foo{ margin-top: 3vh; }
     #col-foo1{ margin-top: 3vh; }
@@ -1084,13 +1155,13 @@
 
     #at{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 38vw;
     }
     
     #ad{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 7vw;
     }
 
@@ -1102,7 +1173,7 @@
         background: var(--negro);
         height: 40px;
         width: 100%;
-        border: 2px solid rgba(192, 192, 192, .6);
+        border: 2px solid var(--negro);
         color: white;
         outline: none;
         font-size: 1em;
@@ -1172,7 +1243,7 @@
         color:white;
         position: relative;
         float: left;
-        border-top: 3px solid var(--negro);
+        border-top: 3px solid rgb(81,81,81);
     } 
     .textofoo{
         color:white !important;
@@ -1188,6 +1259,13 @@
     #imagfoo{
         width: 24% !important;
         margin-left: 3vw;
+    }
+    .iconfoo{ width: 2vh; }
+    #title-foo{
+        color: white !important;
+        font-size: 1.2rem !important;
+        margin-top: 4vh;
+        margin-left: 2vw;
     }
     #col-foo{ margin-top: 3vh; }
     #col-foo1{ margin-top: 3vh; }
@@ -1265,13 +1343,13 @@
 
     #at{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 7vw;
     }
     
     #ad{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 7vw;
     }
 
@@ -1283,7 +1361,7 @@
         background: var(--negro);
         height: 40px;
         width: 100%;
-        border: 2px solid rgba(192, 192, 192, .6);
+        border: 2px solid var(--negro);
         color: white;
         outline: none;
         font-size: 1em;
@@ -1348,7 +1426,7 @@
         color:white;
         position: relative;
         float: left;
-        border-top: 3px solid var(--negro);
+        border-top: 3px solid rgb(81,81,81);
     } 
     .textofoo{
         color:white !important;
@@ -1364,6 +1442,13 @@
     #imagfoo{
         width: 24% !important;
         margin-left: 3vw;
+    }
+    .iconfoo{ width: 2vh; }
+    #title-foo{
+        color: white !important;
+        font-size: 1.2rem !important;
+        margin-top: 4vh;
+        margin-left: 2vw;
     }
     #col-foo{ margin-top: 3vh; }
     #col-foo1{ margin-top: 3vh; }
@@ -1437,13 +1522,13 @@
 
     #at{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 30vw;
     }
     
     #ad{ 
         filter: invert(100%);
-        width: 3em;
+        width: 2.5em;
         margin-left: 7vw;
     }
 
@@ -1455,7 +1540,7 @@
         background: var(--negro);
         height: 40px;
         width: 100%;
-        border: 2px solid rgba(192, 192, 192, .6);
+        border: 2px solid var(--negro);
         color: white;
         outline: none;
         font-size: 1em;
@@ -1521,7 +1606,7 @@
         color:white;
         position: relative;
         float: left;
-        border-top: 3px solid var(--negro);
+        border-top: 3px solid rgb(81,81,81);
     } 
     .textofoo{
         color:white !important;
@@ -1538,8 +1623,16 @@
         width: 31% !important;
         margin-left: 6vw;
     }
+    .iconfoo{ width: 2vh; }
+    #title-foo{
+        color: white !important;
+        font-size: 1.2rem !important;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+    #divfoo{display: none;}
     #col-foo{ margin-top: 3vh; }
-    #col-foo1{ margin-top: 4vh; }
+    #col-foo1{ margin-top: 3vh; }
    
        
     /* NOSOTROS  */
@@ -1630,7 +1723,7 @@
         background: var(--negro);
         height: 40px;
         width: 100%;
-        border: 2px solid rgba(192, 192, 192, .6);
+        border: 2px solid var(--negro);
         color: white;
         outline: none;
         font-size: 1em;
@@ -1700,7 +1793,7 @@
 }
 .bgs { /* BACKGROUND EN LOS SERVICIOS - FONDO  */
     width: 100%;
-    height: 100%;
+    height: 74%;
     position: absolute;
     float: left;
     background-image: url(../images/fondo.png);
@@ -1718,8 +1811,9 @@
 }
 
 .navbar{
-    border-bottom: 3px solid var(--negro) !important;
+    border-bottom: 3px solid rgb(81,81,81) !important;
 }
+
 
 #barraus{
     z-index: 3;
@@ -1874,7 +1968,7 @@ h3{ margin-top: -15px !important; }
     background: var(--negro);
     position: relative;
     float: left;
-    border-top: 3px solid var(--negro);
+    border-top: 3px solid rgb(81,81,81);
 }  */  
 
 

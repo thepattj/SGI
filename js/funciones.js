@@ -48,11 +48,11 @@ $(document).ready(function () {
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                             "<div id='infoservicio' class='row'>"+
-                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                     "<h4>"+texto+"</h4>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                    "<h6><b> Materiales: <br> MDF, triplay, trovicel, coroplast, foamboard, lámina, microalambre, aluminio entre otros</b> </h6>"+
+                                    "<h6><b> Materiales: </b> <br> MDF, triplay, trovicel, coroplast, foamboard, lámina, microalambre, aluminio entre otros </h6>"+
                                 "</div>"+
                             "</div>"+
                         "</div>";
@@ -93,11 +93,11 @@ $(document).ready(function () {
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                             "<div id='infoservicio' class='row'>"+
-                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                     "<h4>"+texto+"</h4>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                    "<h6><b>Materiales: <br> RECORTE </b> <br>(a uno o varios colores)<br><b>ESMERILADO </b> (recorte e impreso)</h6>"+
+                                    "<h6><b> Materiales: </b>  <br> RECORTE (a uno o varios colores)<br>ESMERILADO (recorte e impreso)</h6>"+
                                 "</div>"+
                             "</div>"+
                         "</div>";
@@ -138,11 +138,11 @@ $(document).ready(function () {
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                             "<div id='infoservicio' class='row'>"+
-                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                     "<h4>"+texto+"</h4>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                    "<h6><b>Materiales: <br> WALL GRAPHIC <br> FLOOR GRAPHIC </b> <br><b>ELECTROESTÁTICO </b> (blanco, transparente)<br><b>AUTOADHERIBLE </b> (mate, blanco, covencional, con fondo gris o negro, microperforado)</h6>"+
+                                    "<h6><b>Materiales:</b>  <br> WALL GRAPHIC <br> FLOOR GRAPHIC <br>ELECTROESTÁTICO  (blanco, transparente)<br>AUTOADHERIBLE (mate, blanco, covencional, con fondo gris o negro, microperforado)</h6>"+
                                 "</div>"+
                             "</div>"+
                         "</div>";
@@ -181,11 +181,11 @@ $(document).ready(function () {
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                             "<div id='infoservicio' class='row'>"+
-                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                     "<h4>"+texto+"</h4>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                    "<h6><b>Materiales: <br> LONAS Tradicionales</b> (de 13 onzas) <b><br> APLICACIÓN DE LONAS</b> (en bastidores) <b><br> LONA BLACKLIGHT <br> LONA MESH <br> LONA BLACKOUT <br> LONA SOLIDA <br> PARA TOLDOS <br> VINIL </b> (blanco, con adhesivo gris o negro)</h6>"+
+                                    "<h6><b>Materiales:</b>  <br> LONAS Tradicionales (de 13 onzas) <br> APLICACIÓN DE LONAS (en bastidores) <br> LONA BLACKLIGHT <br> LONA MESH <br> LONA BLACKOUT <br> LONA SOLIDA <br> PARA TOLDOS <br> VINIL (blanco, con adhesivo gris o negro)</h6>"+
                                 "</div>"+
                             "</div>"+
                         "</div>";
@@ -222,11 +222,11 @@ $(document).ready(function () {
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                             "<div id='infoservicio' class='row'>"+
-                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                     "<h4>"+texto+"</h4>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                    "<h6><b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                    "<h6><b>Materiales:</b>  <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA<br> (brillosa, mate y repelente al agua)</h6>"+
                                 "</div>"+
                             "</div>"+
                         "</div>";
@@ -267,11 +267,11 @@ $(document).ready(function () {
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                             "<div id='infoservicio' class='row'>"+
-                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                     "<h4>"+texto+"</h4>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                    "<h6><b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                    "<h6><b>Materiales:</b>  <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA <br> (brillosa, mate y repelente al agua)</h6>"+
                                 "</div>"+
                             "</div>"+
                         "</div>";
@@ -310,7 +310,7 @@ $(document).ready(function () {
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                             "<div id='infoservicio' class='row'>"+
-                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                     "<h4>"+texto+"</h4>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
@@ -349,11 +349,11 @@ $(document).ready(function () {
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                             "<div id='infoservicio' class='row'>"+
-                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                     "<h4>"+texto+"</h4>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                    "<h6><b>Materiales: <br> PLAYERAS DE CUALQUIER TIPO DE SERIGRAFIA Y VINIL TEXTIL</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                    "<h6><b>Materiales:</b>  <br> PLAYERAS DE CUALQUIER TIPO DE SERIGRAFIA Y VINIL TEXTIL <br> (brillosa, mate y repelente al agua)</h6>"+
                                 "</div>"+
                             "</div>"+
                         "</div>";
@@ -388,11 +388,11 @@ $(document).ready(function () {
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                             "<div id='infoservicio' class='row'>"+
-                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                     "<h4>"+texto+"</h4>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                    "<h6><b>Materiales: <br>SUSTRATOS RIGIDOS</b> <br> (PVC, acrilico, vidrio, estireno, foamboard, coroplast, madera, MDF impreso)</h6>"+
+                                    "<h6><b>Materiales:</b>  <br>SUSTRATOS RIGIDOS <br> (PVC, acrilico, vidrio, estireno, foamboard, coroplast, madera, MDF impreso)</h6>"+
                                 "</div>"+
                             "</div>"+
                         "</div>";
@@ -429,7 +429,7 @@ $(document).ready(function () {
                         "</div>"+
                         "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                             "<div id='infoservicio' class='row'>"+
-                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                     "<h4>"+texto+"</h4>"+
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
@@ -482,11 +482,11 @@ $(document).ready(function () {
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                                     "<div id='infoservicio' class='row'>"+
-                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                             "<h4>"+texto+"</h4>"+
                                         "</div>"+
                                         "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                            "<h6><b> Materiales: <br> MDF, triplay, trovicel, coroplast, foamboard, lámina, microalambre, aluminio entre otros</b> </h6>"+
+                                            "<h6><b> Materiales:</b>  <br> MDF, triplay, trovicel, coroplast, foamboard, lámina, microalambre, aluminio entre otros </h6>"+
                                         "</div>"+
                                     "</div>"+
                                 "</div>";
@@ -526,11 +526,11 @@ $(document).ready(function () {
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                                     "<div id='infoservicio' class='row'>"+
-                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                             "<h4>"+texto+"</h4>"+
                                         "</div>"+
                                         "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                            "<h6><b>Materiales: <br> RECORTE </b> <br>(a uno o varios colores)<br><b>ESMERILADO </b> (recorte e impreso)</h6>"+
+                                            "<h6><b>Materiales:</b>  <br> RECORTE (a uno o varios colores)<br>ESMERILADO (recorte e impreso)</h6>"+
                                         "</div>"+
                                     "</div>"+
                                 "</div>";
@@ -570,11 +570,11 @@ $(document).ready(function () {
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                                     "<div id='infoservicio' class='row'>"+
-                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                             "<h4>"+texto+"</h4>"+
                                         "</div>"+
                                         "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                            "<h6><b>Materiales: <br> WALL GRAPHIC <br> FLOOR GRAPHIC </b> <br><b>ELECTROESTÁTICO </b> (blanco, transparente)<br><b>AUTOADHERIBLE </b> (mate, blanco, covencional, con fondo gris o negro, microperforado)</h6>"+
+                                            "<h6><b>Materiales:</b>  <br> WALL GRAPHIC <br> FLOOR GRAPHIC <br>ELECTROESTÁTICO (blanco, transparente)<br>AUTOADHERIBLE (mate, blanco, covencional, con fondo gris o negro, microperforado)</h6>"+
                                         "</div>"+
                                     "</div>"+
                                 "</div>";
@@ -612,11 +612,11 @@ $(document).ready(function () {
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                                     "<div id='infoservicio' class='row'>"+
-                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                             "<h4>"+texto+"</h4>"+
                                         "</div>"+
                                         "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                            "<h6><b>Materiales: <br> LONAS Tradicionales</b> (de 13 onzas) <b><br> APLICACIÓN DE LONAS</b> (en bastidores) <b><br> LONA BLACKLIGHT <br> LONA MESH <br> LONA BLACKOUT <br> LONA SOLIDA <br> PARA TOLDOS <br> VINIL </b> (blanco, con adhesivo gris o negro)</h6>"+
+                                            "<h6><b>Materiales:</b>  <br> LONAS Tradicionales (de 13 onzas) <br> APLICACIÓN DE LONAS (en bastidores) <br> LONA BLACKLIGHT <br> LONA MESH <br> LONA BLACKOUT <br> LONA SOLIDA <br> PARA TOLDOS <br> VINIL  (blanco, con adhesivo gris o negro)</h6>"+
                                         "</div>"+
                                     "</div>"+
                                 "</div>";
@@ -652,11 +652,11 @@ $(document).ready(function () {
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                                     "<div id='infoservicio' class='row'>"+
-                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                             "<h4>"+texto+"</h4>"+
                                         "</div>"+
                                         "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                            "<h6><b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                            "<h6><b>Materiales:</b> <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA <br> (brillosa, mate y repelente al agua)</h6>"+
                                         "</div>"+
                                     "</div>"+
                                 "</div>";
@@ -696,11 +696,11 @@ $(document).ready(function () {
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                                     "<div id='infoservicio' class='row'>"+
-                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                             "<h4>"+texto+"</h4>"+
                                         "</div>"+
                                         "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                            "<h6><b>Materiales: <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                            "<h6><b>Materiales:</b>  <br> SUBLIMACIÓN EN DIFERENTES TIPOS DE TELA <br> (brillosa, mate y repelente al agua)</h6>"+
                                         "</div>"+
                                     "</div>"+
                                 "</div>";
@@ -712,7 +712,7 @@ $(document).ready(function () {
                     $('#seleccion').css({"float":"none"});
                     $('.informacion').animate({ scrollTop: 9999 }, 2000);
                 }
-            }if(str == "VOLUMETRICOS"){
+            }if(str == "VOLUMÉTRICOS"){
                 $('#slc1').css({"border-bottom":"", "font-weight":""});
                 $('#slc2').css({"border-bottom":"", "font-weight":""});
                 $('#slc3').css({"border-bottom":"", "font-weight":""});
@@ -738,7 +738,7 @@ $(document).ready(function () {
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                                     "<div id='infoservicio' class='row'>"+
-                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                             "<h4>"+texto+"</h4>"+
                                         "</div>"+
                                         "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
@@ -776,11 +776,11 @@ $(document).ready(function () {
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                                     "<div id='infoservicio' class='row'>"+
-                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                             "<h4>"+texto+"</h4>"+
                                         "</div>"+
                                         "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                            "<h6><b>Materiales: <br> PLAYERAS DE CUALQUIER TIPO DE SERIGRAFIA Y VINIL TEXTIL</b> <br> (brillosa, mate y repelente al agua)</h6>"+
+                                            "<h6><b>Materiales:</b>  <br> PLAYERAS DE CUALQUIER TIPO DE SERIGRAFIA Y VINIL TEXTIL <br> (brillosa, mate y repelente al agua)</h6>"+
                                         "</div>"+
                                     "</div>"+
                                 "</div>";
@@ -814,11 +814,11 @@ $(document).ready(function () {
                                 "</div>"+
                                 "<div class='col-sm-12 col-md-12 col-lg-5 col-xl-5'>"+
                                     "<div id='infoservicio' class='row'>"+
-                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center' id='tituloserv'>"+
+                                        "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='tituloserv'>"+
                                             "<h4>"+texto+"</h4>"+
                                         "</div>"+
                                         "<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 text-justify' id='infoser'>"+
-                                            "<h6><b>Materiales: <br>SUSTRATOS RIGIDOS</b> <br> (PVC, acrilico, vidrio, estireno, foamboard, coroplast, madera, MDF impreso)</h6>"+
+                                            "<h6><b>Materiales:</b>  <br>SUSTRATOS RIGIDOS <br> (PVC, acrilico, vidrio, estireno, foamboard, coroplast, madera, MDF impreso)</h6>"+
                                         "</div>"+
                                     "</div>"+
                                 "</div>";
